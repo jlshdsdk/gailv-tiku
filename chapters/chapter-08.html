@@ -13,9 +13,553 @@
 <div class="layout">
 <aside class="sidebar" id="sidebar">
 <h3>本章目录</h3>
+<div class="sec-group">
+<a class="sec-name" href="#sec-1">§1 假设检验基本概念</a>
+<div class="q-links">
+<a href="#q-1-1" data-qid="c8-1.1">1.1</a>
+<a href="#q-1-2" data-qid="c8-1.2">1.2</a>
+<a href="#q-1-3" data-qid="c8-1.3">1.3</a>
+<a href="#q-1-4" data-qid="c8-1.4">1.4</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-2">§2 正态总体参数的假设检验</a>
+<div class="q-links">
+<a href="#q-2-1" data-qid="c8-2.1">2.1</a>
+<a href="#q-2-2" data-qid="c8-2.2">2.2</a>
+<a href="#q-2-3" data-qid="c8-2.3">2.3</a>
+<a href="#q-2-4" data-qid="c8-2.4">2.4</a>
+<a href="#q-2-5" data-qid="c8-2.5">2.5</a>
+<a href="#q-2-6" data-qid="c8-2.6">2.6</a>
+<a href="#q-2-7" data-qid="c8-2.7">2.7</a>
+<a href="#q-2-8" data-qid="c8-2.8">2.8</a>
+<a href="#q-2-9" data-qid="c8-2.9">2.9</a>
+<a href="#q-2-10" data-qid="c8-2.10">2.10</a>
+<a href="#q-2-11" data-qid="c8-2.11">2.11</a>
+<a href="#q-2-12" data-qid="c8-2.12">2.12</a>
+<a href="#q-2-13" data-qid="c8-2.13">2.13</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-3">§3 综合提高题型</a>
+<div class="q-links">
+<a href="#q-3-1" data-qid="c8-3.1">3.1</a>
+<a href="#q-3-2" data-qid="c8-3.2">3.2</a>
+<a href="#q-3-3" data-qid="c8-3.3">3.3</a>
+<a href="#q-3-4" data-qid="c8-3.4">3.4</a>
+<a href="#q-3-5" data-qid="c8-3.5">3.5</a>
+<a href="#q-3-6" data-qid="c8-3.6">3.6</a>
+<a href="#q-3-7" data-qid="c8-3.7">3.7</a>
+<a href="#q-3-8" data-qid="c8-3.8">3.8</a>
+<a href="#q-3-9" data-qid="c8-3.9">3.9</a>
+<a href="#q-3-10" data-qid="c8-3.10">3.10</a>
+<a href="#q-3-11" data-qid="c8-3.11">3.11</a>
+<a href="#q-3-12" data-qid="c8-3.12">3.12</a>
+<a href="#q-3-13" data-qid="c8-3.13">3.13</a>
+<a href="#q-3-14" data-qid="c8-3.14">3.14</a>
+<a href="#q-3-15" data-qid="c8-3.15">3.15</a>
+<a href="#q-3-16" data-qid="c8-3.16">3.16</a>
+<a href="#q-3-17" data-qid="c8-3.17">3.17</a>
+<a href="#q-3-18" data-qid="c8-3.18">3.18</a>
+<a href="#q-3-19" data-qid="c8-3.19">3.19</a>
+<a href="#q-3-20" data-qid="c8-3.20">3.20</a>
+<a href="#q-3-21" data-qid="c8-3.21">3.21</a>
+<a href="#q-3-22" data-qid="c8-3.22">3.22</a>
+<a href="#q-3-23" data-qid="c8-3.23">3.23</a>
+<a href="#q-3-24" data-qid="c8-3.24">3.24</a>
+<a href="#q-3-25" data-qid="c8-3.25">3.25</a>
+<a href="#q-3-26" data-qid="c8-3.26">3.26</a>
+<a href="#q-3-27" data-qid="c8-3.27">3.27</a>
+</div></div>
 </aside>
 <main class="main"><div class="content">
-<div class="chapter-head"><h1>第8章 假设检验</h1><div class="meta">共 0 题</div></div>
+<div class="chapter-head"><h1>第8章 假设检验</h1><div class="meta">共 44 题</div></div>
+<h2 class="sec-title" id="sec-1">§1 假设检验基本概念</h2>
+<div class="know-box"><p>1. 假设检验<br>对总体的分布类型或分布中的某些未知参数作出假设，然后抽取样本并选择一个合适的检验统计量，利用检验统计量的观察值和预先给定的误差 $\alpha$，对所作假设成立与否作出定性判断，这种统计推断称为假设检验. 若总体分布已知，只对分布中未知参数提出假设并作检验，这种检验称为参数检验.<br>2. 假设检验基本思想的依据是小概率原理<br>小概率原理是指概率很小的事件在试验中发生的频率也很小，因此小概率事件在一次试验中不可能发生.<br>当对问题提出待检假设 $H_0$，并要检验它是否可信时，先假定 $H_0$ 正确. 在这个假定下，经过一次抽样，若小概率事件发生了，就作出拒绝 $H_0$ 的决定；否则，若小概率事件未发生，则接受 $H_0$.<br>3. 假设检验基本概念<br>在显著性水平 $\alpha$ 下，检验假设.</p>
+<p class="dmath">$$H_0:\mu=\mu_0,\qquad H_1:\mu\ne\mu_0.$$</p>
+<p>$H_0$ 称为原假设或零假设. $H_1$ 称为备择假设.<br>当检验统计量取某个区域 $C$ 中的值时，我们拒绝原假设 $H_0$，则称区域 $C$ 为拒绝域（或否定域）.<br>4. 假设检验过程<br>（1）提出原假设和备择假设；<br>（2）选取检验统计量；<br>（3）确定拒绝原假设的域；<br>（4）计算检验统计量的观察值并作出判断.<br>5. 两类错误<br>人们作出判断的依据是一个样本，样本是随机的，因而人们进行假设检验判断 $H_0$ 可信与否时，不免发生误判而犯两类错误.<br>第一类错误：$H_0$ 为真，而检验结果将其否定，这称为"弃真"错误；<br>第二类错误：$H_0$ 不真，而检验结果将其接受，这称为"取伪"错误.<br>分别记犯第一、二类错误的概率为 $\alpha,\beta$，即 $\alpha=P\{\text{拒绝 }H_0\mid H_0\text{ 为真}\}$，$\beta=P\{\text{接受 }H_0\mid H_0\text{ 不真}\}$. 当样本容量 $n$ 固定时，$\alpha$ 越小，$\beta$ 就越大. 一般采取的原则是：固定 $\alpha$，通过增加样本容量 $n$ 降低 $\beta$.<br>6. 假设检验与区间估计的联系<br>假设检验与区间估计是从不同角度来对同一问题的回答，其解决问题的途径相通.<br>下面以正态总体 $N(\mu,\sigma_0^2)$，其中 $\sigma_0^2$ 已知，关于 $\mu$ 的假设检验和区间估计为例加以说明：<br>假设 $H_0:\mu=\mu_0$，当 $H_0$ 为真时，则 $U=\dfrac{\overline{X}-\mu_0}{\sigma/\sqrt{n}}\sim N(0,1)$，对于给定的显著性水平 $\alpha$，$P\left\{|U|\le u_{\frac{\alpha}{2}}\right\}=1-\alpha$，那么 $H_0$ 的接受域为 $\left(\overline{X}\pm u_{\frac{\alpha}{2}}\dfrac{\sigma_0}{\sqrt{n}}\right)$，即认为以 $1-\alpha$ 的概率接受 $H_0$. 事实上这个接受域也是 $\mu$ 的置信度为 $1-\alpha$ 的置信区间. 这充分说明两者解决问题的途径相同，假设检验判断的是结论是否成立，而参数估计解决的是范围问题.<br>基本题型</p></div>
+<div class="block-title">题型1 关于两类错误</div>
+<section class="q-card" id="q-1-1" data-qid="c8-1.1">
+<div class="q-head"><span class="q-num">【1.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>在假设检验中，记 $H_1$ 为备择假设，则称（　　）为犯第一类错误.<br>（A）$H_1$ 真，接受 $H_1$<br>（B）$H_1$ 不真，接受 $H_1$<br>（C）$H_1$ 真，拒绝 $H_1$<br>（D）$H_1$ 不真，拒绝 $H_1$</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　应选(B)，(B)相当于 $H_0$ 为真，但拒绝 $H_0$，为第一类错误.</p></div>
+<div class="ans-line">最终答案：<p>故应选(B).</p></div>
+</div></section>
+<section class="q-card" id="q-1-2" data-qid="c8-1.2">
+<div class="q-head"><span class="q-num">【1.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>对假设检验，显著性水平 $\alpha=0.05$，其意义是（　　）.<br>（A）原假设不成立，经过检验而被拒绝的概率<br>（B）原假设成立，经过检验而被拒绝的概率<br>（C）原假设不成立，经过检验不能拒绝的概率<br>（D）原假设成立，经过检验不能拒绝的概率</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　应选(B)，$\alpha$ 即第一类错误"弃真"的概率.</p></div>
+<div class="ans-line">最终答案：<p>故应选(B).</p></div>
+</div></section>
+<section class="q-card" id="q-1-3" data-qid="c8-1.3">
+<div class="q-head"><span class="q-num">【1.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>在假设检验中，$H_0$ 表示原假设，$H_1$ 为备择假设，则称为犯第二类错误是（　　）.<br>（A）$H_1$ 不真，接受 $H_1$<br>（B）$H_1$ 不真，接受 $H_0$<br>（C）$H_0$ 不真，接受 $H_1$<br>（D）$H_0$ 不真，接受 $H_0$</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　应选(D).</p></div>
+<div class="ans-line">最终答案：<p>故应选(D).</p></div>
+</div></section>
+<section class="q-card" id="q-1-4" data-qid="c8-1.4">
+<div class="q-head"><span class="q-num">【1.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>假设 $X_1,X_2,\cdots,X_{36}$ 是来自正态总体 $N(\mu,0.04)$ 的简单随机样本，其中 $\mu$ 为未知参数，记 $\overline{X}=\dfrac{1}{36}\sum\limits_{i=1}^{36}X_i$，现对检验问题 $H_0:\mu=0.5$，$H_1:\mu=\mu_1&gt;0.5$，并取检验否定域 $D=\{(x_1,x_2,\cdots,x_{36}):\overline{X}&gt;C\}$，检验显著性水平 $\alpha=0.05$. 试计算：<br>（1）$C$；（2）若 $\alpha=0.05$，$\mu_1=0.65$ 时，犯第二类错误的概率是多少？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　（1）若假设 $H_0$ 成立，即 $\mu=0.5$，那么总体 $X\sim N(0.5,\ 0.04)$，$\overline{X}\sim N\left(0.5,\dfrac{1}{900}\right)$.<br>根据题意知</p>
+<p class="dmath">$$\alpha=P\{\text{拒绝 }H_0\mid H_0\text{ 为真}\}=P\{\overline{X}&gt;C\}=1-P\{\overline{X}\le C\}$$</p>
+<p class="dmath">$$=1-P\left\{\dfrac{\overline{X}-0.5}{\dfrac{1}{30}}\le\dfrac{C-0.5}{\dfrac{1}{30}}\right\}=1-\Phi(30C-15)=0.05.$$</p>
+<p>那么 $\Phi(30C-15)=0.95$，查表得 $30C-15=1.645$，即 $C=0.5548$.<br>（2）若假设 $H_1$ 成立，即 $\mu=\mu_1=0.65$，那么总体 $X\sim N(0.65,\ 0.04)$，$\overline{X}\sim N\left(0.65,\dfrac{1}{900}\right)$.<br>根据题意知</p>
+<p class="dmath">$$\beta=P(\text{接受 }H_0\mid H_0\text{ 不真})=P\{\overline{X}&lt;C\}$$</p>
+<p class="dmath">$$=P\left\{\dfrac{\overline{X}-0.65}{\dfrac{1}{30}}&lt;\dfrac{C-0.65}{\dfrac{1}{30}}\right\}=\Phi(30\times(0.5548-0.65))$$</p>
+<p class="dmath">$$=\Phi(-2.855)=1-\Phi(2.86)=1-0.9979=0.0021.$$</p></div>
+</div></section>
+<h2 class="sec-title" id="sec-2">§2 正态总体参数的假设检验</h2>
+<div class="know-box"><p>1. 一个正态总体的假设检验<br>设 $X\sim N(\mu,\sigma^2)$，$(X_1,X_2,\cdots,X_n)$ 为其样本，<br>（1）$\sigma^2$ 已知，检验假设 $H_0:\mu=\mu_0$；$H_1:\mu\ne\mu_0$.<br>检验步骤为：<br>①提出待检假设 $H_0:\mu=\mu_0$（$\mu_0$ 已知）；<br>②选取样本 $(X_1,X_2,\cdots,X_n)$ 的统计量 $U=\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma_0}{\sqrt{n}}}$（$\sigma_0$ 已知），在 $H_0$ 成立时，$U\sim N(0,1)$；<br>③对给定的显著性水平 $\alpha$，查表确定临界值 $u_{\frac{\alpha}{2}}$，使得 $P\left\{|U|&gt;u_{\frac{\alpha}{2}}\right\}=\alpha$，计算检验统计量 $U$ 的观察值并与临界值 $u_{\frac{\alpha}{2}}$ 比较；<br>④作出判断：若 $|U|&gt;u_{\frac{\alpha}{2}}$，则拒绝 $H_0$；若 $|U|&lt;u_{\frac{\alpha}{2}}$，则接受 $H_0$.<br>（2）$\sigma^2$ 未知，检验假设 $H_0:\mu=\mu_0$；$H_1:\mu\ne\mu_0$.<br>选取统计量 $T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}$，其中 $S^2=\dfrac{1}{n-1}\sum\limits_{i=1}^{n}(X_i-\overline{X})^2$，当 $H_0$ 为真时，$T\sim t(n-1)$.<br>拒绝域为 $|T|&gt;t_{\frac{\alpha}{2}}(n-1)$.<br>（3）$\mu$ 已知，检验假设 $H_0:\sigma^2=\sigma_0^2$；$H_1:\sigma^2\ne\sigma_0^2$.<br>选取统计量 $\chi^2=\dfrac{\sum\limits_{i=1}^{n}(X_i-\mu_0)^2}{\sigma_0^2}\sim\chi^2(n)$，<br>拒绝域为 $\chi^2&gt;\chi_{\frac{\alpha}{2}}^2(n)$　或　$\chi^2&lt;\chi_{1-\frac{\alpha}{2}}^2(n)$.<br>（4）$\mu$ 未知，检验假设 $H_0:\sigma^2=\sigma_0^2$；$H_1:\sigma^2\ne\sigma_0^2$.<br>选取统计量 $\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}$. 当 $H_0$ 为真时，$\chi^2\sim\chi^2(n-1)$，<br>拒绝域为 $\chi^2&gt;\chi_{\frac{\alpha}{2}}^2(n-1)$　或　$\chi^2&lt;\chi_{1-\frac{\alpha}{2}}^2(n-1)$.<br>2. 两个正态总体的假设检验<br>设 $X\sim N(\mu_1,\sigma_1^2)$，$Y\sim N(\mu_2,\sigma_2^2)$，$(X_1,X_2,\cdots,X_{n_1})$ 和 $(Y_1,Y_2,\cdots,Y_{n_2})$ 分别是来自总体 $X$ 和 $Y$ 的样本，$\overline{X},S_1^2$ 和 $\overline{Y},S_2^2$ 是相应的样本的均值和方差，<br>（1）$\sigma_1^2,\sigma_2^2$ 已知，检验假设 $H_0:\mu_1=\mu_2$；$H_1:\mu_1\ne\mu_2$.<br>选取统计量 $U=\dfrac{\overline{X}-\overline{Y}}{\sqrt{\dfrac{\sigma_1^2}{n_1}+\dfrac{\sigma_2^2}{n_2}}}\sim N(0,1)$.<br>拒绝域为 $|U|&gt;u_{\frac{\alpha}{2}}$.<br>（2）$\sigma_1^2,\sigma_2^2$ 未知，检验假设 $H_0:\mu_1=\mu_2$；$H_1:\mu_1\ne\mu_2$. 常见的三种特殊情形：<br>①当 $n_1,n_2$ 较大时：<br>选取统计量 $U=\dfrac{\overline{X}-\overline{Y}}{\sqrt{\dfrac{S_1^2}{n_1}+\dfrac{S_2^2}{n_2}}}\overset{\text{近似}}{\sim}N(0,1)$.<br>拒绝域为 $|U|&gt;u_{\frac{\alpha}{2}}$.<br>②$\sigma_1^2=\sigma_2^2$ 时：<br>选取检验统计量 $T=\dfrac{\overline{X}-\overline{Y}}{\sqrt{\dfrac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}}\sqrt{\dfrac{1}{n_1}+\dfrac{1}{n_2}}}$，当 $H_0$ 为真时，$T\sim t(n_1+n_2-2)$，<br>显著性水平为 $\alpha$ 的拒绝域为 $|T|&gt;t_{\frac{\alpha}{2}}(n_1+n_2-2)$.<br>③$\sigma_1^2\ne\sigma_2^2$，但 $n_1=n_2$（配对问题）：<br>令 $D_i=X_i-Y_i\ (i=1,2,\cdots,n)$，则 $D_i\sim N(\mu_D,\sigma_D^2)$，其中 $\mu_D=\mu_1-\mu_2$，$\sigma_D^2=\sigma_1^2+\sigma_2^2$（未知）.<br>此时检验假设等价于 $H_0:\mu_D=0$；$H_1:\mu_D\ne0$.<br>选取统计量 $T=\dfrac{\overline{D}-\mu_D}{\dfrac{S_D}{\sqrt{n}}}\sim t(n-1)$.<br>拒绝域为 $|T|&gt;t_{\frac{\alpha}{2}}(n-1)$.<br>（3）$\mu_1,\mu_2$ 已知，检验假设 $H_0:\sigma_1^2=\sigma_2^2$；$H_1:\sigma_1^2\ne\sigma_2^2$.<br>选取统计量 $F=\dfrac{\dfrac{\sum\limits_{i=1}^{n_1}(X_i-\mu_1)^2}{n_1}}{\dfrac{\sum\limits_{j=1}^{n_2}(Y_j-\mu_2)^2}{n_2}}\sim F(n_1,n_2)$，<br>拒绝域为 $F&gt;F_{\frac{\alpha}{2}}(n_1,n_2)$　或　$F&lt;F_{1-\frac{\alpha}{2}}(n_1,n_2)$.<br>（4）$\mu_1,\mu_2$ 未知，检验假设 $H_0:\sigma_1^2=\sigma_2^2$；$H_1:\sigma_1^2\ne\sigma_2^2$.<br>选取检验统计量 $F=\dfrac{S_1^2}{S_2^2}$，当 $H_0$ 为真时 $F\sim F(n_1-1,n_2-1)$，<br>显著性水平为 $\alpha$ 的拒绝域为 $F&gt;F_{\frac{\alpha}{2}}(n_1-1,n_2-1)$　或　$F&lt;F_{1-\frac{\alpha}{2}}(n_1-1,n_2-1)$.<br>3. 单侧检验<br>在假设检验中，如果只关心总体参数是否偏大或偏小，此时可将拒绝域确定在某一侧，这种检验称为单侧检验. 单侧检验可由双侧检验修改转化而得到. 常用基本类型举例：<br>（1）$\sigma^2$ 已知，检验假设 $H_0:\mu\le\mu_0$；$H_1:\mu&gt;\mu_0$（有时也写成 $H_0:\mu=\mu_0$；$H_1:\mu&gt;\mu_0$）<br>选取 $U=\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}$，拒绝域为 $U&gt;u_\alpha$.<br>（2）$\sigma^2$ 已知，检验假设 $H_0:\mu\ge\mu_0$；$H_1:\mu&lt;\mu_0$<br>选取 $U=\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}$，拒绝域为 $U&lt;-u_\alpha$.<br>（3）$\sigma^2$ 未知，检验假设 $H_0:\mu\le\mu_0$；$H_1:\mu&gt;\mu_0$<br>选取 $T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}$，拒绝域为 $T&gt;t_\alpha(n-1)$.<br>（4）$\sigma^2$ 未知，检验假设 $H_0:\mu\ge\mu_0$；$H_1:\mu&lt;\mu_0$<br>选取 $T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}$，拒绝域为 $T&lt;-t_\alpha(n-1)$.<br>（5）$\mu$ 未知，检验假设 $H_0:\sigma^2\le\sigma_0^2$；$H_1:\sigma^2&gt;\sigma_0^2$<br>选取 $\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}$，拒绝域为 $\chi^2&gt;\chi_\alpha^2(n-1)$.<br>（6）$\mu$ 未知，检验假设 $H_0:\sigma^2\ge\sigma_0^2$；$H_1:\sigma^2&lt;\sigma_0^2$<br>选取 $\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}$，拒绝域为 $\chi^2&lt;\chi_{1-\alpha}^2(n-1)$.<br>（7）$\mu_1,\mu_2$ 未知，检验假设 $H_0:\sigma_1^2\le\sigma_2^2$；$H_1:\sigma_1^2&gt;\sigma_2^2$<br>选取 $F=\dfrac{S_1^2}{S_2^2}$，拒绝域为 $F&gt;F_\alpha(n_1-1,n_2-1)$.<br>（8）$\mu_1,\mu_2$ 未知，检验假设 $H_0:\sigma_1^2\ge\sigma_2^2$；$H_1:\sigma_1^2&lt;\sigma_2^2$<br>选取 $F=\dfrac{S_1^2}{S_2^2}$，拒绝域为 $F&lt;F_{1-\alpha}(n_1-1,n_2-1)$.<br>其他类型可仿照上述类型得到解决.<br>基本题型</p></div>
+<div class="block-title">题型1 正态总体均值的检验</div>
+<section class="q-card" id="q-2-1" data-qid="c8-2.1">
+<div class="q-head"><span class="q-num">【2.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知某炼铁厂铁水含碳量服从正态分布 $N(4.55,\ 0.108^2)$，现在测定了 9 种铁水，其平均含碳量为 4.84. 若估计方差没有变化，可否认为现在生产的铁水平均含碳量仍为 4.55（$\alpha=0.05$）？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　根据题意，建立检验假设 $H_0:\mu=\mu_0=4.55$，$H_1:\mu\ne\mu_0$.<br>由于已知 $\sigma^2=0.108^2$，故在 $H_0$ 成立条件下选取统计量</p>
+<p class="dmath">$$U=\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma_0}{\sqrt{n}}}\sim N(0,1).$$</p>
+<p>已知 $\alpha=0.05$，查表知 $u_{\frac{\alpha}{2}}=1.96$.<br>由于 $\overline{X}=4.84$，$n=9$，$\sigma=0.108$. 故 $U$ 的观测值为 $|U|=1.833&lt;1.96=u_{\frac{\alpha}{2}}$.<br>因此接受 $H_0$，即认为现在生产的铁水平均含碳量仍为 4.55.</p></div>
+<div class="ans-line">最终答案：<p>因此接受 $H_0$，即认为现在生产的铁水平均含碳量仍为 4.55.</p></div>
+</div></section>
+<section class="q-card" id="q-2-2" data-qid="c8-2.2">
+<div class="q-head"><span class="q-num">【2.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设某次考试的考生成绩服从正态分布，从中随机地抽取 36 位考生的成绩，算得平均成绩为 66.5 分，标准差为 15 分. 问在显著性水平 0.05 下，是否可以认为这次考试全体考生的平均成绩为 70 分？并给出检验过程.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设该次考试的考试成绩为 $X$，则 $X\sim N(\mu,\sigma^2)$，且 $\sigma^2$ 未知.<br>根据题意建立假设 $H_0:\mu=70$，$H_1:\mu\ne70$，选取检验统计量</p>
+<p class="dmath">$$T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}},$$</p>
+<p>当 $H_0$ 成立时，有 $T=\dfrac{\overline{X}-70}{S}\sqrt{36}\sim t(35)$，<br>计算 $\overline{X}=66.5$，$S=15$，从而 $t=\dfrac{66.5-70}{15}\sqrt{36}=-1.4$.<br>查表可得 $t_{0.025}(35)=2.0301$. 因为 $|t|=1.4&lt;2.0301$，所以接受 $H_0$.<br>即在显著性水平 0.05 下可以认为这次考试全体考生的平均成绩为 70 分.</p></div>
+<div class="ans-line">最终答案：<p>即在显著性水平 0.05 下可以认为这次考试全体考生的平均成绩为 70 分.</p></div>
+</div></section>
+<section class="q-card" id="q-2-3" data-qid="c8-2.3">
+<div class="q-head"><span class="q-num">【2.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>用甲、乙两种方法生产同一种药品，其成品得率的方差分别为 $\sigma_1^2=0.46$，$\sigma_2^2=0.37$. 现测得甲方法生产的药品得率的 25 个数据，$\overline{X}=3.81$；乙方法生产的药品得率的 30 个数据，$\overline{Y}=3.56$. 设得率服从正态分布. 问甲、乙两种方法的平均得率是否有显著的差异？（$\alpha=0.05$）</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　根据题意，建立检验假设 $H_0:\mu_1=\mu_2$，$H_1:\mu_1\ne\mu_2$.<br>由于方差已知，故在 $H_0$ 成立时，选取统计量</p>
+<p class="dmath">$$U=\dfrac{\overline{X}-\overline{Y}}{\sqrt{\dfrac{\sigma_1^2}{n_1}+\dfrac{\sigma_2^2}{n_2}}}\sim N(0,1).$$</p>
+<p>$\alpha=0.05$，查表得 $u_{0.025}=1.96$.<br>计算 $|u|=\left|\dfrac{3.81-3.56}{\sqrt{\dfrac{0.46}{25}+\dfrac{0.37}{30}}}\right|=1.426&lt;1.96$.<br>因此接受 $H_0$，即认为两种方法的平均得率没有显著差异.</p></div>
+<div class="ans-line">最终答案：<p>因此接受 $H_0$，即认为两种方法的平均得率没有显著差异.</p></div>
+</div></section>
+<section class="q-card" id="q-2-4" data-qid="c8-2.4">
+<div class="q-head"><span class="q-num">【2.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某烟厂生产甲、乙两种香烟，独立地随机抽取容量大小相同的烟叶标本，测量尼古丁含量的毫克数，一实验室分别做了 6 次测定，数据记录如下：<br>甲　25　28　23　26　29　22<br>乙　28　23　30　25　21　27<br>假定尼古丁含量服从正态分布且具有相同的方差，试问在显著性水平 $\alpha=0.05$ 下，这两种香烟的尼古丁含量有无显著差异？<br>解　提出待检假设 $H_0:\mu_1=\mu_2$，$H_1:\mu_1\ne\mu_2$. 由于 $\sigma_1^2,\sigma_2^2$ 未知，但相等.<br>选取统计量，</p>
+<p class="dmath">$$T=\dfrac{\overline{X}-\overline{Y}}{\sqrt{\dfrac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}}\sqrt{\dfrac{1}{n_1}+\dfrac{1}{n_2}}},$$</p>
+<p>其中 $n_1=n_2=6$，当 $H_0$ 为真时，$T\sim t(6+6-2)=t(10)$；<br>对 $\alpha=0.05$，拒绝域为 $|T|\ge t_{0.025}(10)=2.2281$，且 $\overline{X}=25.5$，$\overline{Y}=25.67$，$S_1^2=7.5$，$S_2^2=11.07$，那么</p>
+<p class="dmath">$$|T|=\left|\dfrac{25.5-25.67}{\sqrt{\dfrac{5\times(7.5+11.07)}{10}}\sqrt{\dfrac{1}{6}+\dfrac{1}{6}}}\right|\approx0.099,$$</p>
+<p>因为 $|T|\approx0.099&lt;2.2281=t_{0.025}(10)$，从而接受 $H_0$，即认为两种香烟的尼古丁含量无显著差异.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<div class="ans-line">最终答案：<p>因为 $|T|\approx0.099&lt;2.2281=t_{0.025}(10)$，从而接受 $H_0$，即认为两种香烟的尼古丁含量无显著差异.</p></div>
+</div></section>
+<section class="q-card" id="q-2-5" data-qid="c8-2.5">
+<div class="q-head"><span class="q-num">【2.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>要求一种元件使用寿命不得低于 1000h，生产者从一批这种元件中随机抽取 25 件，测量其寿命的平均值为 950h，已知该种元件寿命服从标准差为 $\sigma=100$h 的正态分布. 试在显著性水平 $\alpha=0.05$ 下确定这批元件是否合格？设总体均值为 $\mu$，即需检验假设 $H_0:\mu\ge1000$，$H_1:\mu&lt;1000$.<br>解　$H_0:\mu\ge1000$，$H_1:\mu&lt;1000$.<br>此题中，$\sigma^2=10000$ 为已知，因此此检验问题的拒绝域为</p>
+<p class="dmath">$$U=\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\le-u_\alpha\quad(\text{单边检验}，\alpha\text{ 不分半})；$$</p>
+<p>计算 $\alpha=0.05$，$\overline{x}=950$，$\sigma=100$，$n=25$，$u_{0.05}=1.645$，</p>
+<p class="dmath">$$u=\dfrac{950-1000}{\dfrac{100}{\sqrt{25}}}=-2.5&lt;-1.645,$$</p>
+<p>$u$ 落在拒绝域中，所以拒绝 $H_0$，即认为这批元件不合格.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<div class="ans-line">最终答案：<p>$u$ 落在拒绝域中，所以拒绝 $H_0$，即认为这批元件不合格.</p></div>
+</div></section>
+<section class="q-card" id="q-2-6" data-qid="c8-2.6">
+<div class="q-head"><span class="q-num">【2.6】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>下面列出的是某厂随机选取的 20 部部件的装配时间（分）：<br>9.8　10.4　10.6　9.6　9.7　9.9　10.9　11.1　9.6　10.2<br>10.3　9.6　9.9　11.2　10.6　9.8　10.5　10.1　10.5　9.7<br>设装配时间的总体服从正态分布 $N(\mu,\sigma^2)$，$\mu,\sigma^2$ 均未知，是否可以认为装配时间的均值显著大于 10（$\alpha=0.05$）？<br>解　需要检验的假设为 $H_0:\mu\le10$，$H_1:\mu&gt;10$.<br>$\sigma^2$ 未知，因此，拒绝域的形式为</p>
+<p class="dmath">$$T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}\ge t_\alpha(n-1),$$</p>
+<p>现在 $n=20$，$\alpha=0.05$，查表得 $t_\alpha(n-1)=1.7291$. 算得 $\overline{x}=10.2$，$s^2=0.26$，$s=0.51$.</p>
+<p class="dmath">$$t=\dfrac{10.2-10}{\dfrac{0.51}{\sqrt{20}}}=1.7537&gt;1.7291.$$</p>
+<p>因为 $t$ 落在拒绝域之内，故应拒绝 $H_0$，即认为装配时间的均值显著大于 10（分）.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<div class="ans-line">最终答案：<p>因为 $t$ 落在拒绝域之内，故应拒绝 $H_0$，即认为装配时间的均值显著大于 10（分）.</p></div>
+</div></section>
+<div class="block-title">题型2 正态总体方差的检验</div>
+<section class="q-card" id="q-2-7" data-qid="c8-2.7">
+<div class="q-head"><span class="q-num">【2.7】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知维尼纶纤度在正常条件下服从正态分布 $N(\mu,\ 0.048^2)$. 某日抽取 5 根纤维，测得其纤度为 1.32，1.55，1.36，1.40，1.44. 问这一天纤度总体方差是否正常？（$\alpha=0.05$）<br>解　根据题意，建立检验假设 $H_0:\sigma^2=\sigma_0^2=0.048^2$，$H_1:\sigma^2\ne\sigma_0^2$.<br>由于 $\mu$ 未知，故在 $H_0$ 成立条件下选取统计量如下</p>
+<p class="dmath">$$\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}\sim\chi^2(n-1),$$</p>
+<p>$\alpha=0.05$，自由度为 $n-1=5-1=4$. 查 $\chi^2$ 分布表得 $\chi_{0.025}^2(4)=11.1$，$\chi_{0.975}^2(4)=0.484$，<br>其中 $(n-1)S^2=\sum\limits_{i=1}^{n}(X_i-\overline{X})^2=\sum\limits_{i=1}^{5}X_i^2-5\overline{X}^2=0.03142$，则</p>
+<p class="dmath">$$\dfrac{(n-1)S^2}{\sigma_0^2}=\dfrac{0.03142}{0.048^2}\approx13.64&gt;\chi_{0.025}^2(4).$$</p>
+<p>因此拒绝 $H_0$，即认为这一天纤度方差有显著变化.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<div class="ans-line">最终答案：<p>因此拒绝 $H_0$，即认为这一天纤度方差有显著变化.</p></div>
+</div></section>
+<section class="q-card" id="q-2-8" data-qid="c8-2.8">
+<div class="q-head"><span class="q-num">【2.8】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>（接上例）若规定加工精度 $\sigma^2$ 不能超过 $0.048^2$，试在 $\alpha=0.05$ 下检验该日产品的精度是否正常？<br>解　建立检验假设 $H_0:\sigma^2\le\sigma_0^2=0.048^2$，$H_1:\sigma^2&gt;0.048^2$.<br>（或者 $H_0:\sigma^2=\sigma_0^2=0.048^2$，$H_1:\sigma^2&gt;0.048^2$.）<br>由于 $\mu$ 未知，当 $H_0$ 成立时</p>
+<p class="dmath">$$\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}\sim\chi^2(n-1),$$</p>
+<p>$\alpha=0.05$，自由度为 $n-1=5-1=4$. 查 $\chi^2$ 分布表得 $\chi_{0.05}^2(4)=9.488$，<br>其中 $(n-1)S^2=\sum\limits_{i=1}^{5}(x_i-\overline{x})^2=0.03142$，则</p>
+<p class="dmath">$$\dfrac{(n-1)S^2}{\sigma_0^2}=\dfrac{0.03142}{0.048^2}\approx13.64&gt;9.488=\chi_{0.05}^2(4).$$</p>
+<p>因此拒绝 $H_0$，认为这一天产品的精度不正常.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<div class="ans-line">最终答案：<p>因此拒绝 $H_0$，认为这一天产品的精度不正常.</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　【2.7】和【2.8】是在期望未知的情形下，对正态总体方差的检验问题.<br>比较【2.7】和【2.8】，可知单侧检验与双侧检验所用统计量及其计算是一样的. 只是拒绝域不同.</p></div>
+</div></section>
+<section class="q-card" id="q-2-9" data-qid="c8-2.9">
+<div class="q-head"><span class="q-num">【2.9】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一种混杂的小麦品种，株高的标准差为 $\sigma_0=14$cm，经提纯后随机抽取 10 株，它们的株高（以 cm 计）为<br>90　105　101　95　100　100　101　105　93　97<br>考虑提纯后群体是否比原群体整齐？取显著性水平 $\alpha=0.01$，并设小麦株高服从 $N(\mu,\sigma^2)$.<br>解　需假设检验（$\alpha=0.01$），$H_0:\sigma\ge\sigma_0$，$H_1:\sigma&lt;\sigma_0$（$\sigma_0=14$）.<br>采用 $\chi^2$ 检验法. 拒绝域为</p>
+<p class="dmath">$$\chi^2 = \frac{(n-1)S^2}{\sigma_0^2} &lt; \chi^2_{1-\alpha}(9),$$</p>
+<p>现在 $n=10$，$\chi^2_{1-0.01}(9)=2.088$，$s^2=24.233$，</p>
+<p class="dmath">$$\chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{218.1}{14^2} = 1.11 &lt; 2.088.$$</p>
+<p>落在拒绝域内，故拒绝 $H_0$，认为提纯后的群体比原群体整齐.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+</div></section>
+<section class="q-card" id="q-2-10" data-qid="c8-2.10">
+<div class="q-head"><span class="q-num">【2.10】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某一橡胶配方中，原用氧化锌 5 克，现减为 1 克，若分别用两种配方做一批试验. 5 克配方测 9 个橡胶伸长率，其样本方差为 $s_1^2=63.86$. 1 克配方测 10 个橡胶伸长率，其样本方差为 $s_2^2=236.8$. 设橡胶伸长率遵从正态分布，问两种配方伸长率的总体标准差有无显著差异？$(\alpha=0.10,\alpha=0.05)$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设 $X,Y$ 分别为 5 克配方，1 克配方的橡胶伸长率，</p>
+<p class="dmath">$$X\sim N(\mu_1,\sigma_1^2),\quad Y\sim N(\mu_2,\sigma_2^2),\quad n_1=9,\quad n_2=10.$$</p>
+<p>假设为 $H_0:\sigma_1^2=\sigma_2^2$，$H_1:\sigma_1^2\ne\sigma_2^2$. 应选取检验统计量为 $F=\dfrac{S_1^2}{S_2^2}$.<br>当 $H_0$ 成立时，$F$ 服从自由度为 $(n_1-1,n_2-1)$ 的 $F$ 分布，查 $F(8,9)$ 分布表得<br>$\alpha=0.10$ 时，$F_{\frac{0.10}{2}}(8,9)=3.23$，$F_{1-\frac{0.10}{2}}(8,9)=0.295$，<br>$\alpha=0.05$ 时，$F_{\frac{0.05}{2}}(8,9)=4.10$，$F_{1-\frac{0.05}{2}}(8,9)=0.2294$，<br>所以<br>当 $\alpha=0.10$ 时，否定域为 $F\ge 3.23$ 或 $F\le 0.295$，<br>当 $\alpha=0.05$ 时，否定域为 $F\ge 4.10$ 或 $F\le 0.2294$，<br>由题设中条件，计算得 $F=0.2697$，故在 $\alpha=0.10$ 时，否定 $H_0$；在 $\alpha=0.05$ 时，不能否定 $H_0$.</p></div>
+</div></section>
+<section class="q-card" id="q-2-11" data-qid="c8-2.11">
+<div class="q-head"><span class="q-num">【2.11】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>为比较不同季节出生的女婴体重的方差，从某年 12 月和 6 月出生的女婴中分别随机地选取 6 名及 10 名，测其体重(单位：g)如下表所示</p>
+<table><tr><th>12 月 $X$</th><th>3520</th><th>2960</th><th>2560</th><th>2960</th><th>3260</th><th>3960</th><th></th><th></th><th></th><th></th></tr><tr><td>6 月 $Y$</td><td>3220</td><td>3220</td><td>3760</td><td>3000</td><td>2920</td><td>3740</td><td>3060</td><td>3080</td><td>2940</td><td>3060</td></tr></table>
+<p>假定冬、夏新生女婴体重分别服从正态分布 $N(\mu_1,\sigma_1^2)$，$N(\mu_2,\sigma_2^2)$，试在显著性水平 $\alpha=0.05$ 下，检验假设 $H_0:\sigma_1^2\le\sigma_2^2$，$H_1:\sigma_1^2&gt;\sigma_2^2$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 在 $\alpha=0.05$ 下，检验假设 $H_0:\sigma_1^2\le\sigma_2^2$.<br>选取检验统计量 $F=\dfrac{S_1^2}{S_2^2}$，当 $H_0$ 为真时，$F\sim F(n_1-1,n_2-1)$.<br>对 $\alpha=0.05$，拒绝域为</p>
+<p class="dmath">$$F&gt;F_{\alpha}(n_1-1,n_2-1)=F_{0.05}(5,9)=3.48,$$</p>
+<p>而由题意可知 $S_1^2=505667$，$S_2^2=93956$，那么检验统计量 $F$ 的观察值为</p>
+<p class="dmath">$$F=\frac{S_1^2}{S_2^2}=\frac{505667}{93956}=5.382&gt;3.48=F_{0.05}(5,9),$$</p>
+<p>作出判断：$F$ 落入拒绝域内，故拒绝 $H_0$，即认为新生女婴体重的方差冬季不比夏季的小.</p></div>
+</div></section>
+<div class="block-title">题型3 配对问题</div>
+<section class="q-card" id="q-2-12" data-qid="c8-2.12">
+<div class="q-head"><span class="q-num">【2.12】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>为了试验两种不同谷物的种子的优劣，选取了 10 块土质不同的土地，并将每块土地分为面积相同的两部分，分别种植 $A$、$B$ 两种种子，设在每块土地的两部分人工管理等条件完全一样，下面给出各块土地上的单位面积产量.</p>
+<table><tr><th>土地编号</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><td>种子 $A(x_i)$</td><td>23</td><td>35</td><td>29</td><td>42</td><td>39</td><td>29</td><td>37</td><td>34</td><td>35</td><td>28</td></tr><tr><td>种子 $B(y_i)$</td><td>26</td><td>39</td><td>35</td><td>40</td><td>38</td><td>24</td><td>36</td><td>27</td><td>41</td><td>27</td></tr></table>
+<p>设 $D_i=X_i-Y_i\,(i=1,2,\cdots,10)$ 是来自正态总体 $N(\mu_D,\sigma_D^2)$ 的样本，$\mu_D,\sigma_D^2$ 均未知，问以这两种种子种植的谷物的产量是否有显著的差异(取 $\alpha=0.05$)？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设 $D=X-Y\sim N(\mu_D,\sigma_D^2)$，$D_i=X_i-Y_i$.<br>检验假设 $H_0:\mu_D=0$，$H_1:\mu_D\ne 0$.<br>该检验的拒绝域为 $|t|=\left|\dfrac{\bar{D}-0}{\dfrac{S}{\sqrt{n}}}\right|\ge t_{\frac{\alpha}{2}}(n-1)$，此处 $\alpha=0.05$，$\dfrac{\alpha}{2}=0.025$，$n=10$，<br>查表知 $t_{\frac{\alpha}{2}}(n-1)=2.2622$，计算得 $\bar{d}=-0.2$，$s^2=19.822$，$s=4.45$，<br>于是 $|t|=\left|\dfrac{-0.2-0}{\dfrac{4.45}{\sqrt{10}}}\right|=0.1424&lt;2.2622.$<br>$t$ 没落在拒绝域，故接受 $H_0$，认为没有显著差异.</p></div>
+</div></section>
+<section class="q-card" id="q-2-13" data-qid="c8-2.13">
+<div class="q-head"><span class="q-num">【2.13】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>为了比较用来做鞋子后跟的两种材料的质量，选取了 15 个男子(他们的生活条件各不相同)，每个人穿一双新鞋，其中一只以材料 $A$ 做后跟，另一只以材料 $B$ 做后跟，其厚度均为 10mm，过了一个月再测量厚度，得到数据如下：</p>
+<table><tr><th>男子</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr><tr><td>材料 $A(x_i)$</td><td>6.6</td><td>7.0</td><td>8.3</td><td>8.2</td><td>5.2</td><td>9.3</td><td>7.9</td><td>8.5</td><td>7.8</td><td>7.5</td><td>6.1</td><td>8.9</td><td>6.1</td><td>9.4</td><td>9.1</td></tr><tr><td>材料 $B(y_i)$</td><td>7.4</td><td>5.4</td><td>8.8</td><td>8.0</td><td>6.8</td><td>9.1</td><td>6.3</td><td>7.5</td><td>7.0</td><td>6.5</td><td>4.4</td><td>7.7</td><td>4.2</td><td>9.4</td><td>9.1</td></tr></table>
+<p>设 $D_i=X_i-Y_i\,(i=1,2,\cdots,15)$ 是来自正态总体 $N(\mu_D,\sigma_D^2)$ 的样本，$\mu_D,\sigma_D^2$ 均未知，问是否可以认为用材料 $A$ 制作的后跟比用材料 $B$ 制作的耐穿($\alpha=0.05$)？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 成对试验 $D=X-Y\sim N(\mu_D,\sigma_D^2)$，$D_i=X_i-Y_i$.<br>检验假设 $H_0:\mu_D\le 0$，$H_1:\mu_D&gt;0$.<br>因 $\sigma_D^2$ 未知，拒绝域为 $t=\dfrac{\bar{D}-0}{\dfrac{S_D}{\sqrt{n}}}\ge t_{\alpha}(n-1)$，这里 $n=15$，$\alpha=0.05$，$t_{0.05}(14)=1.7613$，<br>计算得 $\bar{D}=0.553$，$S_D^2=(1.0225)^2$，于是 $t=\dfrac{0.553-0}{\dfrac{1.0225}{\sqrt{15}}}=2.0958&gt;1.7613$，<br>$t$ 落在拒绝域中，拒绝 $H_0$，认为 $A$ 比 $B$ 耐穿.</p></div>
+</div></section>
+<h2 class="sec-title" id="sec-3">§3 综合提高题型</h2>
+<div class="block-title">题型1 正态总体参数的假设检验</div>
+<section class="q-card" id="q-3-1" data-qid="c8-3.1">
+<div class="q-head"><span class="q-num">【3.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $X_1,X_2,\cdots,X_n$ 是来自正态总体 $N(\mu,\sigma^2)$ 的简单随机样本，其中参数 $\mu$ 和 $\sigma^2$ 未知，记</p>
+<p class="dmath">$$\bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_i,\qquad Q^2=\sum_{i=1}^{n}(X_i-\bar{X})^2,$$</p>
+<p>则假设 $H_0:\mu=0$ 的 $t$ 检验使用统计量______.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 因为 $\sigma^2$ 未知，故取统计量 $t=\dfrac{\bar{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}$，由 $\mu=0$，$S^2=\dfrac{Q^2}{n-1}$，得 $t=\dfrac{\bar{X}}{Q}\sqrt{n(n-1)}$.</p></div>
+<div class="ans-line">最终答案：<p>故应填 $\dfrac{\bar{X}}{Q}\sqrt{n(n-1)}$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-2" data-qid="c8-3.2">
+<div class="q-head"><span class="q-num">【3.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知总体 $X\sim N(\mu,\sigma^2)$，其中 $\mu$ 是未知参数，$X_1,X_2,\cdots,X_{16}$ 是其样本，$\bar{X}$ 为样本均值，如果对检验 $H_0:\mu=\mu_0$，取拒绝域 $\{|\bar{X}-\mu_0|&gt;k\}$，则 $k=$______ $(\alpha=0.05)$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $P\{|\bar{X}-\mu_0|&gt;k\}=0.05$，则</p>
+<p class="dmath">$$P\left\{\left|\frac{\bar{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\right|&gt;k\cdot\frac{\sqrt{n}}{\sigma}\right\}=0.05,$$</p>
+<p>即 $k\cdot\dfrac{4}{\sigma}=u_{0.025}=1.96$，从而 $k=0.49\sigma$.</p></div>
+<div class="ans-line">最终答案：<p>故应填 $0.49\sigma$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-3" data-qid="c8-3.3">
+<div class="q-head"><span class="q-num">【3.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设总体 $X\sim N(\mu,\sigma^2)$，现对 $\mu$ 进行假设检验，如在显著性水平 $\alpha=0.05$ 下接受了 $H_0:\mu=\mu_0$，则在显著性水平 $\alpha=0.01$ 下( ).<br>(A)接受 $H_0$ (B)拒绝 $H_0$<br>(C)可能接受，可能拒绝 $H_0$ (D)第一类错误概率变大</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 无论 $\sigma^2$ 已知或未知，即无论选取 $U$ 统计量还是 $T$ 统计量，当 $\alpha$ 变小时，拒绝域更小，在原显著性水平下能接受 $H_0$，现在也能接受.</p></div>
+<div class="ans-line">最终答案：<p>故应选(A).</p></div>
+</div></section>
+<section class="q-card" id="q-3-4" data-qid="c8-3.4">
+<div class="q-head"><span class="q-num">【3.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设总体 $X\sim N(\mu,8)$，$X_1,\cdots,X_n$ 是其样本，如果在 $\alpha=0.05$ 水平上检验 $H_0:\mu=\mu_0$，$H_1:\mu\ne\mu_0$，其拒绝域为 $|\bar{X}-\mu_0|\ge 1.96$，则样本容量 $n=$______.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 当 $\sigma^2=8$ 时，检验 $H_0:\mu=\mu_0$，$H_1:\mu\ne\mu_0$，拒绝域应为 $|U|\ge u_{\frac{\alpha}{2}}$，<br>即</p>
+<p class="dmath">$$\left|\frac{\bar{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\right|\ge u_{0.025}=1.96.$$</p>
+<p>由题意 $\dfrac{\sigma}{\sqrt{n}}=1$，故 $n=\sigma^2=8$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-5" data-qid="c8-3.5">
+<div class="q-head"><span class="q-num">【3.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设总体 $X\sim N(\mu_1,\sigma_1^2)$，$Y\sim N(\mu_2,\sigma_2^2)$，检验假设 $H_0:\sigma_1^2=\sigma_2^2$，$H_1:\sigma_1^2\ne\sigma_2^2$，$\alpha=0.10$. 从 $X,Y$ 分别抽取容量为 $n_1=12,n_2=10$ 的样本，算得 $S_1^2=118.4$，$S_2^2=31.93$. 则正确的检验为( ).<br>(A)用 $t$ 检验法，拒绝 $H_0$ (B)用 $t$ 检验法，接受 $H_0$<br>(C)用 $F$ 检验法，拒绝 $H_0$ (D)用 $F$ 检验法，接受 $H_0$</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $\mu_1,\mu_2$ 未知，检验两个正态总体方差相等，应选 $F$ 检验法.</p>
+<p class="dmath">$$F=\frac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-1),$$</p>
+<p>因为 $\dfrac{S_1^2}{S_2^2}=\dfrac{118.4}{31.93}=3.71$，$F_{0.05}(11,9)=3.10$，所以 $f&gt;F_{0.05}(11,9)$，应拒绝 $H_0$.</p></div>
+<div class="ans-line">最终答案：<p>故应选(C).</p></div>
+</div></section>
+<section class="q-card" id="q-3-6" data-qid="c8-3.6">
+<div class="q-head"><span class="q-num">【3.6】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某批矿砂的 5 个样品中的镍含量，经测定为(%) 3.24 3.27 3.24 3.26 3.24. 设测定值总体服从正态分布，但参数均未知，问在 $\alpha=0.01$ 下能否接受假设：这批矿砂的镍含量的均值为 3.25.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 按题意需检验 $H_0:\mu=3.25$，$H_1:\mu\ne 3.25$.<br>此题 $\sigma^2$ 未知，此检验问题的拒绝域为</p>
+<p class="dmath">$$|t|=\left|\frac{\bar{x}-3.25}{\dfrac{s}{\sqrt{n}}}\right|\ge t_{\frac{\alpha}{2}}(n-1),$$</p>
+<p>这里 $n=5$，$\alpha=0.01$，$\dfrac{\alpha}{2}=0.005$，查表得 $t_{\frac{\alpha}{2}}(n-1)=4.6041$，计算得 $\bar{x}=3.252$，$s^2=170\times 10^{-6}$，$s=0.013$，</p>
+<p class="dmath">$$|t|=\left|\frac{3.252-3.25}{\dfrac{0.013}{\sqrt{5}}}\right|=0.343&lt;4.6041,$$</p>
+<p>$t$ 不落在拒绝域中，故接受 $H_0$，即认为这批矿砂的镍含量的均值为 3.25.</p></div>
+</div></section>
+<section class="q-card" id="q-3-7" data-qid="c8-3.7">
+<div class="q-head"><span class="q-num">【3.7】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>如果一矩形的宽度 $w$ 与长度 $l$ 的比 $\dfrac{w}{l}=\dfrac{1}{2}(\sqrt{5}-1)\approx 0.618$，这样的矩形称为黄金矩形，这种尺寸的矩形使人们看上去有良好的感觉. 现代的建筑构件(如窗架)，工艺品(如图片镜框)，甚至司机的执照，商业的信用卡等常常都是采用黄金矩形. 下面列出某工艺品厂随机取的 20 个矩形的宽度与长度的比值.<br>0.693 0.749 0.654 0.670 0.662 0.672 0.615 0.606 0.690 0.628<br>0.668 0.611 0.606 0.609 0.601 0.553 0.570 0.844 0.576 0.933<br>设这一工厂生产矩形的宽度与长度的比值总体服从正态分布，其均值为 $\mu$，方差为 $\sigma^2$，$\mu,\sigma^2$ 均未知. 试检验假设(取 $\alpha=0.05$)$H_0:\mu=0.618$，$H_1:\mu\ne 0.618$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $H_0:\mu=0.618$，$H_1:\mu\ne 0.618$.<br>此题方差 $\sigma^2$ 未知，因此检验问题的拒绝域为</p>
+<p class="dmath">$$|t|=\left|\frac{\bar{x}-\mu_0}{\dfrac{s}{\sqrt{n}}}\right|\ge t_{\frac{\alpha}{2}}(n-1),$$</p>
+<p>$n=20$，$\alpha=0.05$，$\dfrac{\alpha}{2}=0.025$，查表得 $t_{\frac{\alpha}{2}}(n-1)=2.0930$，计算得 $\bar{x}=0.6605$，$s^2=85.58\times 10^{-4}$，$s=0.0925$，</p>
+<p class="dmath">$$|t|=\left|\frac{0.6605-0.618}{\dfrac{0.0925}{\sqrt{20}}}\right|=2.0548&lt;2.0930,$$</p>
+<p>$t$ 不落在拒绝域之内，故接受 $H_0$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-8" data-qid="c8-3.8">
+<div class="q-head"><span class="q-num">【3.8】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>在【3.7】题中记总体的标准差为 $\sigma$，试检验假设(取 $\alpha=0.05$)</p>
+<p class="dmath">$$H_0:\sigma^2=0.11^2,\ H_1:\sigma^2\ne 0.11^2.$$</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 在【3.7】题中，$X\sim N(\mu,\sigma^2)$，$\mu,\sigma^2$ 均未知，关于 $\sigma^2$ 的检验要用 $\chi^2$-检验法.<br>检验假设 $H_0:\sigma^2=\sigma_0^2$，$H_1:\sigma^2\ne\sigma_0^2$.<br>$H_0$ 为真时，检验统计量：</p>
+<p class="dmath">$$\chi^2=\frac{(n-1)S^2}{\sigma_0^2}\sim\chi^2(n-1),$$</p>
+<p>拒绝域为：</p>
+<p class="dmath">$$\chi^2\ge\chi^2_{\frac{\alpha}{2}}(n-1)\quad\text{或}\quad\chi^2\le\chi^2_{1-\frac{\alpha}{2}}(n-1).$$</p>
+<p>计算：$s^2=0.0925^2$，$n=20$，$\sigma_0^2=0.11^2$，得 $\chi^2=13.435$，<br>查表：$\alpha=0.05\Rightarrow\chi^2_{\frac{\alpha}{2}}(n-1)=\chi^2_{0.025}(19)=32.852$，$\chi^2_{1-\frac{\alpha}{2}}(n-1)=\chi^2_{0.075}(19)=8.907$，<br>因为 $8.907&lt;13.435&lt;32.852$，$\chi^2$ 落在拒绝域之外，接受 $H_0$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-9" data-qid="c8-3.9">
+<div class="q-head"><span class="q-num">【3.9】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某种导线，要求其电阻的标准差不得超过 0.005(单位：$\Omega$). 今在生产的一批导线中取样品 9 根，测得 $s=0.007(\Omega)$. 设总体为正态分布，参数均未知，问在显著性水平 $\alpha=0.05$ 下能否认为这批导线的标准差显著地偏大？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 需检验的假设为 $H_0:\sigma\le 0.005$，$H_1:\sigma&gt;0.005$.<br>该检验的拒绝域为</p>
+<p class="dmath">$$\chi^2=\frac{(n-1)S^2}{\sigma_0^2}\ge\chi^2_{\alpha}(n-1),$$</p>
+<p>这里 $\alpha=0.05$，$n=9$，查表得 $\chi^2_{\alpha}(n-1)=15.507$，</p>
+<p class="dmath">$$\chi^2=\frac{8\times 0.007^2}{0.005^2}=15.68&gt;15.507.$$</p>
+<p>$\chi^2$ 落在拒绝域内，故应拒绝 $H_0$. 即认为在水平 $\alpha=0.05$ 下这批导线的标准差显著偏大.</p></div>
+</div></section>
+<section class="q-card" id="q-3-10" data-qid="c8-3.10">
+<div class="q-head"><span class="q-num">【3.10】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>测定某种溶液中的水份，它的 10 个测定值给出 $s=0.037\%$，设测定值总体为正态分布，$\sigma^2$ 为总体方差，$\sigma^2$ 未知，试在显著性水平 $\alpha=0.05$ 下检验假设：$H_0:\sigma\ge 0.04\%$，$H_1:\sigma&lt;0.04\%$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $H_0:\sigma\ge 0.0004$，$H_1:\sigma&lt;0.0004$.<br>此题 $\mu$ 未知. 故拒绝域为</p>
+<p class="dmath">$$\chi^2=\frac{(n-1)S^2}{\sigma_0^2}\le\chi^2_{1-\alpha}(n-1),$$</p>
+<p>这里 $\alpha=0.05$，$n=10$，查表 $\chi^2_{1-\alpha}(9)=\chi^2_{0.95}(9)=3.325$，计算</p>
+<p class="dmath">$$\chi^2=\frac{9\times(0.00037)^2}{(0.0004)^2}=7.7006&gt;3.325.$$</p>
+<p>$\chi^2$ 没落在拒绝域内，故应接受 $H_0$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-11" data-qid="c8-3.11">
+<div class="q-head"><span class="q-num">【3.11】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>按规定，100g 罐头番茄汁中的平均维生素 C 含量不得少于 21mg/g. 现从工厂的产品中抽取 17 个罐头，其 100g 番茄汁中，测得维生素 C 含量(mg/g)记录如下：<br>16 25 21 20 23 21 19 15 13 23 17 20 29 18 22 16 22<br>设维生素含量服从正态分布 $N(\mu,\sigma^2)$，$\mu,\sigma^2$ 均未知，问这批罐头是否符合要求(取显著性水平 $\alpha=0.05$).</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 本题需检验假设：$H_0:\mu\ge 21$，$H_1:\mu&lt;21$.<br>$\sigma^2$ 未知，因此拒绝域的形式为</p>
+<p class="dmath">$$t=\frac{\bar{x}-\mu_0}{\dfrac{s}{\sqrt{n}}}&lt;-t_{\alpha}(n-1).$$</p>
+<p>现在 $n=17$，$\bar{x}=20$，$s=3.984$，$t_{0.05}(16)=1.7459$，</p>
+<p class="dmath">$$t=\frac{20-21}{\dfrac{3.984}{\sqrt{17}}}=-1.035&gt;-1.7459.$$</p>
+<p>$t$ 不落在拒绝域内，故接受 $H_0$，认为这批罐头是符合规定的.</p></div>
+</div></section>
+<section class="q-card" id="q-3-12" data-qid="c8-3.12">
+<div class="q-head"><span class="q-num">【3.12】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>下表分别给出两个文学家马克·吐温(Mark Twain)的 8 篇小品文以及斯诺特格拉斯(Snodgrass)的 10 篇小品文中由 3 个字母组成的词的比例</p>
+<table><tr><th>马克·吐温</th><th>0.225</th><th>0.262</th><th>0.217</th><th>0.240</th><th>0.230</th><th>0.229</th><th>0.235</th><th>0.217</th><th></th><th></th></tr><tr><td>斯诺特格拉斯</td><td>0.209</td><td>0.205</td><td>0.196</td><td>0.210</td><td>0.202</td><td>0.207</td><td>0.224</td><td>0.223</td><td>0.220</td><td>0.201</td></tr></table>
+<p>设两组数据分别来自正态总体，且两总体方差相等但参数均未知，两样本相互独立，问两个作家的小品文中包含由 3 个字母组成的词的比例是否有显著的差异(取 $\alpha=0.05$)？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 需要检验的假设为 $H_0:\mu_1=\mu_2$，$H_1:\mu_1\ne\mu_2$.<br>这里 $\sigma_1^2=\sigma_2^2$ 未知，该检验的拒绝域为</p>
+<p class="dmath">$$|t|=\left|\frac{\bar{X}-\bar{Y}}{S_w\sqrt{\dfrac{1}{n_1}+\dfrac{1}{n_2}}}\right|\ge t_{\frac{\alpha}{2}}(n_1+n_2-2),$$</p>
+<p>这里 $n_1=8,n_2=10,\alpha=0.05$，$\dfrac{\alpha}{2}=0.025$，查表知 $t_{\frac{\alpha}{2}}(n_1+n_2-2)=2.1199$.<br>计算 $\bar{x}=0.232$，$\bar{y}=0.2097$，$s_1^2=0.000215$，$s_2^2=0.000094$，</p>
+<p class="dmath">$$s_w^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}=145.32\times 10^{-6},\quad s_w=0.0121,$$</p>
+<p>即</p>
+<p class="dmath">$$|t|=\left|\frac{0.232-0.2097}{0.0121\sqrt{\dfrac{1}{8}+\dfrac{1}{10}}}\right|=3.918&gt;2.1199.$$</p>
+<p>$t$ 落在拒绝域中，因而拒绝 $H_0$，即有显著差异.</p></div>
+</div></section>
+<section class="q-card" id="q-3-13" data-qid="c8-3.13">
+<div class="q-head"><span class="q-num">【3.13】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>在【3.12】中分别记两个总体的方差为 $\sigma_1^2$ 和 $\sigma_2^2$，试检验假设(取 $\alpha=0.05$)</p>
+<p class="dmath">$$H_0:\sigma_1^2=\sigma_2^2,\ H_1:\sigma_1^2\ne\sigma_2^2$$</p>
+<p>以说明在【3.12】中我们假设 $\sigma_1^2=\sigma_2^2$ 是合理的.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $H_0:\sigma_1^2=\sigma_2^2$，$H_1:\sigma_1^2\ne\sigma_2^2$.<br>$\mu_1,\mu_2$ 未知. $H_0$ 为真时 $F=\dfrac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-1)$，<br>拒绝域为</p>
+<p class="dmath">$$F\ge F_{\frac{\alpha}{2}}(n_1-1,n_2-1)\quad\text{或}\quad F\le F_{1-\frac{\alpha}{2}}(n_1-1,n_2-1),$$</p>
+<p>这里 $n_1=8,n_2=10,\alpha=0.05$，$F_{0.025}(7,9)=4.20$，$F_{0.975}(7,9)=\dfrac{1}{F_{0.025}(9,7)}=\dfrac{1}{4.82}=0.207$，<br>由【3.12】知 $s_1^2=0.000215$，$s_2^2=0.000094$，计算得 $F=\dfrac{S_1^2}{S_2^2}=2.287$.<br>因为 $0.207&lt;F&lt;4.20$，故应接受 $H_0$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-14" data-qid="c8-3.14">
+<div class="q-head"><span class="q-num">【3.14】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>在 20 世纪 70 年代后期人们发现，在酿造啤酒时，在麦芽干燥过程中形成致癌物质亚硝基二甲胺(NDMA)，到了 20 世纪 80 年代初期开发了一种新的麦芽干燥过程. 下面给出分别在新老两种过程中形成的 NDMA 含量(以 10 亿份中的份数计).</p>
+<table><tr><th>老过程</th><th>6</th><th>4</th><th>5</th><th>5</th><th>6</th><th>5</th><th>5</th><th>6</th><th>4</th><th>6</th><th>7</th><th>4</th></tr><tr><td>新过程</td><td>2</td><td>1</td><td>2</td><td>2</td><td>1</td><td>0</td><td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>3</td></tr></table>
+<p>设两样本分别来自正态总体，两总体方差相等，两样本独立，分别以 $\mu_1,\mu_2$ 记对应于老、新过程的总体均值，试检验假设(取 $\alpha=0.05$)：$H_0:\mu_1-\mu_2\le 2$，$H_1:\mu_1-\mu_2&gt;2$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $H_0:\mu_1-\mu_2\le 2$，$H_1:\mu_1-\mu_2&gt;2$.<br>$\sigma_1^2,\sigma_2^2$ 未知，该检验的拒绝域为</p>
+<p class="dmath">$$t=\frac{\bar{x}-\bar{y}-2}{s_w\sqrt{\dfrac{1}{n_1}+\dfrac{1}{n_2}}}\ge t_{\alpha}(n_1+n_2-2),$$</p>
+<p>$n_1=12,n_2=12,\alpha=0.05$. 查表知 $t_{\alpha}(n_1+n_2-2)=1.7171$.<br>计算得 $\bar{x}=5.25$，$\bar{y}=1.5$，</p>
+<p class="dmath">$$s_w^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}=\frac{10.252+11}{22}=(0.9828)^2,$$</p>
+<p class="dmath">$$t=\frac{5.25-1.5-2}{0.9828\sqrt{\dfrac{1}{12}+\dfrac{1}{12}}}=4.362&gt;1.7171.$$</p>
+<p>$t$ 在拒绝域中，故应拒绝 $H_0$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-15" data-qid="c8-3.15">
+<div class="q-head"><span class="q-num">【3.15】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>有两台机器生产金属部件，分别在两台机器所生产的部件中各取一容量 $n_1=60$，$n_2=40$ 的样本，测得部件重量(以 kg 计)的样本方差分别为 $s_1^2=15.46$，$s_2^2=9.66$. 设两样本相互独立. 两总体分别服从 $N(\mu_1,\sigma_1^2)$，$N(\mu_2,\sigma_2^2)$ 分布，$\mu_i,\sigma_i^2\,(i=1,2)$ 均未知，试在水平 $\alpha=0.05$ 下检验假设 $H_0:\sigma_1^2\le\sigma_2^2$，$H_1:\sigma_1^2&gt;\sigma_2^2$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 检验假设 $H_0:\sigma_1^2\le\sigma_2^2$，$H_1:\sigma_1^2&gt;\sigma_2^2$.<br>由于两总体均服从正态分布，又 $\mu_1,\sigma_1^2,\mu_2,\sigma_2^2$ 未知，$H_0$ 为真时检验统计量</p>
+<p class="dmath">$$F=\frac{S_1^2}{S_2^2}\sim F(n_1-1,n_2-1),$$</p>
+<p>拒绝域为</p>
+<p class="dmath">$$F\ge F_{\alpha}(n_1-1,n_2-1),$$</p>
+<p>$n_1=60,n_2=40,F_{\alpha}(n_1-1,n_2-1)=F_{0.05}(59,39)=1.64$.<br>计算 $F=\dfrac{15.46}{9.66}=1.60$.<br>因为 $F=1.60&lt;1.64$，故应接受 $H_0$，可以认为 $\sigma_1^2\le\sigma_2^2$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-16" data-qid="c8-3.16">
+<div class="q-head"><span class="q-num">【3.16】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>两种小麦从播种到抽穗所需的天数如下：</p>
+<table><tr><th>$x$</th><th>101</th><th>100</th><th>99</th><th>99</th><th>98</th><th>100</th><th>98</th><th>99</th><th>99</th><th>99</th></tr><tr><td>$y$</td><td>100</td><td>98</td><td>100</td><td>99</td><td>98</td><td>99</td><td>98</td><td>98</td><td>99</td><td>100</td></tr></table>
+<p>设两样本依次来自正态总体 $N(\mu_1,\sigma_1^2)$，$N(\mu_2,\sigma_2^2)$，$\mu_i,\sigma_i^2\,(i=1,2)$ 均未知，两样本相互独立.<br>(1)试检验假设 $H_0:\sigma_1^2=\sigma_2^2$，$H_1:\sigma_1^2\ne\sigma_2^2$(取 $\alpha=0.05$)；<br>(2)若能接受 $H_0$，接着检验假设 $H_0':\mu_1=\mu_2$，$H_1':\mu_1\ne\mu_2$(取 $\alpha=0.05$).</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 本题需检验<br>(1)$H_0:\sigma_1^2=\sigma_2^2$，$H_1:\sigma_1^2\ne\sigma_2^2$($\alpha=0.05$)；<br>(2)$H_0':\mu_1=\mu_2$，$H_1':\mu_1\ne\mu_2$($\alpha=0.05$).<br>令 $n_1=10,n_2=10$，$\bar{x_1}=99.2$，$s_1^2=0.84$，$\bar{x_2}=98.9$，$s_2^2=0.77$.<br>(1)$\dfrac{s_1^2}{s_2^2}=1.09$，而 $F_{0.025}(9,9)=4.03$，$F_{0.975}(9,9)=\dfrac{1}{4.03}$，</p>
+<p class="dmath">$$\frac{1}{4.03}&lt;1.09&lt;4.03.$$</p>
+<p>故接受 $H_0$，认为两者方差相等.<br>(2)$s_w^2=\dfrac{9\times 0.84+9\times 0.77}{18}=0.805$，</p>
+<p class="dmath">$$|t|=\frac{99.2-98.9}{\sqrt{0.805}\left(\sqrt{\dfrac{1}{10}+\dfrac{1}{10}}\right)}=0.748&lt;t_{0.025}(18)=2.1009.$$</p>
+<p>故接受 $H_0'$，认为所需天数相同.</p></div>
+</div></section>
+<section class="q-card" id="q-3-17" data-qid="c8-3.17">
+<div class="q-head"><span class="q-num">【3.17】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>用一种叫"混乱指标"的尺度去衡量工程师的英语文章的可理解性，对混乱指标的打分越低表示可理解性越高，分别随机选取 13 篇刊载在工程杂志上的论文，以及 10 篇未出版的学术报告，对它们的打分列于下表：</p>
+<table><tr><th>工程杂志上的论文(数据Ⅰ)</th><th>1.79</th><th>1.75</th><th>1.67</th><th>1.65</th><th>1.87</th><th>1.74</th><th>1.94</th></tr><tr><td>(续)</td><td>1.62</td><td>2.06</td><td>1.33</td><td>1.96</td><td>1.69</td><td>1.70</td><td></td></tr><tr><td>未出版的学术报告(数据Ⅱ)</td><td>2.39</td><td>2.51</td><td>2.86</td><td>2.56</td><td>2.29</td><td>2.49</td><td>2.36</td></tr><tr><td>(续)</td><td>2.58</td><td>2.62</td><td>2.41</td><td></td><td></td><td></td><td></td></tr></table>
+<p>设数据Ⅰ，Ⅱ分别来自正态总体 $N(\mu_1,\sigma_1^2)$，$N(\mu_2,\sigma_2^2)$，$\mu_1,\mu_2,\sigma_1^2,\sigma_2^2$ 均未知，两样本独立.<br>（1）检验假设 $H_0:\sigma_1^2=\sigma_2^2$，$H_1:\sigma_1^2\ne\sigma_2^2$（取 $\alpha=0.1$）；<br>（2）若能接受 $H_0$，接着检验假设 $H'_0:\mu_1=\mu_2$，$H'_1:\mu_1\ne\mu_2$（取 $\alpha=0.1$）.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 （1）$n_1=13,n_2=10,s_1^2=0.034,s_2^2=0.0264,\alpha=0.1,F_{0.05}(12,9)=3.07$，</p>
+<p class="dmath">$$F_{1-0.05}(12,9)=\frac{1}{F_{0.05}(9,12)}=\frac{1}{2.80}=0.357,\quad\frac{s_1^2}{s_2^2}=1.288.$$</p>
+<p>由于 $0.357&lt;\dfrac{s_1^2}{s_2^2}&lt;3.07$，故接受 $H_0$，认为两总体方差相等.<br>（2）由（1）可认为 $\sigma_1^2=\sigma_2^2$，接着来检验 $H'_0:\mu_1=\mu_2$，$H'_1:\mu_1\ne\mu_2$.<br>经计算 $\bar{x}_1=1.752,\bar{x}_2=2.507$，</p>
+<p class="dmath">$$s_w^2=\frac{12\times 0.034+9\times 0.0264}{13+10-2}=0.0307,$$</p>
+<p class="dmath">$$|t|=\left|\frac{1.752-2.507}{\sqrt{0.0307}\left(\sqrt{\frac{1}{13}+\frac{1}{10}}\right)}\right|=10.244.$$</p>
+<p>而 $t_{0.05}(13+10-2)=t_{0.05}(21)=1.7207$，故拒绝 $H'_0$，认为杂志上刊载的论文与未出版的学术报告的可理解性有显著差异.</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　在采用 $t$ 检验法检验有关两个正态总体均值差的假设时，如方差未知，先要检查一下两总体的方差是否相等. 若在题目中未指明两总体方差相等时，需先用 $F$ 检验法来检验方差，只有当经 $F$ 检验认为两总体方差相等时，才能用 $t$ 检验法来检验有关均值差的假设，如上面【3.16】【3.17】所示.</p></div>
+</div></section>
+<section class="q-card" id="q-3-18" data-qid="c8-3.18">
+<div class="q-head"><span class="q-num">【3.18】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>随机地选 8 个人，分别测量了他们在早晨起床时和晚上就寝时的身高（cm），得到以下的数据</p>
+<table><tr><th>序号</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr><tr><td>早上 $(x_i)$</td><td>172</td><td>168</td><td>180</td><td>181</td><td>160</td><td>163</td><td>165</td><td>177</td></tr><tr><td>晚上 $(y_i)$</td><td>172</td><td>167</td><td>177</td><td>179</td><td>159</td><td>161</td><td>166</td><td>175</td></tr></table>
+<p>设各对数据的差 $D_i=X_i-Y_i\ (i=1,2,\cdots,8)$ 是来自正态总体 $N(\mu_D,\sigma_D^2)$ 的样本，$\mu_D,\sigma_D^2$ 均未知. 问是否可以认为早晨的身高比晚上的身高要高（取 $\alpha=0.05$）？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设总体 $X$ 表示早晨起床时身高，$Y$ 表示晚上就寝时身高，$D=X-Y$，$D_i=X_i-Y_i$，$D\sim N(\mu_D,\sigma_D^2)$，$\sigma_D^2$ 未知，用 $t$-检验法.<br>检验假设 $H_0:\mu_D\le 0$，$H_1:\mu_D&gt;0$.<br>作差 $d_i=x_i-y_i$，得</p>
+<table><tr><th>序号</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr><tr><td>$d$</td><td>0</td><td>1</td><td>3</td><td>2</td><td>1</td><td>2</td><td>$-1$</td><td>2</td></tr></table>
+<p>$H_0$ 为真时 $t=\dfrac{\overline{D}-0}{\dfrac{S_D}{\sqrt{n}}}\sim t(n-1)$.<br>拒绝域为 $t\ge t_\alpha(n-1)$，而 $n=8,\alpha=0.05$，$t_{0.05}(7)=1.8946$.<br>计算得 $\overline{d}=1.25$，</p>
+<p class="dmath">$$s^2=\frac{1}{7}\Big(\sum_{i=1}^{8}d_i^2-8\overline{d}^2\Big)=\frac{1}{7}(24-12.5)=1.643,\qquad s=1.282,$$</p>
+<p class="dmath">$$t=\frac{1.25}{\dfrac{1.282}{\sqrt{8}}}=2.758&gt;1.8946.$$</p>
+<p>$t$ 落在拒绝域中，因而拒绝 $H_0$，故接受 $H_1$，即认为早晨的身高比晚上高.</p></div>
+</div></section>
+<div class="block-title">题型2 关于两类错误和拒绝域的题目</div>
+<section class="q-card" id="q-3-19" data-qid="c8-3.19">
+<div class="q-head"><span class="q-num">【3.19】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设总体 $X\sim N(\mu,1^2)$，$X_1,\cdots,X_{16}$ 是一组样本值，已知假设 $H_0:\mu=0$，$H_1:\mu\ne 0$ 在显著性水平 $\alpha$ 下的拒绝域是 $|\overline{X}|&gt;1.29$，问此检验的显著性水平 $\alpha$ 的值是多少？犯第一类错误的概率是多少？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$\sigma^2$ 已知检验 $\mu$，应选统计量 $U=\dfrac{\overline{X}-\mu}{\dfrac{\sigma}{\sqrt{n}}}\sim N(0,1)$，拒绝域为 $|U|&gt;u_{\frac{\alpha}{2}}$，<br>因此 $\left|\dfrac{\dfrac{\overline{X}-0}{2}}{\sqrt{16}}\right|&gt;u_{\frac{\alpha}{2}}$，即 $|\overline{X}|&gt;\dfrac{u_{\frac{\alpha}{2}}}{2}$，<br>由题意知 $u_{\frac{\alpha}{2}}=2\times 1.29=2.58$，则 $\Phi(2.58)=1-\dfrac{\alpha}{2}=0.995$，故 $\alpha=0.01$.<br>犯第一类错误的概率即 $\alpha=0.01$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-20" data-qid="c8-3.20">
+<div class="q-head"><span class="q-num">【3.20】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>假设总体 $X\sim N(\mu,\sigma_0^2)$，其中 $\sigma_0^2$ 已知，检验假设 $H_0:\mu=\mu_0$，$H_1:\mu&gt;\mu_0$. 如果取 $H_0$ 的拒绝域为 $\{(x_1,\cdots,x_n):\overline{X}&gt;c\}$，其中 $\overline{X}$ 为样本均值. 那么对固定的样本容量 $n$，犯第一类错误的概率 $\alpha$(　　).<br>(A) 随 $c$ 的增大而减小　　　　　　(B) 随 $c$ 的增大而增大<br>(C) 随 $c$ 的增大保持不变　　　　　(D) 随 $c$ 的增大增减性不定</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　当 $H_0$ 成立时 $X\sim N(\mu_0,\sigma_0^2)$，$\overline{X}\sim N\big(\mu_0,\dfrac{\sigma_0^2}{n}\big)$，那么犯第一类错误的概率为</p>
+<p class="dmath">$$\alpha=P\{\text{弃真}\}=P\{\overline{X}&gt;c\,|\,H_0\ \text{成立}\}=P\{\overline{X}&gt;c\}=1-P\{\overline{X}\le c\}$$</p>
+<p class="dmath">$$=1-\Phi\bigg(\frac{\sqrt{n}(c-\mu_0)}{\sigma_0}\bigg),$$</p>
+<p>固定 $n,\mu_0$ 和 $\sigma_0$，$\Phi\bigg(\dfrac{\sqrt{n}(c-\mu_0)}{\sigma_0}\bigg)$ 关于 $c$ 递增，从而 $\alpha$ 关于 $c$ 递减.</p></div>
+<div class="ans-line">最终答案：<p>故选(A).</p></div>
+</div></section>
+<section class="q-card" id="q-3-21" data-qid="c8-3.21">
+<div class="q-head"><span class="q-num">【3.21】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设总体 $X\sim N(\mu,\sigma^2)$，$\sigma^2$ 已知，$X_1,X_2,\cdots,X_n$ 为其样本，对假设检验 $H_0:\mu=\mu_0$，$H_1:\mu=\mu_1\ (\mu_1&gt;\mu_0)$. 已知拒绝域为</p>
+<p class="dmath">$$\left\{\frac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}&gt;1.64\right\}\quad(\alpha=0.05),$$</p>
+<p>求犯第二类错误的概率 $\beta$（用 $\Phi(x)$ 表示）.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$\beta=P\{\text{接受}\ H_0\,|\,H_1\ \text{为真}\}$</p>
+<p class="dmath">$$=P\bigg\{\frac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\le 1.64\,\big|\,\mu=\mu_1\bigg\}=P\bigg\{\frac{\overline{X}-\mu_1}{\dfrac{\sigma}{\sqrt{n}}}\le 1.64-\frac{\mu_1-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\bigg\}$$</p>
+<p class="dmath">$$=\Phi\bigg(1.64-\frac{\mu_1-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\bigg).$$</p></div>
+</div></section>
+<section class="q-card" id="q-3-22" data-qid="c8-3.22">
+<div class="q-head"><span class="q-num">【3.22】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设总体 $X\sim N(\mu,16)$，$X_1,X_2,X_3,X_4$ 为其样本，检验假设 $H_0:\mu=5$，$H_1:\mu\ne 5$，$\alpha=0.05$，则 $\overline{X}$ 的接受域为______. 若 $\mu=6$，犯第二类错误的概率 $\beta=$______.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　因为 $U=\dfrac{\overline{X}-\mu}{\dfrac{\sigma}{\sqrt{n}}}\sim N(0,1)$，所以接受域为 $|U|&lt;u_{\frac{\alpha}{2}}$，即 $|\overline{X}-5|&lt;u_{\frac{\alpha}{2}}\dfrac{\sigma}{\sqrt{n}}=3.92$，<br>故 $\overline{X}$ 的接受域为 $(1.08,8.92)$.<br>而 $\mu=6$ 相当于 $H_0$ 不真，此时 $\dfrac{\overline{X}-6}{\dfrac{\sigma}{\sqrt{n}}}\sim N(0,1)$，所以<br>$\beta=P\{\text{接受}\ H_0\,|\,H_0\ \text{不真}\}=P\{1.08&lt;\overline{X}&lt;8.92\}=\Phi(1.46)-\Phi(-2.46)=0.9209.$</p></div>
+</div></section>
+<section class="q-card" id="q-3-23" data-qid="c8-3.23">
+<div class="q-head"><span class="q-num">【3.23】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设需要对某一正态总体的均值进行假设检验</p>
+<p class="dmath">$$H_0:\mu\ge 15,\quad H_1:\mu&lt;15.$$</p>
+<p>已知 $\sigma^2=2.5$，取 $\alpha=0.05$. 若要求当 $H_1$ 中的 $\mu\le 13$ 时犯第二类错误的概率不超过 $\beta=0.05$，求所需的样本容量.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　该检验的接受域为 $\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}&gt;-u_\alpha$，在数学期望为 $\mu$ 条件下，该事件的概率</p>
+<p class="dmath">$$P(\mu)=P\bigg\{\frac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}&gt;-u_\alpha\bigg\}=P\bigg\{\overline{X}&gt;-u_\alpha\frac{\sigma}{\sqrt{n}}+\mu_0\bigg\}$$</p>
+<p class="dmath">$$=P\bigg\{\frac{\overline{X}-\mu}{\dfrac{\sigma}{\sqrt{n}}}&gt;-u_\alpha+\frac{\mu_0-\mu}{\dfrac{\sigma}{\sqrt{n}}}\bigg\}\le\beta,$$</p>
+<p>则</p>
+<p class="dmath">$$-u_\alpha+\frac{\mu_0-\mu}{\dfrac{\sigma}{\sqrt{n}}}\ge u_\beta,\qquad(\mu_0-\mu)\sqrt{n}\le(u_\beta+u_\alpha)\sigma,\qquad \sqrt{n}\ge\frac{u_\beta+u_\alpha}{\mu_0-\mu}\sigma,$$</p>
+<p>代入计算 $\sqrt{n}\ge\dfrac{1.645+1.645}{15-13}\sqrt{2.5}$，即 $n\ge 6.765$. 取 $n=7$ 即可.</p></div>
+</div></section>
+<section class="q-card" id="q-3-24" data-qid="c8-3.24">
+<div class="q-head"><span class="q-num">【3.24】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>电池在货架上滞留的时间不能太长，下面给出某商店随机选取的 8 只电池的货架滞留时间（以天计）：108　124　124　106　138　163　159　134. 设数据来自正态总体 $N(\mu,\sigma^2)$，$\mu,\sigma^2$ 未知.<br>（1）试检验假设 $H_0:\mu\le 125$，$H_1:\mu&gt;125$，取 $\alpha=0.05$；<br>（2）若要求在上述 $H_1$ 中 $\dfrac{\mu-125}{\sigma}\ge 1.4$ 时，犯第二类错误的概率不超过 $\beta=0.1$，求所需的样本容量.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　（1）$H_0:\mu\le 125$，$H_1:\mu&gt;125$.<br>拒绝域为 $\dfrac{\overline{x}-\mu_0}{\dfrac{s}{\sqrt{n}}}\ge t_\alpha(n-1)$，这里 $\alpha=0.05$，查表知 $t_\alpha(n-1)=1.895$，<br>算得 $\overline{x}=132,s^2=444.286,s=21.08$，$t=\dfrac{132-125}{\dfrac{21.08}{\sqrt{8}}}=0.939&lt;t_\alpha(n-1)=1.895$，<br>因此 $t$ 没落在否定域之内，故应接受 $H_0$.<br>（2）此题中 $\alpha=0.05,\beta=0.1$，$\dfrac{\mu-\mu_0}{\sigma}=1.4$，仿照【3.23】可得 $n=7$.<br>故所需样本容量 $n\ge 7$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-25" data-qid="c8-3.25">
+<div class="q-head"><span class="q-num">【3.25】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一药厂生产一种新的止痛片，厂方希望验证服用新药片后至开始起作用的时间间隔较原有止痛片至少缩短一半，因此厂方提出需检验假设</p>
+<p class="dmath">$$H_0:\mu_1\le 2\mu_2,\quad H_1:\mu_1&gt;2\mu_2$$</p>
+<p>此处 $\mu_1,\mu_2$ 分别是服用原有止痛片和服用新止痛片后至起作用的时间间隔的总体的均值. 设两总体均为正态且方差分别为已知值 $\sigma_1^2,\sigma_2^2$. 现分别在两总体各取一样本 $X_1,X_2,\cdots,X_{n_1}$ 和 $Y_1,Y_2,\cdots,Y_{n_2}$，设两个样本独立，试给出上述假设 $H_0$ 的拒绝域. 取显著性水平 $\alpha$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$X\sim N(\mu_1,\sigma_1^2)$，$Y\sim N(\mu_2,\sigma_2^2)$ 表示原药与新药起作用时间，且相互独立，$\sigma_1^2,\sigma_2^2$ 已知.<br>则</p>
+<p class="dmath">$$\overline{X}\sim N\big(\mu_1,\tfrac{\sigma_1^2}{n_1}\big),\qquad \overline{Y}\sim N\big(\mu_2,\tfrac{\sigma_2^2}{n_2}\big),\qquad \overline{X}-2\overline{Y}\sim N\big(\mu_1-2\mu_2,\ \tfrac{\sigma_1^2}{n_1}+\tfrac{4\sigma_2^2}{n_2}\big),$$</p>
+<p>故</p>
+<p class="dmath">$$\frac{\overline{X}-2\overline{Y}-(\mu_1-2\mu_2)}{\sqrt{\dfrac{\sigma_1^2}{n_1}+\dfrac{4\sigma_2^2}{n_2}}}\sim N(0,1),$$</p>
+<p>$H_0$ 为真时 $U=\dfrac{\overline{X}-2\overline{Y}}{\sqrt{\dfrac{\sigma_1^2}{n_1}+\dfrac{4\sigma_2^2}{n_2}}}\sim N(0,1)$，<br>由样本观察值计算 $U$. $H_0$ 的拒绝域为 $U\ge u_\alpha$.</p></div>
+</div></section>
+<div class="block-title">题型3 非正态总体参数的假设检验</div>
+<section class="q-card" id="q-3-26" data-qid="c8-3.26">
+<div class="q-head"><span class="q-num">【3.26】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某车间承担了生产额定抗拉强度为 105 的合金线的任务，从该车间生产出的合金线产品中随机地抽出 100 根，测得抗拉强度均值 $\overline{x}=104.5$，标准差 $s=1.8$，问这批产品是否符合标准？$(\alpha=0.05)$</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$H_0:\mu\ge 105$，$H_1:\mu&lt;105$.<br>选统计量 $T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}$，因为 $n=100$ 属于大样本，所以近似地 $T\sim N(0,1)$.<br>对 $\alpha=0.05$，拒绝域为 $T&lt;-u_\alpha$，查得 $u_\alpha=u_{0.05}=1.645$，<br>求出 $t=\dfrac{104.5-105}{\dfrac{1.8}{10}}=-2.778&lt;-1.645$，<br>故拒绝 $H_0$，接受 $H_1$，即认为这批产品不符合标准.</p></div>
+</div></section>
+<section class="q-card" id="q-3-27" data-qid="c8-3.27">
+<div class="q-head"><span class="q-num">【3.27】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设有一大批产品，从中任取 100 件，经检验有正品 92 件，问能不能说这批产品的正品率高于 90%？$(\alpha=0.05)$</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　这是$(0-1)$分布总体的参数 $p$ 的假设检验问题.<br>因为 $X_i\sim(0-1)$ 分布，$i=1,2,\cdots,100$，由中心极限定理</p>
+<p class="dmath">$$\overline{X}=\frac{1}{n}\sum_{i=1}^{n}X_i\ \xlongequal{\text{近似}}\ N\Big(p,\frac{p(1-p)}{n}\Big).$$</p>
+<p>提出假设 $H_0:p\le p_0=0.9$，$H_1:p&gt;p_0$.<br>选统计量</p>
+<p class="dmath">$$U=\frac{\overline{X}-p_0}{\sqrt{\dfrac{p_0(1-p_0)}{n}}}\ \xlongequal{\text{近似}}\ N(0,1)$$</p>
+<p>拒绝域为 $U&gt;u_\alpha$.<br>查得 $u_\alpha=u_{0.05}=1.645$，算出 $u=\dfrac{\overline{x}-0.9}{\sqrt{\dfrac{0.9\times 0.1}{100}}}=\dfrac{\dfrac{92}{100}-0.9}{\sqrt{\dfrac{0.9\times 0.1}{100}}}\approx 0.6667.$<br>因为 $0.6667&lt;1.645$，即 $u&lt;u_\alpha$，<br>故接受 $H_0$，拒绝 $H_1$，不能说正品率高于 90%.<br>（本页为全书封底，非正文内容，无需收录）</p></div>
+</div></section>
 <div class="prev-next">
 <a href="chapter-07.html">← 上一章</a>
 <a href="index.html">下一章 →</a>

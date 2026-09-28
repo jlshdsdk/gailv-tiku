@@ -89,6 +89,18 @@
 <a href="#q-5-11" data-qid="c2-5.11">5.11</a>
 <a href="#q-5-12" data-qid="c2-5.12">5.12</a>
 <a href="#q-5-13" data-qid="c2-5.13">5.13</a>
+<a href="#q-5-14" data-qid="c2-5.14">5.14</a>
+<a href="#q-5-15" data-qid="c2-5.15">5.15</a>
+<a href="#q-5-16" data-qid="c2-5.16">5.16</a>
+<a href="#q-5-17" data-qid="c2-5.17">5.17</a>
+<a href="#q-5-18" data-qid="c2-5.18">5.18</a>
+<a href="#q-5-19" data-qid="c2-5.19">5.19</a>
+<a href="#q-5-20" data-qid="c2-5.20">5.20</a>
+<a href="#q-5-21" data-qid="c2-5.21">5.21</a>
+<a href="#q-5-22" data-qid="c2-5.22">5.22</a>
+<a href="#q-5-23" data-qid="c2-5.23">5.23</a>
+<a href="#q-5-24" data-qid="c2-5.24">5.24</a>
+<a href="#q-5-25" data-qid="c2-5.25">5.25</a>
 <a href="#q-5-26" data-qid="c2-5.26">5.26</a>
 <a href="#q-5-27" data-qid="c2-5.27">5.27</a>
 <a href="#q-5-28" data-qid="c2-5.28">5.28</a>
@@ -116,7 +128,7 @@
 </div></div>
 </aside>
 <main class="main"><div class="content">
-<div class="chapter-head"><h1>第2章 随机变量及其分布</h1><div class="meta">共 81 题</div></div>
+<div class="chapter-head"><h1>第2章 随机变量及其分布</h1><div class="meta">共 93 题</div></div>
 <h2 class="sec-title" id="sec-1">§1 随机变量与分布函数</h2>
 <div class="know-box"><p>1. 随机变量  设 $E$ 是一个随机试验，其样本空间为 $\Omega=\{\omega\}$，如果对于每一个样本点 $\omega\in\Omega$，都有唯一的一个实数 $X(\omega)$ 与之对应，则称 $X(\omega)$ 为一维随机变量. 通常用 $X,Y,Z,\cdots$ 表示随机变量.<br>2. 分布函数  设 $X$ 是一个随机变量，$x$ 是任意实数，则函数 $F(x)=P\{X\le x\}$ 称为 $X$ 的分布函数.<br>基本性质<br>(1) 单调性：$F(x)$ 是一个单调不减的函数，即当 $x_1&lt;x_2$ 时，$F(x_1)\le F(x_2)$<br>(2) 有界性：$0\le F(x)\le 1$，且</p>
 <p class="dmath">$$F(+\infty)=\lim_{x\to+\infty}F(x)=1$$</p>
@@ -828,10 +840,145 @@
 <div class="q-body"><p>设 $X$ 是在 $[0,1]$ 上取值的连续型随机变量，且 $P\{X\le 0.29\}=0.75$. 如果 $Y=1-X$，则 $k=$______时，$P\{Y\le k\}=0.25$.</p></div>
 <div class="sol-wrap collapsed">
 <hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$P\{Y\le k\}=P\{1-X\le k\}=P\{X\ge 1-k\}=1-P\{X&lt;1-k\}=0.25$<br>所以 $P\{X&lt;1-k\}=0.75$，则 $1-k=0.29$.<br>即 $k=0.71$.</p></div>
-<div class="ans-line">最终答案：<p>$k=0.71$<br>求 $X$ 的分布函数 $F(x)$.<br>解　(1)当 $x&lt;1$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=0$<br>当 $1\le x&lt;2$ 时，$F(x)=\int_{1}^{x}2\left(1-\frac{1}{t^{2}}\right)\mathrm{d}t=2x+\frac{2}{x}-4$<br>当 $x\ge 2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{1}^{2}2\left(1-\frac{1}{x^{2}}\right)\mathrm{d}x=1$<br>故 $X$ 的分布函数为</p>
+<div class="ans-line">最终答案：<p>$k=0.71$</p></div>
+</div></section>
+<section class="q-card" id="q-5-14" data-qid="c2-5.14">
+<div class="q-head"><span class="q-num">【5.14】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $X \sim \begin{pmatrix} 0 &amp; 1 \\ \dfrac{1}{4} &amp; \dfrac{3}{4} \end{pmatrix}$，$P\{Y=-\dfrac{1}{2}\}=1$，又 $n$ 维向量 $\alpha_1$、$\alpha_2$、$\alpha_3$ 线性无关，则 $\alpha_1+\alpha_2$，$\alpha_2+2\alpha_3$，$X\alpha_3+Y\alpha_1$ 线性相关的概率为（　　）.<br>(A) $\dfrac{3}{4}$　　　(B) $\dfrac{1}{4}$　　　(C) $1$　　　(D) $\dfrac{1}{2}$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$\alpha_1+\alpha_2$，$\alpha_2+2\alpha_3$，$X\alpha_3+Y\alpha_1$ 线性相关 $\Leftrightarrow \begin{vmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 2 \\ Y &amp; 0 &amp; X \end{vmatrix} = X+2Y=0$</p>
+<p class="dmath">$$P\{X+2Y=0\}=P\left\{X+2Y=0, Y=-\frac{1}{2}\right\}=P\left\{X=1, Y=-\frac{1}{2}\right\}$$</p>
+<p class="dmath">$$=P\{X=1\}=\frac{3}{4}$$</p></div>
+<div class="ans-line">最终答案：<p>故应选(A).</p></div>
+</div></section>
+<section class="q-card" id="q-5-15" data-qid="c2-5.15">
+<div class="q-head"><span class="q-num">【5.15】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>连续型随机变量 $X$ 的密度函数为</p>
+<p class="dmath">$$p(x)=\begin{cases} \dfrac{A}{\sqrt{1-x^2}}, &amp; |x|&lt;1 \\ 0, &amp; \text{其他} \end{cases}$$</p>
+<p>求：(1)系数 $A$；<br>(2)$X$ 落在区间$\left(-\dfrac{1}{2}, \dfrac{1}{2}\right)$内的概率；<br>(3)$X$ 的分布函数.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　(1)因为 $\int_{-\infty}^{+\infty} p(x)\mathrm{d}x=1$，故</p>
+<p class="dmath">$$\int_{-\infty}^{+\infty} p(x)\mathrm{d}x=\int_{-1}^{1} \frac{A}{\sqrt{1-x^2}}\mathrm{d}x=A\arcsin x \bigg|_{-1}^{1}=A\left(\frac{\pi}{2}+\frac{\pi}{2}\right)=1$$</p>
+<p>由此得 $A=\dfrac{1}{\pi}$<br>(2)$P\left\{-\dfrac{1}{2}&lt;X&lt;\dfrac{1}{2}\right\}=\int_{-\frac{1}{2}}^{\frac{1}{2}} \dfrac{1}{\pi} \dfrac{1}{\sqrt{1-x^2}}\mathrm{d}x=\dfrac{1}{\pi}\arcsin x \bigg|_{-\frac{1}{2}}^{\frac{1}{2}}=\dfrac{1}{3}$<br>(3)设 $X$ 的分布函数为 $F(x)$，当 $x\le -1$ 时</p>
+<p class="dmath">$$F(x)=P\{X\le x\}=\int_{-\infty}^{x} p(t)\mathrm{d}t=\int_{-\infty}^{x} 0\mathrm{d}t=0$$</p>
+<p>当 $-1&lt;x\le 1$ 时，</p>
+<p class="dmath">$$F(x)=P\{X\le x\}=P\{X\le -1\}+P\{-1&lt;X\le x\}$$</p>
+<p class="dmath">$$=\int_{-\infty}^{-1} 0\mathrm{d}t+\int_{-1}^{x} \frac{1}{\pi\sqrt{1-t^2}}\mathrm{d}t=\frac{1}{2}+\frac{1}{\pi}\arcsin x$$</p>
+<p>当 $x&gt;1$ 时，</p>
+<p class="dmath">$$F(x)=P\{X\le x\}=P\{X\le -1\}+P\{-1&lt;X\le 1\}+P\{1&lt;X\le x\}$$</p>
+<p class="dmath">$$=\int_{-\infty}^{-1} 0\mathrm{d}t+\int_{-1}^{1} \frac{1}{\pi\sqrt{1-t^2}}\mathrm{d}t+\int_{1}^{x} 0\mathrm{d}t=1$$</p>
+<p>（解答跨页延续至下一页）<br>综合起来，得</p>
+<p class="dmath">$$F(x)=\begin{cases} 0, &amp; x\le -1 \\ \dfrac{1}{2}+\dfrac{1}{\pi}\arcsin x, &amp; -1&lt;x\le 1 \\ 1, &amp; x&gt;1 \end{cases}$$</p></div>
+</div></section>
+<section class="q-card" id="q-5-16" data-qid="c2-5.16">
+<div class="q-head"><span class="q-num">【5.16】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设随机变量 $X$ 的密度为</p>
+<p class="dmath">$$f(x)=\begin{cases} cx, &amp; 0\le x\le 1 \\ 0, &amp; \text{其他} \end{cases}$$</p>
+<p>求　(1)常数 $c$；<br>(2)$P\{0.3&lt;X&lt;0.7\}$；<br>(3)常数 $a$，使 $P\{X&gt;a\}=P\{X&lt;a\}$；<br>(4)$X$ 的分布函数 $F(x)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　(1)由性质 $\int_{-\infty}^{+\infty} f(x)\mathrm{d}x=\int_{0}^{1} cx\mathrm{d}x=\dfrac{c}{2}=1$，可得 $c=2$.<br>(2)$P\{0.3&lt;X&lt;0.7\}=\int_{0.3}^{0.7} f(x)\mathrm{d}x=\int_{0.3}^{0.7} 2x\mathrm{d}x=x^2\bigg|_{0.3}^{0.7}=0.4$.<br>(3)因为 $P\{X&gt;a\}+P\{X&lt;a\}=1$　（$P\{X=a\}=0$），<br>而　$P\{X&gt;a\}=P\{X&lt;a\}$，<br>故　$P\{X&gt;a\}=P\{X&lt;a\}=\dfrac{1}{2}$，<br>即　$\int_{-\infty}^{a} f(x)\mathrm{d}x=\int_{0}^{a} 2x\mathrm{d}x=a^2=\dfrac{1}{2}$，得 $a=\dfrac{1}{\sqrt{2}}$.<br>(4)　$F(x)=\int_{-\infty}^{x} f(t)\mathrm{d}t$</p>
+<p class="dmath">$$=\begin{cases} 0, &amp; x&lt;0 \\ \int_{0}^{x} 2t\mathrm{d}t, &amp; 0\le x&lt;1 \\ 1, &amp; x\ge 1 \end{cases}$$</p>
+<p class="dmath">$$=\begin{cases} 0, &amp; x&lt;0 \\ x^2, &amp; 0\le x&lt;1 \\ 1, &amp; x\ge 1 \end{cases}$$</p></div>
+</div></section>
+<section class="q-card" id="q-5-17" data-qid="c2-5.17">
+<div class="q-head"><span class="q-num">【5.17】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>进行某种试验，成功的概率为 $\dfrac{3}{4}$，失败的概率为 $\dfrac{1}{4}$. 以 $X$ 表示直到试验首次成功时所需试验的次数，写出 $X$ 的概率分布并求 $X$ 取偶数的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由题意可知，$X\sim G\left(\dfrac{3}{4}\right)$，故 $X$ 的分布律为</p>
+<p class="dmath">$$P\{X=k\}=\frac{3}{4}\left(\frac{1}{4}\right)^{k-1},\quad k=1,2,\cdots.$$</p>
+<p class="dmath">$$P\{X=\text{偶数}\}=\frac{3}{4}\cdot\frac{1}{4}+\frac{3}{4}\left(\frac{1}{4}\right)^{3}+\frac{3}{4}\left(\frac{1}{4}\right)^{5}+\cdots=\frac{3}{4}\cdot\frac{\dfrac{1}{4}}{1-\dfrac{1}{16}}=\frac{1}{5}$$</p></div>
+</div></section>
+<div class="block-title">题型3 求随机变量或随机变量函数的分布</div>
+<section class="q-card" id="q-5-18" data-qid="c2-5.18">
+<div class="q-head"><span class="q-num">【5.18】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>假设随机变量 $X$ 的绝对值不大于 1；$P\{X=-1\}=\dfrac{1}{8}$，$P\{X=1\}=\dfrac{1}{4}$；在事件 $\{-1&lt;X&lt;1\}$ 出现的条件下，$X$ 在 $(-1,1)$ 内任一子区间上取值的条件概率与该子区间长度成正比. 试求 $X$ 的分布函数 $F(x)=P\{X\le x\}$.<br>分析　本题是求随机变量的分布函数问题，熟练掌握事件概率与分布函数的关系是关键，首先要求出随机变量在 $(-1,1)$ 上的条件概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由已知条件，当 $x&lt;-1$ 时，$F(x)=0$；且有 $F(-1)=\dfrac{1}{8}$.<br>在 $x\ge 1$ 时，$F(x)=1$，且有</p>
+<p class="dmath">$$P\{-1&lt;X&lt;1\}=1-P\{X=-1\}-P\{X=1\}=1-\frac{1}{4}-\frac{1}{8}=\frac{5}{8}$$</p>
+<p>在 $-1&lt;x&lt;1$ 时，$F(x)=P\{X\le x\}=P\{X\le -1\}+P\{-1&lt;X\le x\}$，因为，</p>
+<p class="dmath">$$P\{-1&lt;X\le x\}=P\{-1&lt;X\le x,\ -1&lt;X&lt;1\},$$</p>
+<p>由条件概率运算得</p>
+<p class="dmath">$$P\{-1&lt;X\le x\}=P\{-1&lt;X&lt;1\}P\{-1&lt;X\le x \mid -1&lt;X&lt;1\}$$</p>
+<p class="dmath">$$=\frac{5}{8}\cdot\frac{x+1}{2}=\frac{5x+5}{16}$$</p>
+<p>故 $F(x)=F(-1)+P\{-1&lt;X\le x\}=\dfrac{5x+7}{16}$<br>从而得 $X$ 的分布函数　$F(x)=\begin{cases} 0, &amp; x&lt;-1 \\ \dfrac{5x+7}{16}, &amp; -1\le x&lt;1 \\ 1, &amp; x\ge 1 \end{cases}$</p></div>
+</div></section>
+<section class="q-card" id="q-5-19" data-qid="c2-5.19">
+<div class="q-head"><span class="q-num">【5.19】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>测量一圆形物体的半径，其分布列为</p>
+<table><tr><th>$R$</th><th>10</th><th>11</th><th>12</th><th>13</th></tr><tr><td>$P$</td><td>0.1</td><td>0.4</td><td>0.3</td><td>0.2</td></tr></table>
+<p>求圆周长 $X$ 和圆面积 $Y$ 的分布列.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　显然周长 $X=2\pi R$ 和面积 $Y=\pi R^2$ 均为随机变量 $R$ 的函数，且易看出 $X,Y$ 的取值分别全不相等，因而其分布列分别为：</p>
+<table><tr><th>$X$</th><th>$20\pi$</th><th>$22\pi$</th><th>$24\pi$</th><th>$26\pi$</th></tr><tr><td>$P$</td><td>0.1</td><td>0.4</td><td>0.3</td><td>0.2</td></tr><tr><td>$Y$</td><td>$100\pi$</td><td>$121\pi$</td><td>$144\pi$</td><td>$169\pi$</td></tr><tr><td>$P$</td><td>0.1</td><td>0.4</td><td>0.3</td><td>0.2</td></tr></table></div>
+</div></section>
+<section class="q-card" id="q-5-20" data-qid="c2-5.20">
+<div class="q-head"><span class="q-num">【5.20】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>假设随机变量 $X$ 的概率密度为 $f(x)=\begin{cases} 2x, &amp; \text{若 } 0&lt;x&lt;1 \\ 0, &amp; \text{其他} \end{cases}$，现在对 $X$ 进行 $n$ 次独立重复观测，以 $V_n$ 表示观测值不大于 0.1 的次数. 试求随机变量 $V_n$ 的概率分布.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 事件“观测值不大于 0.1”，即事件 $\{X\le 0.1\}$ 的概率为</p>
+<p class="dmath">$$p=P\{X\le 0.1\}=\int_{-\infty}^{0.1}f(x)\mathrm{d}x=2\int_{0}^{0.1}x\mathrm{d}x=0.01$$</p>
+<p>每次观测所得观测值不大于 0.1 为成功，则 $V_n$ 作为 $n$ 次独立重复试验成功的次数，服从参数为 $(n,0.01)$ 的二项分布</p>
+<p class="dmath">$$P\{V_n=m\}=\mathrm{C}_n^m(0.01)^m(0.99)^{n-m}\quad(m=0,1,2,\cdots,n)$$</p></div>
+</div></section>
+<section class="q-card" id="q-5-21" data-qid="c2-5.21">
+<div class="q-head"><span class="q-num">【5.21】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知随机变量 $X$ 的分布律如下：</p>
+<table><tr><th>$X$</th><th>$-2$</th><th>$-1$</th><th>$0$</th><th>$1$</th><th>$2$</th><th>$3$</th></tr><tr><td>$P$</td><td>$4a$</td><td>$\dfrac{1}{12}$</td><td>$3a$</td><td>$a$</td><td>$10a$</td><td>$4a$</td></tr></table>
+<p>$Y=X^2$，则 $Y$ 的分布律为______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 $Y$ 的分布律可表示为</p>
+<table><tr><th>$Y$</th><th>$0$</th><th>$1$</th><th>$4$</th><th>$9$</th></tr><tr><td>$P$</td><td>$3a$</td><td>$\dfrac{1}{12}+a$</td><td>$14a$</td><td>$4a$</td></tr></table>
+<p>由性质确定 $a=\dfrac{1}{24}$<br>则 $Y$ 的分布律为</p>
+<table><tr><th>$Y$</th><th>$0$</th><th>$1$</th><th>$4$</th><th>$9$</th></tr><tr><td>$P$</td><td>$\dfrac{1}{8}$</td><td>$\dfrac{1}{8}$</td><td>$\dfrac{7}{12}$</td><td>$\dfrac{1}{6}$</td></tr></table></div>
+</div></section>
+<section class="q-card" id="q-5-22" data-qid="c2-5.22">
+<div class="q-head"><span class="q-num">【5.22】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设有随机变量 $X\sim\begin{pmatrix} -1 &amp; 0 &amp; 1 \\[2pt] \dfrac{1}{3} &amp; \dfrac{1}{6} &amp; \dfrac{1}{2} \end{pmatrix}$，则 $X$ 的分布函数为______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 当 $x&lt;-1$ 时，$F(x)=P\{X\le x\}=0$<br>当 $-1\le x&lt;0$ 时，$F(x)=P\{X\le x\}=\dfrac{1}{3}$<br>当 $0\le x&lt;1$ 时，$F(x)=P\{X\le x\}=\dfrac{1}{3}+\dfrac{1}{6}=\dfrac{1}{2}$<br>当 $x\ge 1$ 时，$F(x)=P\{X\le x\}=\dfrac{1}{3}+\dfrac{1}{6}+\dfrac{1}{2}=1$<br>故 $F(x)=\begin{cases} 0, &amp; x&lt;-1 \\[2pt] \dfrac{1}{3}, &amp; -1\le x&lt;0 \\[2pt] \dfrac{1}{2}, &amp; 0\le x&lt;1 \\[2pt] 1, &amp; x\ge 1 \end{cases}$</p></div>
+</div></section>
+<section class="q-card" id="q-5-23" data-qid="c2-5.23">
+<div class="q-head"><span class="q-num">【5.23】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一房间有 3 扇同样大小的窗子，其中只有一扇是打开的. 有一只鸟自开着的窗子飞入了房间，它只能从开着的窗子飞出去. 鸟在房子里飞来飞去，试图飞出房间. 假定鸟是没有记<br>忆的，鸟飞向各扇窗子是随机的.<br>（1）以 $X$ 表示鸟为了飞出房间试飞的次数，求 $X$ 的分布律.<br>（2）户主声称，他养的一只鸟是有记忆的，它飞向任一窗子的尝试不多于一次. 以 $Y$ 表示这只聪明的鸟为了飞出房间试飞的次数，如户主所说是确定的，试求 $Y$ 的分布律.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 （1）$X$ 的可能取值为 $1,2,3,\cdots$，$X$ 服从几何分布，故 $X$ 的分布律为</p>
+<p class="dmath">$$P\{X=k\}=\left(\frac{2}{3}\right)^{k-1}\cdot\frac{1}{3},\quad k=1,2,\cdots$$</p>
+<p>或者</p>
+<table><tr><th>$X$</th><th>$1$</th><th>$2$</th><th>$3$</th><th>$\cdots$</th></tr><tr><td>$P$</td><td>$\dfrac{1}{3}$</td><td>$\dfrac{2}{3}\times\dfrac{1}{3}$</td><td>$\left(\dfrac{2}{3}\right)^2\times\dfrac{1}{3}$</td><td>$\cdots$</td></tr></table>
+<p>（2）$Y$ 的可能取值为 $1,2,3$.<br>则由题意有 $Y$ 的分布律为</p>
+<table><tr><th>$Y$</th><th>$1$</th><th>$2$</th><th>$3$</th></tr><tr><td>$P$</td><td>$\dfrac{1}{3}$</td><td>$\dfrac{1}{3}$</td><td>$\dfrac{1}{3}$</td></tr></table></div>
+</div></section>
+<section class="q-card" id="q-5-24" data-qid="c2-5.24">
+<div class="q-head"><span class="q-num">【5.24】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设在 15 只同类型的零件中有 2 只是次品，在其中取 3 次，每次任取 1 只，作不放回抽样，以 $X$ 表示取出样品的只数，求 $X$ 的分布律.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 随机变量 $X$ 的可能值为 $0,1,2$.<br>当 $X=0$ 时，即取出的 3 只都是合格品，故 $P\{X=0\}=\dfrac{13}{15}\times\dfrac{12}{14}\times\dfrac{11}{13}=\dfrac{22}{35}$.<br>当 $X=1$ 时，即取出的 3 只中有一只次品，该次品可能在第一次，第二次或第三次被取出，故</p>
+<p class="dmath">$$P\{X=1\}=P\{\text{次},\text{正},\text{正}\}+P\{\text{正},\text{次},\text{正}\}+P\{\text{正},\text{正},\text{次}\}$$</p>
+<p class="dmath">$$=\frac{2}{15}\times\frac{13}{14}\times\frac{12}{13}+\frac{13}{15}\times\frac{2}{14}\times\frac{12}{13}+\frac{13}{15}\times\frac{12}{14}\times\frac{2}{13}=\frac{12}{35}$$</p>
+<p>类似地可得 $P\{X=2\}=\dfrac{1}{35}$<br>因此，$X$ 的分布律为</p>
+<table><tr><th>$X$</th><th>$0$</th><th>$1$</th><th>$2$</th></tr><tr><td>$p_k$</td><td>$\dfrac{22}{35}$</td><td>$\dfrac{12}{35}$</td><td>$\dfrac{1}{35}$</td></tr></table></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评 本题中抽取方式为不放回抽样，且 $X$ 表示次品的个数，与抽取次序无关，故可视为服从超几何分布，计算更加简便，如 $P\{X=1\}=\dfrac{\mathrm{C}_2^1\cdot\mathrm{C}_{13}^2}{\mathrm{C}_{15}^3}=\dfrac{12}{35}$.</p></div>
+</div></section>
+<section class="q-card" id="q-5-25" data-qid="c2-5.25">
+<div class="q-head"><span class="q-num">【5.25】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设随机变量 $X$ 的概率密度为<br>（1）$f(x)=\begin{cases} 2\left(1-\dfrac{1}{x^3}\right), &amp; 1\le x\le 2 \\ 0, &amp; \text{其他} \end{cases}$ \hfill （2）$f(x)=\begin{cases} x, &amp; 0\le x&lt;1 \\ 2-x, &amp; 1\le x&lt;2 \\ 0, &amp; \text{其他} \end{cases}$<br>求 $X$ 的分布函数 $F(x)$.<br>解　(1)当 $x&lt;1$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=0$<br>当 $1\le x&lt;2$ 时，$F(x)=\int_{1}^{x}2\left(1-\frac{1}{t^{2}}\right)\mathrm{d}t=2x+\frac{2}{x}-4$<br>当 $x\ge 2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{1}^{2}2\left(1-\frac{1}{x^{2}}\right)\mathrm{d}x=1$<br>故 $X$ 的分布函数为</p>
 <p class="dmath">$$F(x)=\begin{cases}0, &amp; x&lt;1\\ 2x+\dfrac{2}{x}-4, &amp; 1\le x&lt;2\\ 1, &amp; x\ge 2\end{cases}$$</p>
 <p>(2)当 $x&lt;0$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=0$<br>当 $0\le x&lt;1$ 时，$F(x)=\int_{0}^{x}t\mathrm{d}t=\frac{x^{2}}{2}$<br>当 $1\le x&lt;2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{0}^{1}t\mathrm{d}t-\int_{1}^{x}(2-t)\mathrm{d}t=-\frac{x^{2}}{2}+2x-1$<br>当 $x\ge 2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{0}^{1}x\mathrm{d}x+\int_{1}^{2}(2-x)\mathrm{d}x=1$<br>故得 $X$ 的分布函数为</p>
 <p class="dmath">$$F(x)=\begin{cases}0, &amp; x&lt;0\\ \dfrac{x^{2}}{2}, &amp; 0\le x&lt;1\\ -\dfrac{x^{2}}{2}+2x-1, &amp; 1\le x&lt;2\\ 1, &amp; x\ge 2\end{cases}$$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-5-26" data-qid="c2-5.26">
 <div class="q-head"><span class="q-num">【5.26】</span><span>
@@ -902,7 +1049,7 @@
 <p class="dmath">$$=\begin{cases}0, &amp; y\le 0\\ y, &amp; 0&lt;y&lt;1\\ 1, &amp; y\ge 1\end{cases}$$</p>
 <p>于是，$Y$ 在 $(0,1)$ 服从均匀分布.</p></div>
 </div></section>
-<div class="block-title">题型4 关于重要分布</div>
+<div class="block-title">题型4：关于重要分布</div>
 <section class="q-card" id="q-5-31" data-qid="c2-5.31">
 <div class="q-head"><span class="q-num">【5.31】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
@@ -1072,7 +1219,7 @@
 <section class="q-card" id="q-5-44" data-qid="c2-5.44">
 <div class="q-head"><span class="q-num">【5.44】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>设一大型设备在任长为 $t$ 的时间内发生故障的次数 $N(t)$ 服从参数为 $\lambda t$ 的泊松分布.<br>(1)求在相继两次故障之间时间间隔 $T$ 的概率分布；<br>(2)求在设备已经无故障工作 8 小时的情况下，再无故障运行 8 小时的概率 $Q$.</p></div>
+<div class="q-body"><p>设一大型设备在任何长为 $t$ 的时间内发生故障的次数 $N(t)$ 服从参数为 $\lambda t$ 的泊松分布.<br>(1)求在相继两次故障之间时间间隔 $T$ 的概率分布；<br>(2)求在设备已经无故障工作 8 小时的情况下，再无故障运行 8 小时的概率 $Q$.</p></div>
 <div class="sol-wrap collapsed">
 <hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　(1)由于 $T$ 是非负随机变量，可见<br>当 $t&lt;0$ 时，$F(t)=P\{T\le t\}=0$<br>设 $t\ge 0$ 时，则事件 $\{T&gt;t\}$ 与 $\{N(t)=0\}$ 等价. 因此，当 $t\ge 0$ 时，有</p>
 <p class="dmath">$$F(t)=P\{T\le t\}=1-P\{T&gt;t\}=1-P\{N(t)=0\}=1-\mathrm{e}^{-\lambda t}$$</p>
@@ -1105,8 +1252,8 @@
 <div class="sol-wrap collapsed">
 <hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证　设 $X=\{$蛋数$\}$，$Y=\{$鸡数$\}$. 由全概率公式，</p>
 <p class="dmath">$$P\{Y=n\}=P\{X=n\}P\{Y=n\mid X=n\}+P\{X=n+1\}P\{Y=n\mid X=n+1\}+\cdots$$</p>
-<p class="dmath">$$=\dfrac{\lambda^{n}}{n!}\mathrm{e}^{-\lambda}p^{n}+\dfrac{\lambda^{n+1}}{(n+1)!}\mathrm{e}^{-\lambda}C_{n+1}^{1}\,p^{n}q+\cdots$$</p>
-<p class="dmath">$$=\dfrac{(\lambda p)^{n}}{n!}\,\mathrm{e}^{-\lambda(1-p)}=\dfrac{(\lambda p)^{n}}{n!}\,\mathrm{e}^{-\lambda p}$$</p>
+<p class="dmath">$$=\dfrac{\lambda^{n}}{n!}\mathrm{e}^{-\lambda}p^{n}+\dfrac{\lambda^{n+1}}{(n+1)!}\mathrm{e}^{-\lambda}C_{n+1}^{n}\,p^{n}q+\cdots$$</p>
+<p class="dmath">$$=\dfrac{(\lambda p)^{n}}{n!}\,\mathrm{e}^{-\lambda(1-q)}=\dfrac{(\lambda p)^{n}}{n!}\,\mathrm{e}^{-\lambda p}$$</p>
 <p>所以 $Y\sim P(\lambda p)$.</p></div>
 </div></section>
 <section class="q-card" id="q-5-48" data-qid="c2-5.48">
