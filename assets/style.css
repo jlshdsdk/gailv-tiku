@@ -165,8 +165,10 @@ body {
 .sidebar .q-links a.done { color: var(--ans); }
 .sidebar .q-links a.active { border-color: var(--q-num); background: var(--hover); }
 
-.main { flex: 1; margin-left: 240px; padding: 30px 20px 120px; }
-.content { max-width: 880px; margin: 0 auto; }
+.main { flex: 1; min-width: 0; margin-left: 240px; padding: 30px 20px 120px; }
+.content { max-width: 880px; min-width: 0; margin: 0 auto; }
+/* 超宽公式/表格在卡片内滚动，不撑破移动端布局 */
+.q-card, .know-box, .cmt-box { overflow-x: auto; }
 .chapter-head { margin-bottom: 26px; }
 .chapter-head h1 { font-size: 24px; color: var(--q-num); font-weight: 700; margin-bottom: 4px; }
 .chapter-head .meta { color: var(--text-soft); font-size: 14px; }
@@ -252,6 +254,7 @@ body {
 .katex { font-size: 1.06em; }
 .katex-display { margin: 10px 0; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 p.dmath { text-align: center; }
+.q-body p, .sol-body p, .know-box p, .cmt-box { overflow-wrap: break-word; }
 
 /* 小节标题 / 知识要点框 / 表格 / 存疑标记 */
 .sec-title {

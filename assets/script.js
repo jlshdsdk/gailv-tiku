@@ -72,6 +72,8 @@
   var lazyMode = cards.length > 50;   // 超过 50 题：视口外延迟渲染
 
   if (pageType === 'chapter') {
+    /* 知识要点框数量少且位于页首，加载后立即渲染 */
+    Array.prototype.slice.call(document.querySelectorAll('.know-box')).forEach(renderIn);
     if (!lazyMode) {
       cards.forEach(function (c) { renderIn(c); });
     } else {
@@ -93,14 +95,14 @@
           if (r.top < vh + 600 && r.bottom > -200) renderIn(c);
         });
       }, 250), { passive: true });
-      /* 终极兜底：加载 1.5s 后分块渐进渲染全部剩余题（每批 8 题），
-         确保任何环境（IO 失效/滚动受限的嵌入视图）都不会留下未渲染公式 */
-      (function progressive(start) {
+      /* 终极兜底：1.5s 后开始分块渐进渲染全部剩余题（首批后每 150ms 一批 8 题），
+         确保任何环境（IO 失效/滚动受限的嵌入视图）都在数秒内完成全量渲染 */
+      (function progressive(delay) {
         setTimeout(function () {
           var rest = cards.filter(function (c) { return !c.dataset.katexDone; });
           rest.slice(0, 8).forEach(renderIn);
-          if (rest.length > 8) progressive(start);
-        }, start);
+          if (rest.length > 8) progressive(150);
+        }, delay);
       })(1500);
     }
   } else {
