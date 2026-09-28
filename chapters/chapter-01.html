@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 随机事件及其概率 · 概率论与数理统计习题精选精解 · 刷题版</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css?v=1">
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body data-page="chapter" data-chapter="c1">
+<header class="topbar"><button class="icon-btn" id="menuBtn" title="目录">☰</button><a class="back-home" href="../index.html">← 总目录</a><span class="bar-title">概率论与数理统计习题精选精解 · 刷题版 · 第1章 随机事件及其概率</span><button class="icon-btn" id="themeBtn" title="切换夜间模式">🌙</button></header>
+<div class="mask" id="sidebarMask"></div>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<h3>本章目录</h3>
+<div class="sec-group">
+<a class="sec-name" href="#sec-1">§1 随机事件及其运算</a>
+<div class="q-links">
+<a href="#q-1-1" data-qid="c1-1.1">1.1</a>
+<a href="#q-1-2" data-qid="c1-1.2">1.2</a>
+<a href="#q-1-3" data-qid="c1-1.3">1.3</a>
+<a href="#q-1-4" data-qid="c1-1.4">1.4</a>
+<a href="#q-1-5" data-qid="c1-1.5">1.5</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-2">§2 随机事件的概率</a>
+<div class="q-links">
+<a href="#q-2-1" data-qid="c1-2.1">2.1</a>
+<a href="#q-2-2" data-qid="c1-2.2">2.2</a>
+<a href="#q-2-3" data-qid="c1-2.3">2.3</a>
+<a href="#q-2-4" data-qid="c1-2.4">2.4</a>
+<a href="#q-2-5" data-qid="c1-2.5">2.5</a>
+<a href="#q-2-6" data-qid="c1-2.6">2.6</a>
+<a href="#q-2-7" data-qid="c1-2.7">2.7</a>
+<a href="#q-2-8" data-qid="c1-2.8">2.8</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-3">§3 概率基本运算法则</a>
+<div class="q-links">
+<a href="#q-3-1" data-qid="c1-3.1">3.1</a>
+<a href="#q-3-2" data-qid="c1-3.2">3.2</a>
+<a href="#q-3-3" data-qid="c1-3.3">3.3</a>
+<a href="#q-3-4" data-qid="c1-3.4">3.4</a>
+<a href="#q-3-5" data-qid="c1-3.5">3.5</a>
+<a href="#q-3-6" data-qid="c1-3.6">3.6</a>
+<a href="#q-3-7" data-qid="c1-3.7">3.7</a>
+<a href="#q-3-8" data-qid="c1-3.8">3.8</a>
+<a href="#q-3-9" data-qid="c1-3.9">3.9</a>
+<a href="#q-3-10" data-qid="c1-3.10">3.10</a>
+<a href="#q-3-11" data-qid="c1-3.11">3.11</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-4">§4 全概率公式与贝叶斯公式</a>
+<div class="q-links">
+<a href="#q-4-1" data-qid="c1-4.1">4.1</a>
+<a href="#q-4-2" data-qid="c1-4.2">4.2</a>
+<a href="#q-4-3" data-qid="c1-4.3">4.3</a>
+<a href="#q-4-4" data-qid="c1-4.4">4.4</a>
+<a href="#q-4-5" data-qid="c1-4.5">4.5</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-5">§5 独立性</a>
+<div class="q-links">
+<a href="#q-5-1" data-qid="c1-5.1">5.1</a>
+<a href="#q-5-2" data-qid="c1-5.2">5.2</a>
+<a href="#q-5-3" data-qid="c1-5.3">5.3</a>
+<a href="#q-5-4" data-qid="c1-5.4">5.4</a>
+<a href="#q-5-5" data-qid="c1-5.5">5.5</a>
+<a href="#q-5-6" data-qid="c1-5.6">5.6</a>
+</div></div>
+<div class="sec-group">
+<a class="sec-name" href="#sec-6">§6. 综合提高题型</a>
+<div class="q-links">
+<a href="#q-6-19" data-qid="c1-6.19">6.19</a>
+<a href="#q-6-20" data-qid="c1-6.20">6.20</a>
+<a href="#q-6-21" data-qid="c1-6.21">6.21</a>
+<a href="#q-6-22" data-qid="c1-6.22">6.22</a>
+<a href="#q-6-23" data-qid="c1-6.23">6.23</a>
+<a href="#q-6-24" data-qid="c1-6.24">6.24</a>
+<a href="#q-6-25" data-qid="c1-6.25">6.25</a>
+<a href="#q-6-26" data-qid="c1-6.26">6.26</a>
+<a href="#q-6-27" data-qid="c1-6.27">6.27</a>
+<a href="#q-6-28" data-qid="c1-6.28">6.28</a>
+<a href="#q-6-29" data-qid="c1-6.29">6.29</a>
+<a href="#q-6-30" data-qid="c1-6.30">6.30</a>
+<a href="#q-6-31" data-qid="c1-6.31">6.31</a>
+<a href="#q-6-32" data-qid="c1-6.32">6.32</a>
+<a href="#q-6-33" data-qid="c1-6.33">6.33</a>
+<a href="#q-6-34" data-qid="c1-6.34">6.34</a>
+<a href="#q-6-35" data-qid="c1-6.35">6.35</a>
+<a href="#q-6-36" data-qid="c1-6.36">6.36</a>
+<a href="#q-6-37" data-qid="c1-6.37">6.37</a>
+<a href="#q-6-38" data-qid="c1-6.38">6.38</a>
+<a href="#q-6-39" data-qid="c1-6.39">6.39</a>
+<a href="#q-6-40" data-qid="c1-6.40">6.40</a>
+<a href="#q-6-41" data-qid="c1-6.41">6.41</a>
+</div></div>
+</aside>
+<main class="main"><div class="content">
+<div class="chapter-head"><h1>第1章 随机事件及其概率</h1><div class="meta">共 58 题</div></div>
+<h2 class="sec-title" id="sec-1">§1 随机事件及其运算</h2>
+<div class="know-box"><p>**1. 随机事件的相关概念**<br>（1）随机试验　在概率论中将具备下列三个条件的试验称为随机试验，简称试验：<br>1°在相同条件下可重复进行；<br>2°每次试验的结果具有多种可能性；<br>3°在每次试验之前不能准确预言该次试验将出现何种结果，但是所有结果明确可知.<br>（2）样本空间　随机试验的所有可能结果构成的集合，常用 $\Omega$ 表示.<br>（3）随机事件　随机试验的每一种可能的结果称为随机事件，常用 $A,B,C,D$ 表示.<br>（4）基本事件　不能分解为其他事件组合的最简单的随机事件.<br>（5）必然事件　每次试验中一定发生的事件，常用 $\Omega$ 表示.<br>（6）不可能事件　每次试验中一定不发生的事件，常用 $\varnothing$ 表示.<br>**2. 事件的关系及运算**<br>（1）包含　$A$ 发生必然导致 $B$ 发生，则称 $B$ 包含 $A$（或 $A$ 包含于 $B$），记为 $B\supset A$（或 $A\subset B$）.<br>（2）相等　若 $A\supset B$ 且 $B\supset A$，则称 $A$ 与 $B$ 相等，记为 $A=B$.<br>（3）事件的和　$A$ 与 $B$ 至少有一个发生，称为 $A$ 与 $B$ 的和事件，记为 $A\cup B$.<br>（4）事件的积　$A$ 与 $B$ 同时发生，称为 $A$ 与 $B$ 的积事件，记为 $A\cap B$（或 $AB$）.<br>（5）事件的差　$A$ 发生而 $B$ 不发生，称为 $A$ 与 $B$ 的差事件，记为 $A-B$.<br>（6）互斥事件　在试验中，若事件 $A$ 与 $B$ 不能同时发生，即 $A\cap B=\varnothing$，则称 $A$、$B$ 为互斥事件.<br>（7）对立事件　在每次试验中，"事件 $A$ 不发生"的事件称为事件 $A$ 的对立事件. $A$ 的对立事件常记为 $\bar{A}$.<br>**3. 事件的运算律**<br>（1）交换律　$A\cup B=B\cup A$，$AB=BA$.<br>（2）结合律　$(A\cup B)\cup C=A\cup(B\cup C)$，$(A\cap B)\cap C=A\cap(B\cap C)$.<br>（3）分配律　$(A\cup B)C=(AC)\cup(BC)$，$A\cup(BC)=(A\cup B)(A\cup C)$.<br>（4）摩根律　$\overline{A\cup B}=\bar{A}\cap\bar{B}$，$\overline{A\cap B}=\bar{A}\cup\bar{B}$.<br>基 本 题 型</p></div>
+<div class="block-title">题型1 事件的表示</div>
+<section class="q-card" id="q-1-1" data-qid="c1-1.1">
+<div class="q-head"><span class="q-num">【1.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A$，$B$，$C$ 为三事件，用 $A$，$B$，$C$ 的运算关系表示下列各事件.<br>（1）$A$ 发生，$B$ 与 $C$ 不发生；　　（2）$A$ 与 $B$ 都发生，而 $C$ 不发生；<br>（3）$A$，$B$，$C$ 中至少有一个发生；　　（4）$A$，$B$，$C$ 都发生；<br>（5）$A$，$B$，$C$ 都不发生；　　（6）$A$，$B$，$C$ 中不多于一个发生；<br>（7）$A$，$B$，$C$ 中不多于两个发生；　　（8）$A$，$B$，$C$ 中至少有两个发生.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>（1）$A\bar{B}\bar{C}$　　（2）$AB\bar{C}$　　（3）$A\cup B\cup C$<br>（4）$ABC$　　（5）$\bar{A}\bar{B}\bar{C}$<br>（6）$\bar{A}\bar{B}C\cup\bar{A}B\bar{C}\cup A\bar{B}\bar{C}\cup\bar{A}\bar{B}\bar{C}$ 或 $\bar{A}\bar{B}\cup\bar{A}\bar{C}\cup\bar{B}\bar{C}$<br>（7）$\overline{ABC}$ 或 $\bar{A}\cup\bar{B}\cup\bar{C}$　　（8）$AB\cup BC\cup AC$.</p></div>
+</div></section>
+<section class="q-card" id="q-1-2" data-qid="c1-1.2">
+<div class="q-head"><span class="q-num">【1.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>在电炉上安装了 4 个温控器，其显示温度的误差是随机的. 在使用过程中，只要有两个温控器显示的温度不低于临界温度 $t_0$，电炉就断电. 以 $E$ 表示事件"电炉断电"，而 $T_{(1)}\le T_{(2)}\le T_{(3)}\le T_{(4)}$ 为 4 个温控器显示的按递增顺序排列的温度值，则事件 $E$ 等于（　　）.<br>（A）$\{T_{(1)}\ge t_0\}$　　（B）$\{T_{(2)}\ge t_0\}$　　（C）$\{T_{(3)}\ge t_0\}$　　（D）$\{T_{(4)}\ge t_0\}$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>$\{T_{(1)}\ge t_0\}$ 表示四个温控器显示温度均不低于 $t_0$<br>$\{T_{(2)}\ge t_0\}$ 表示至少三个温控器显示温度均不低于 $t_0$<br>$\{T_{(3)}\ge t_0\}$ 表示至少二个温控器显示温度均不低于 $t_0$<br>$\{T_{(4)}\ge t_0\}$ 表示至少一个温控器显示温度均不低于 $t_0$</p></div>
+<div class="ans-line">最终答案：<p>故应选（C）.</p></div>
+</div></section>
+<div class="block-title">题型2 判断事件的关系及运算</div>
+<section class="q-card" id="q-1-3" data-qid="c1-1.3">
+<div class="q-head"><span class="q-num">【1.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>指出下面式子中事件之间的关系：<br>（1）$AB=A$；　　（2）$A\cup B=A$；　　（3）$ABC=A$；　　（4）$A\cup B\cup C=A$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>（1）表明 $A$ 包含于 $B$，即 $A\subset B$；　　（2）表明 $B$ 包含于 $A$，即 $B\subset A$；<br>（3）表明 $A$ 包含于 $BC$，即 $A\subset BC$；　　（4）表明 $B\cup C$ 包含于 $A$，即 $B\cup C\subset A$.</p></div>
+</div></section>
+<section class="q-card" id="q-1-4" data-qid="c1-1.4">
+<div class="q-head"><span class="q-num">【1.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A$ 和 $B$ 是任意两个随机事件，则与 $A\cup B=B$ 不等价的是（　　）.<br>（A）$A\subset B$　　（B）$\bar{B}\subset\bar{A}$　　（C）$A\bar{B}=\varnothing$　　（D）$\bar{A}B=\varnothing$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>根据题干的信息，$A\cup B=B\Leftrightarrow A\subset B\Leftrightarrow\bar{B}\subset\bar{A}\Leftrightarrow A\bar{B}=\varnothing$</p></div>
+<div class="ans-line">最终答案：<p>所以选项（D）不正确.</p></div>
+</div></section>
+<section class="q-card" id="q-1-5" data-qid="c1-1.5">
+<div class="q-head"><span class="q-num">【1.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设任意两个随机事件 $A$ 和 $B$ 满足条件 $AB=\overline{\bar{A}\bar{B}}$，则（　　）.<br>（A）$A\cup B=\varnothing$　　（B）$A\cup B=\Omega$　　（C）$A\cup B=A$　　（D）$A\cup B=B$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　排除法.<br>注意到 $AB=\overline{\bar{A}\bar{B}}$，那么 $A$，$B$ 的地位是"对等"的，从而（C），（D）均不成立.（A）不正确是显然的. 故（B）正确.<br>解法二　直接法.<br>运用摩根律，$AB=\overline{\bar{A}\bar{B}}=\overline{A\cup B}$，那么</p>
+<p class="dmath">$$A\cup B=(A\cup B)\cup AB=(A\cup B)\cup\overline{A\cup B}=\Omega.$$</p></div>
+<div class="ans-line">最终答案：<p>故应选（B）.</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　对于较复杂的事件运算，除了熟练运用定义及运算规律判断，还可采用集合论中的文氏图帮助分析和理解.</p></div>
+</div></section>
+<h2 class="sec-title" id="sec-2">§2 随机事件的概率</h2>
+<div class="know-box"><p>**1. 概率的统计定义**　在相同的条件下，重复进行 $n$ 次试验，事件 $A$ 发生的频率稳定地在某一常数 $p$ 附近摆动. 且一般来说，$n$ 越大，摆动幅度越小，则称常数 $p$ 为事件 $A$ 的概率，记作 $P(A)$.<br>**2. 概率的公理化定义**　设 $\Omega$ 是一样本空间，称满足下列三条公理的集函数 $P(\cdot)$ 为定义在 $\Omega$ 上的概率：<br>（1）非负性　对任意事件 $A$，$P(A)\ge 0$；<br>（2）规范性　$P(\Omega)=1$；<br>（3）可列可加性　若两两互不相容的事件列 $\{A_n\}$ 是可列的，则 $P\Big(\sum\limits_{i=1}^{\infty}A_i\Big)=\sum\limits_{i=1}^{\infty}P(A_i)$.<br>**3. 古典概型**　具有下列两个特点的试验称为古典概型.<br>（1）每次试验只有有限种可能的试验结果；<br>（2）每次试验中，各基本事件出现的可能性完全相同.<br>对于古典概型，事件 $A$ 发生的概率为</p>
+<p class="dmath">$$P(A)=\frac{A\ \text{中基本事件数}}{\Omega\ \text{中基本事件数}}=\frac{m}{n}.$$</p>
+<p>**4. 几何概型**<br>如果随机试验的样本空间是一个区域（例如直线上的区间、平面或空间中的区域），而且样本空间中每个试验结果的出现具有等可能性，那么规定事件 $A$ 的概率为</p>
+<p class="dmath">$$P(A)=\frac{A\ \text{的测度（长度、面积、体积）}}{\text{样本空间的测度（长度、面积、体积）}}$$</p>
+<p>基 本 题 型</p></div>
+<div class="block-title">题型1 古典概型</div>
+<section class="q-card" id="q-2-1" data-qid="c1-2.1">
+<div class="q-head"><span class="q-num">【2.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设一个袋中装有 $a$ 个黑球，$b$ 个白球，现将球随机地一个个摸出，问第 $k$ 次摸出黑球的概率是多少？$(1\le k\le a+b)$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　令 $A$ 表示事件"第 $k$ 次摸到黑球".<br>将这 $a+b$ 个球编号，并将球依摸出的先后次序排队，易知基本事件总数为 $(a+b)!$. 事件 $A$ 等价于在第 $k$ 个位置上放一个黑球，在其余 $a+b-1$ 个位置上放余下的 $(a+b-1)$ 个球，则 $A$ 包含的基本事件数为 $a(a+b-1)!$. 那么所求概率为</p>
+<p class="dmath">$$P(A)=\frac{a(a+b-1)!}{(a+b)!}=\frac{a}{a+b}.$$</p>
+<p>解法二　本题也可以只考虑前 $k$ 个位置，则 $P(A)=\dfrac{C_a^1\cdot P_{a+b-1}^{k-1}}{P_{a+b}^{k}}=\dfrac{a}{a+b}$</p></div>
+</div></section>
+<section class="q-card" id="q-2-2" data-qid="c1-2.2">
+<div class="q-head"><span class="q-num">【2.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一袋中装有 10 个号码球，分别标有 1～10 号，现从袋中任取 3 个球，记录其号码，求：<br>（1）最小号码为 5 的概率；<br>（2）最大号码为 5 的概率；<br>（3）中间号码为 5 的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>（1），（2），（3）有同一样本空间且所含元素个数为 $C_{10}^3$<br>（1）记 $A=$"最小号码为 5"，$A$ 的有利事件数为 $C_5^2$，故 $P(A)=\dfrac{C_5^2}{C_{10}^3}=\dfrac{1}{12}$.<br>（2）记 $B=$"最大号码为 5"，则 $B$ 的有利事件数为 $C_4^2$，故 $P(B)=\dfrac{C_4^2}{C_{10}^3}=\dfrac{1}{20}$.<br>（3）记 $C=$"中间号码为 5"，则利用乘法原理，$C$ 的有利事件数为为 $C_4^1\cdot C_5^1$，故</p>
+<p class="dmath">$$P(C)=\frac{C_4^1\cdot C_5^1}{C_{10}^3}=\frac{1}{6}.$$</p></div>
+</div></section>
+<section class="q-card" id="q-2-3" data-qid="c1-2.3">
+<div class="q-head"><span class="q-num">【2.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>有 $n$ 个人，每人都有同等的机会被分配到 $N(n\le N)$ 间房中的任一间去，试求下列各事件的概率.<br>（1）$A=$"某指定的 $n$ 间房中各有一人"；<br>（2）$B=$"恰有 $n$ 间房各有一人"；<br>（3）$C=$"某一指定的一间房中恰有 $m(m\le n)$ 人".</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>（1）基本事件总数为 $N^n$. 将 $n$ 个人分到某指定的 $n$ 间房中，相当于 $n$ 个元素的全排列，所以事件 $A$ 包含的基本事件数为 $n!$，故</p>
+<p class="dmath">$$P(A)=\frac{n!}{N^n}$$</p>
+<p>（2）$n$ 间房中各有 1 人是指任意的 $n$ 间房中各有 1 人，这共有 $C_N^n$ 种情况，所以事件 $B$ 包含的基本事件数为 $C_N^n n!$，故</p>
+<p class="dmath">$$P(B)=\frac{C_N^n n!}{N^n}=\frac{N!}{N^n(N-n)!}$$</p>
+<p>（3）从 $n$ 个人中选 $m$ 个分配到指定的一间房中，有 $C_n^m$ 种选法；而其余的 $n-m$ 个人分到其余 $N-1$ 间房，有 $(N-1)^{n-m}$ 种方法，所以事件 $C$ 包含的基本事件数为 $C_n^m(N-1)^{n-m}$，故</p>
+<p class="dmath">$$P(C)=\frac{C_n^m(N-1)^{n-m}}{N^n}=C_n^m\left(\frac{1}{N}\right)^m\left(\frac{N-1}{N}\right)^{n-m}$$</p>
+<p>这实际上是第二章将要介绍的二项分布的特殊情形.</p></div>
+</div></section>
+<section class="q-card" id="q-2-4" data-qid="c1-2.4">
+<div class="q-head"><span class="q-num">【2.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>考虑一元二次方程 $x^2+Bx+C=0$，其中 $B$，$C$ 分别是将一枚骰子接连掷两次先后出现的点数. 求该方程有实根的概率 $p$ 和有重根的概率 $q$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>一枚骰子掷两次，其基本事件总数为 36. 令 $A_i(i=1,2)$ 分别表示"方程有实根"和"方程有重根"，则</p>
+<p class="dmath">$$A_1=\{B^2-4C\ge 0\}=\left\{C\le\frac{B^2}{4}\right\},\qquad A_2=\{B^2-4C=0\}=\left\{C=\frac{B^2}{4}\right\}$$</p>
+<p>注意到表 1−1.<br>表 1−1</p>
+<table><tr><th>$B$</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr><tr><td>$A_1$ 的基本事件个数</td><td>0</td><td>1</td><td>2</td><td>4</td><td>6</td><td>6</td></tr><tr><td>$A_2$ 的基本事件个数</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr></table>
+<p>由此易知 $A_1$ 的基本事件个数为</p>
+<p class="dmath">$$0+1+2+4+6+6=19$$</p>
+<p>则由古典型概率计算公式得</p>
+<p class="dmath">$$p=P(A_1)=\frac{19}{36}$$</p>
+<p>$A_2$ 的基本事件个数为</p>
+<p class="dmath">$$0+1+0+1+0+0=2$$</p>
+<p>由古典型概率计算公式得</p>
+<p class="dmath">$$q=P(A_2)=\frac{2}{36}=\frac{1}{18}.$$</p></div>
+</div></section>
+<section class="q-card" id="q-2-5" data-qid="c1-2.5">
+<div class="q-head"><span class="q-num">【2.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一部五卷的文集，按任意次序排放到书架上，试求下列概率：<br>（1）第一卷出现在两边；<br>（2）第一卷及第五卷出现在两边；<br>（3）第一卷或第五卷出现在两边；<br>（4）第一卷或第五卷不出现在两边.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>（1）记 $A$ 为"第一卷出现在两边"，则 $A$ 中样本点数为 2，<br>故 $P(A)=\dfrac{2}{5}$.<br>（2）记 $B$ 为"第一卷及第五卷出现在两边"，则 $B$ 中样本点数为 2，而（2），（3），（4）中样本空间中所含样本点数都为 $5\cdot 4=20$，<br>故 $P(B)=\dfrac{1}{10}$.<br>（3）记 $C$ 为"第一卷或第五卷出现在两边"，则 $C$ 中样本点数为 $2\cdot 4+2\cdot 4-2=14$，<br>故 $P(C)=\dfrac{7}{10}$.<br>（4）记 $D$ 为"第一卷或第五卷不出现在两边"，则 $D$ 中样本点数为 $3\cdot 4+3\cdot 4-3\cdot 2=18$，<br>故 $P(D)=\dfrac{9}{10}$.<br>另外，也可以利用 $B$ 与 $D$ 的互逆性，$P(D)=1-P(B)=\dfrac{9}{10}$.</p></div>
+</div></section>
+<section class="q-card" id="q-2-6" data-qid="c1-2.6">
+<div class="q-head"><span class="q-num">【2.6】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>50 只铆钉随机地取来用在 10 个部位上，其中有 3 个铆钉强度太弱，每个部位用 3 个铆钉，若将 3 个强度太弱的铆钉都装在一个部件上，则这个部件强度就太弱，问发生一个部件强度太弱的概率是多少？</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　记 $A$ 表示"发生一个部件强度太弱"，则 $A$ 所含的样本点数为 $C_{10}^1 C_{47}^{27}\dfrac{27!}{(3!)^9}$.<br>将 50 个铆钉装在 10 个部件上的所有方法全体看作样本空间，则所含的样本点数为 $C_{50}^{30}\dfrac{30!}{(3!)^{10}}$.<br>则</p>
+<p class="dmath">$$P(A)=\frac{C_{10}^1\cdot C_{47}^{27}\cdot\dfrac{27!}{(3!)^9}}{C_{50}^{30}\cdot\dfrac{30!}{(3!)^{10}}}=\frac{1}{1960}$$</p>
+<p>解法二　从 50 个铆钉中任取 3 个，有 $C_{50}^3$ 种取法，而发生"一个部件强度太弱"这一事件必须将三个强度太弱的铆钉同时取来，并放到一个部件上，共有 $C_3^3 C_{10}^1$ 种情况，故</p>
+<p class="dmath">$$P(A)=\frac{C_3^3 C_{10}^1}{C_{50}^3}=\frac{1}{1960}$$</p></div>
+</div></section>
+<div class="block-title">题型2 几何概型</div>
+<section class="q-card" id="q-2-7" data-qid="c1-2.7">
+<div class="q-head"><span class="q-num">【2.7】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>从区间 $(0,1)$ 中任取两个数，则这两个数的积小于 $\dfrac{1}{4}$ 的概率为______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>设两个数分别为 $x$ 和 $y$，有 $0&lt;x&lt;1$，$0&lt;y&lt;1$，需要求事件 $\left\{xy&lt;\dfrac{1}{4}\right\}$ 的概率，如图 1−2.7 所示，把 $(x,y)$ 看作平面上的一个点，则 $(x,y)$ 在边长为 1 的正方形内等可能取值，正方形面积为 1. 满足 $xy&lt;\dfrac{1}{4}$ 的全体点 $(x,y)$ 构成平面区域 $D$，$D$ 的面积为</p>
+<p class="dmath">$$S=1-\int_{\frac{1}{4}}^{1}\left(1-\frac{1}{4x}\right)\mathrm{d}x=\frac{1}{4}+\frac{1}{2}\ln 2$$</p>
+<div class="fig-desc">图1−2.7：平面直角坐标系 $O\text{-}xy$，第一象限内以原点 $O$ 为一角、边长为 1 的正方形（$y$ 轴与 $x$ 轴上各标 1）；双曲线 $xy=\dfrac{1}{4}$ 经过 $\left(\dfrac{1}{4},1\right)$ 与 $\left(1,\dfrac{1}{4}\right)$；正方形内双曲线下方（靠原点一侧）画有斜线阴影的区域即 $D$；图下标注"图 1−2.7".</div>
+<p>则 $P\left\{xy&lt;\dfrac{1}{4}\right\}=\dfrac{S}{1}=\dfrac{1}{4}+\dfrac{1}{2}\ln 2.$</p></div>
+</div></section>
+<section class="q-card" id="q-2-8" data-qid="c1-2.8">
+<div class="q-head"><span class="q-num">【2.8】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>有一根长 $l$ 的木棒，任意折成三段，恰好能构成一个三角形的概率为______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>设折得的三段长度为 $x$，$y$ 和 $l-x-y$，那么，样本空间 $\Omega=\{(x,y)\,|\,0\le x\le l,0\le y\le l,0\le x+y\le l\}$，而随机事件 $A$:"三段构成三角形"相应的子区域 $G$ 应满足"两边之和大于第三边"的原则，从而</p>
+<p class="dmath">$$\begin{cases}l-x-y&lt;x+y\\ x&lt;(l-x-y)+y\\ y&lt;(l-x-y)+x\end{cases}$$</p>
+<p>即 $G=\left\{(x,y)\,\middle|\,0&lt;x&lt;\dfrac{l}{2},0&lt;y&lt;\dfrac{l}{2},\dfrac{l}{2}&lt;x+y&lt;l\right\}$.<br>从图 1−2.8 中可以得到相应的几何概率：$P(A)=\dfrac{1}{4}$.</p>
+<div class="fig-desc">图1−2.8：平面直角坐标系 $O\text{-}xy$，样本空间为以 $(0,0),(l,0),(0,l)$ 为顶点的三角形（斜边自 $(0,l)$ 到 $(l,0)$；$y$ 轴上标 $l$ 与 $\dfrac{l}{2}$，$x$ 轴上标 $\dfrac{l}{2}$ 与 $l$）；由直线 $x=\dfrac{l}{2}$、$y=\dfrac{l}{2}$ 与斜线 $x+y=\dfrac{l}{2}$ 围成的小三角形标注为 $G$；图下标注"图 1−2.8".</div></div>
+</div></section>
+<h2 class="sec-title" id="sec-3">§3 概率基本运算法则</h2>
+<div class="know-box"><p>**1. 概率的性质**<br>（1）对任何事件 $A$，$0\le P(A)\le 1$<br>（2）$P(\Omega)=1$，$P(\varnothing)=0$<br>（3）设 $A$ 为任一随机事件，则 $P(\bar{A})=1-P(A)$<br>（4）设 $A\subset B$，则 $P(B-A)=P(B)-P(A)$<br>（5）设事件 $A_1,A_2,\cdots,A_n$ 两两互斥，则</p>
+<p class="dmath">$$P(A_1+A_2+\cdots+A_n)=P(A_1)+P(A_2)+\cdots+P(A_n)$$</p>
+<p>（6）设 $A$，$B$ 为任意两个随机事件，则 $P(A\cup B)=P(A)+P(B)-P(AB)$<br>上式还能推广到多个事件的情况. 例如，设 $A_1,A_2,A_3$ 为任意三个事件，则有</p>
+<p class="dmath">$$P(A_1\cup A_2\cup A_3)$$</p>
+<p class="dmath">$$=P(A_1)+P(A_2)+P(A_3)-P(A_1A_2)-P(A_1A_3)-P(A_2A_3)+P(A_1A_2A_3)$$</p>
+<p>一般，对于任意 $n$ 个事件 $A_1,A_2,\cdots,A_n$</p>
+<p class="dmath">$$P(A_1\cup A_2\cup\cdots\cup A_n)$$</p>
+<p class="dmath">$$=\sum_{i=1}^{n}P(A_i)-\sum_{1\le i\le j\le n}P(A_iA_j)+\sum_{1\le i\le j\le k\le n}P(A_iA_jA_k)+\cdots+(-1)^{n-1}P(A_1A_2\cdots A_n).$$</p>
+<p>**2. 条件概率**<br>在事件 $A$ 已经发生的条件下，事件 $B$ 发生的概率，称为事件 $B$ 在给定条件 $A$ 下的条件概率，记作 $P(B|A)$.</p>
+<p class="dmath">$$P(B|A)=\frac{P(AB)}{P(A)},\qquad P(A)&gt;0$$</p>
+<p>**3. 乘法公式**<br>设 $A$，$B$ 是任意两个随机事件，$P(A)&gt;0$，$P(B)&gt;0$，则</p>
+<p class="dmath">$$P(AB)=P(A|B)P(B)=P(B|A)P(A).$$</p>
+<p>一般地，设 $A_1,\cdots,A_n$ 是 $n$ 个随机事件，且 $P(A_1\cdots A_{n-1})&gt;0$，则</p>
+<p class="dmath">$$P(A_1\cdots A_n)=P(A_n|A_1\cdots A_{n-1})\cdots P(A_3|A_1A_2)P(A_2|A_1)P(A_1).$$</p>
+<p>基 本 题 型</p></div>
+<div class="block-title">题型1 利用性质求概率</div>
+<section class="q-card" id="q-3-1" data-qid="c1-3.1">
+<div class="q-head"><span class="q-num">【3.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设随机事件 $A$，$B$ 及其和事件 $A\cup B$ 的概率分别是 $0.4$，$0.3$，$0.6$. 若 $\bar{B}$ 表示 $B$ 的对立事件，那么积事件 $A\bar{B}$ 的概率 $P(A\bar{B})=$______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>因为 $A\bar{B}=A(\Omega-B)=A-AB$，<br>所以 $P(A\bar{B})=P(A-AB)=P(A)-P(AB)=P(A\cup B)-P(B)$</p>
+<p class="dmath">$$=0.6-0.3=0.3$$</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　充分运用减法公式的各种变形. 特别注意以下方法在解决此类问题中的应用.<br>设 $A$，$B$ 是任意两个随机事件，$A-B=A-AB=A(\Omega-B)=A\bar{B}$. 事实上，这是一个很容易理解的变形，不妨按下列方式理解：$A-B$ 表示事件"$A$ 发生 $B$ 不发生"，$A-AB$ 表示事件"在 $A$ 发生的事件中排除 $AB$ 一起发生的事件"，$A\bar{B}$ 表示事件"$A$ 发生 $B$ 不发生"，很明显这三个事件是一样的.</p></div>
+</div></section>
+<section class="q-card" id="q-3-2" data-qid="c1-3.2">
+<div class="q-head"><span class="q-num">【3.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A$，$B$ 为随机事件，$P(A)=0.7$，$P(A-B)=0.3$，则 $P(\overline{AB})=$______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>先求 $\overline{AB}$ 的对立事件 $AB$ 发生的概率 $P(AB)$.<br>由题意</p>
+<p class="dmath">$$P(A-B)=P(A-AB)=P(A)-P(AB)=0.3$$</p>
+<p>则</p>
+<p class="dmath">$$P(AB)=P(A)-0.3=0.7-0.3=0.4$$</p>
+<p>那么</p>
+<p class="dmath">$$P(\overline{AB})=1-P(AB)=1-0.4=0.6$$</p></div>
+</div></section>
+<section class="q-card" id="q-3-3" data-qid="c1-3.3">
+<div class="q-head"><span class="q-num">【3.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知 $P(A)=P(B)=P(C)=\dfrac{1}{4}$，$P(AB)=0$，$P(AC)=P(BC)=\dfrac{1}{6}$，则事件 $A$，$B$，$C$ 全不发生的概率为______.<br>分析　应用摩根律，加法法则，对立事件的概念.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>因为 $P(AB)=0$，所以 $P(ABC)=0$.</p>
+<p class="dmath">$$\begin{aligned}P(\bar{A}\bar{B}\bar{C})&amp;=P(\overline{A\cup B\cup C})=1-P(A\cup B\cup C)\\&amp;=1-[P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)]\\&amp;=1-\left(\frac{1}{4}+\frac{1}{4}+\frac{1}{4}-0-\frac{1}{6}-\frac{1}{6}+0\right)=\frac{7}{12}.\end{aligned}$$</p></div>
+</div></section>
+<section class="q-card" id="q-3-4" data-qid="c1-3.4">
+<div class="q-head"><span class="q-num">【3.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设当事件 $A$ 与 $B$ 同时发生时，事件 $C$ 必发生，则（　　）.<br>（A）$P(C)\le P(A)+P(B)-1$　　（B）$P(C)\ge P(A)+P(B)-1$<br>（C）$P(C)=P(AB)$　　（D）$P(C)=P(A\cup B)$<br>解 由题意"当 $A,B$ 发生时，$C$ 必然发生"从而 $AB\subset C$，所以 $P(AB)\le P(C)$，那么</p>
+<p class="dmath">$$P(C)\ge P(AB)=P(A)+P(B)-P(A\cup B)\ge P(A)+P(B)-1$$</p>
+<p>故应选(B)<br>点评 此题考查概率"单调性"，即若 $A\subset B$ 是两个随机事件，则</p>
+<p class="dmath">$$0\le P(A)\le P(B)\le 1$$</p>
+<p>事实上，因为 $A\subset B$，所以 $B-A$ 与 $A$ 互不相容，并且满足 $B=(B-A)+A$，由概率的非负性和加法公式得</p>
+<p class="dmath">$$P(B)=P(B-A)+P(A)$$</p>
+<p>从而 $0\le P(A)\le P(B)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+</div></section>
+<section class="q-card" id="q-3-5" data-qid="c1-3.5">
+<div class="q-head"><span class="q-num">【3.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A,B$ 是任意两个随机事件，则 $P\{(\bar{A}+B)(A+\bar{B})(\bar{A}+\bar{B})(A+\bar{B})\}=$ ______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 注意到</p>
+<p class="dmath">$$(A+B)(\bar{A}+\bar{B})=A(\bar{A}+\bar{B})+B(\bar{A}+\bar{B})=A\bar{B}+\bar{A}B$$</p>
+<p class="dmath">$$(\bar{A}+B)(A+\bar{B})=\bar{A}(A+\bar{B})+B(A+\bar{B})=\bar{A}\bar{B}+AB$$</p>
+<p>那么</p>
+<p class="dmath">$$(\bar{A}+B)(A+\bar{B})(\bar{A}+\bar{B})(A+\bar{B})=(A\bar{B}+\bar{A}B)(\bar{A}\bar{B}+AB)=\varnothing$$</p>
+<p>则</p>
+<p class="dmath">$$P\{(\bar{A}+B)(A+\bar{B})(\bar{A}+\bar{B})(A+\bar{B})\}=P(\varnothing)=0.$$</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评 在有关事件运算或者是化简的问题中，要学会熟练应用事件的运算法则.</p></div>
+</div></section>
+<div class="block-title">题型2 条件概率的计算</div>
+<section class="q-card" id="q-3-6" data-qid="c1-3.6">
+<div class="q-head"><span class="q-num">【3.6】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A,B$ 是两个随机事件，且 $0&lt;P(A)&lt;1$，$P(B)&gt;0$，$P(B|A)=P(B|\bar{A})$，则必有（　）.<br>(A) $P(A|B)=P(\bar{A}|B)$　　(B) $P(A|B)\ne P(\bar{A}|B)$<br>(C) $P(AB)=P(A)P(B)$　　(D) $P(AB)\ne P(A)P(B)$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 由 $P(B|A)=P(B|\bar{A})$ 得</p>
+<p class="dmath">$$\frac{P(AB)}{P(A)}=\frac{P(B\bar{A})}{1-P(A)}=\frac{P(B)-P(AB)}{1-P(A)}$$</p>
+<p>即 $P(AB)=P(A)P(B)$</p></div>
+<div class="ans-line">最终答案：<p>故应选(C).</p></div>
+</div></section>
+<section class="q-card" id="q-3-7" data-qid="c1-3.7">
+<div class="q-head"><span class="q-num">【3.7】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设某种动物由出生算起活 20 年以上的概率为 0.8，活 25 年以上的概率为 0.4. 如果现在有一只 20 岁的这种动物，问它能活到 25 岁以上的概率是多少?</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设事件 $B=$"能活 20 年以上"，$A=$"能活 25 年以上".<br>按题意，$P(B)=0.8$，由于 $A\subset B$，所以 $BA=A$，因此 $P(AB)=P(A)=0.4$.<br>由条件概率的定义，得 $P(A|B)=\dfrac{P(AB)}{P(B)}=\dfrac{0.4}{0.8}=0.5$.</p></div>
+</div></section>
+<section class="q-card" id="q-3-8" data-qid="c1-3.8">
+<div class="q-head"><span class="q-num">【3.8】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知 $0&lt;P(B)&lt;1$，且 $P\{(A_1\cup A_2)|B\}=P(A_1|B)+P(A_2|B)$，则下列选项成立的是（　）.<br>(A) $P\{(A_1\cup A_2)|\bar{B}\}=P(A_1|\bar{B})+P(A_2|\bar{B})$<br>(B) $P(A_1B\cup A_2B)=P(A_1B)+P(A_2B)$<br>(C) $P(A_1\cup A_2)=P(A_1|B)+P(A_2|B)$<br>(D) $P(B)=P(A_1)P(B|A_1)+P(A_2)P(B|A_2)$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 因为 $0&lt;P(B)&lt;1$，所以应用条件概率公式化简已知条件</p>
+<p class="dmath">$$P\{(A_1\cup A_2)|B\}=P(A_1|B)+P(A_2|B)$$</p>
+<p class="dmath">$$\Leftrightarrow \frac{P\{(A_1\cup A_2)B\}}{P(B)}=\frac{P(A_1B)}{P(B)}+\frac{P(A_2B)}{P(B)}$$</p>
+<p class="dmath">$$\Leftrightarrow P(A_1B\cup A_2B)=P(A_1B)+P(A_2B).$$</p></div>
+<div class="ans-line">最终答案：<p>故应选(B).</p></div>
+</div></section>
+<div class="block-title">题型3 利用乘法公式求概率</div>
+<section class="q-card" id="q-3-9" data-qid="c1-3.9">
+<div class="q-head"><span class="q-num">【3.9】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>100 件产品中有 10 件次品，用不放回的方式从中每次取一件，连取三次，求第三次才取得次品的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设 $A_i$ 表示第 $i$ 次取得正品，其中 $i=1,2,3$.<br>由题意，所求概率应为 $P(A_1A_2\bar{A}_3)$，根据乘法公式，</p>
+<p class="dmath">$$P(A_1A_2\bar{A}_3)=P(A_1)P(A_2|A_1)P(\bar{A}_3|A_1A_2)$$</p>
+<p class="dmath">$$=\frac{90}{100}\cdot\frac{89}{99}\cdot\frac{10}{98}=0.0826.$$</p></div>
+</div></section>
+<section class="q-card" id="q-3-10" data-qid="c1-3.10">
+<div class="q-head"><span class="q-num">【3.10】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>甲袋中装有 9 个乒乓球，其中 3 个白球，6 个黄球，乙袋中也装有 9 个乒乓球，5 个白球，4 个黄球. 首先从甲袋中任选一球放入乙袋，再从乙袋中任取一球放入甲袋，则甲袋中白球数目不会发生变化的概率为______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 令 $A$ 表示事件"经过两次交换球后，甲袋中白球数目不变"，<br>$B$ 表示事件"从甲袋中取出并放入乙袋的是白球"，<br>$C$ 表示事件"从乙袋中取出并放入甲袋的是白球"，<br>那么 $A=BC+\bar{B}\bar{C}$</p>
+<p class="dmath">$$P(A)=P(BC+\bar{B}\bar{C})=P(BC)+P(\bar{B}\bar{C})=P(B)P(C|B)+P(\bar{B})P(\bar{C}|\bar{B})$$</p>
+<p class="dmath">$$=\frac{3}{9}\times\frac{6}{10}+\frac{6}{9}\times\frac{5}{10}=\frac{8}{15}$$</p></div>
+</div></section>
+<section class="q-card" id="q-3-11" data-qid="c1-3.11">
+<div class="q-head"><span class="q-num">【3.11】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>袋中有 $a$ 个白球 $b$ 个黑球，随机取出一个球，然后放回，并同时再放进与取出的球同色的球 $c$ 个，再取第二个，这样连续三次. 问取出的三个球中前两个是黑球，第三个是白球的概率是多少?</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设 $A_i$ 表示取出的第 $i$ 个球为白球，则所求的概率为</p>
+<p class="dmath">$$P(\bar{A}_1\bar{A}_2A_3)=P(\bar{A}_1\bar{A}_2)P(A_3|\bar{A}_1\bar{A}_2)=P(\bar{A}_1)P(\bar{A}_2|\bar{A}_1)P(A_3|\bar{A}_1\bar{A}_2)$$</p>
+<p class="dmath">$$=\frac{b}{a+b}\cdot\frac{b+c}{a+b+c}\cdot\frac{a}{a+b+2c}.$$</p></div>
+</div></section>
+<h2 class="sec-title" id="sec-4">§4 全概率公式与贝叶斯公式</h2>
+<div class="know-box"><p>**1. 完备事件组**<br>设 $\Omega$ 为试验的样本空间，$B_1,B_2,\cdots,B_n$ 为试验的一组事件，若有<br>（1）$B_iB_j=\varnothing$（$i\ne j$；$i,j=1,2,\cdots,n$）<br>（2）$\bigcup_{i=1}^{n}B_i=\Omega$<br>则称 $B_1,B_2,\cdots,B_n$ 为 $\Omega$ 的一个分划或完备事件组.<br>由定义可见，若 $B_1,B_2,\cdots,B_n$ 为 $\Omega$ 的一个分划，则在一次试验中，$B_1,B_2,\cdots,B_n$ 必有且仅有一个发生.<br>**2. 全概率公式**<br>设事件 $B_1,B_2,\cdots,B_n$ 是样本空间 $\Omega$ 的一个分划，$P(B_i)&gt;0$（$i=1,2,\cdots,n$），$A$ 是试验的任一事件，则有</p>
+<p class="dmath">$$P(A)=\sum_{i=1}^{n}P(B_i)P(A|B_i)$$</p>
+<p>**3. 贝叶斯公式**<br>设事件 $B_1,B_2,\cdots,B_n$ 是样本空间 $\Omega$ 的一个分划，$P(B_i)&gt;0$（$i=1,2,\cdots,n$），$A$ 为试验的任一事件. 且 $P(A)&gt;0$，则有</p>
+<p class="dmath">$$P(B_i|A)=\frac{P(B_i)P(A|B_i)}{\sum_{j=1}^{n}P(B_j)P(A|B_j)}\qquad(i=1,2,\cdots,n)$$</p></div>
+<div class="block-title">基本题型</div>
+<div class="block-title">题型1 全概率公式的应用</div>
+<section class="q-card" id="q-4-1" data-qid="c1-4.1">
+<div class="q-head"><span class="q-num">【4.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>（1）设甲袋中装有 $n$ 只白球，$m$ 只红球；乙袋中装有 $N$ 只白球，$M$ 只红球. 今从甲袋中任意取一只球放入乙袋中，再从乙袋中任意取一只球，问取到白球的概率是多少?<br>（2）第一只盒子装有 5 只红球，4 只白球，第二只盒子装有 4 只红球，5 只白球. 先从第一盒中任取 2 只球放入第二个盒子中，然后从第二个盒子中任取一球，求取到白球的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 （1）设 $A=$"从乙袋中取到白球"，<br>$B=$"从甲袋中取出的是白球"，则 $A=BA+\bar{B}A$</p>
+<p class="dmath">$$P(A)=P(B)P(A|B)+P(\bar{B})P(A|\bar{B})$$</p>
+<p class="dmath">$$=\frac{n}{m+n}\cdot\frac{N+1}{N+M+1}+\frac{m}{m+n}\cdot\frac{N}{M+N+1}$$</p>
+<p>（2）设 $A=$"从第二盒中取得白球"，$B_i=$"从第一盒中取出两球恰有 $i$ 个白球"，$i=0,1,2$，<br>则</p>
+<p class="dmath">$$P(A)=P(B_0)P(A|B_0)+P(B_1)P(A|B_1)+P(B_2)P(A|B_2)$$</p>
+<p class="dmath">$$=\frac{C_4^2}{C_9^2}\cdot\frac{5}{11}+\frac{C_4^1C_5^1}{C_9^2}\cdot\frac{6}{11}+\frac{C_5^2}{C_9^2}\cdot\frac{7}{11}=\frac{53}{99}.$$</p></div>
+</div></section>
+<section class="q-card" id="q-4-2" data-qid="c1-4.2">
+<div class="q-head"><span class="q-num">【4.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>从数 1,2,3,4 中任取一个数，记为 $X$，再从 $1,\cdots,X$ 中任取一个数，记为 $Y$，则 $P\{Y=2\}=$ ______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 令 $A_i=\{X=i\}$，$i=1,2,3,4$，则 $A_1,A_2,A_3,A_4$ 构成一个完备事件组，且</p>
+<p class="dmath">$$P(A_i)=\frac{1}{4},\ i=1,2,3,4$$</p>
+<p>而　$P\{Y=2|A_1\}=0$，$P\{Y=2|A_i\}=\dfrac{1}{i}$，$i=2,3,4$，<br>那么由全概率公式得</p>
+<p class="dmath">$$P\{Y=2\}=\sum_{i=1}^{4}P(A_i)P\{Y=2|A_i\}=\frac{1}{4}\left(0+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}\right)=\frac{13}{48}.$$</p></div>
+</div></section>
+<div class="block-title">题型2 利用贝叶斯公式求概率</div>
+<section class="q-card" id="q-4-3" data-qid="c1-4.3">
+<div class="q-head"><span class="q-num">【4.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>对以往数据分析表明，当机器调整得良好时，产品的合格率为 0.9，否则，产品的合格率为 0.3，每天早上机器开动前调整得良好的概率为 0.75. 若某日早上第一件产品是合格品，试求机器调整得良好的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设事件 $B=$"产品合格"，$A=$"机器调整良好". 则 $A,\bar{A}$ 是一完备事件组，所需求的概率为 $P(A|B)$. 由贝叶斯公式知</p>
+<p class="dmath">$$P(A|B)=\frac{P(A)P(B|A)}{P(A)P(B|A)+P(\bar{A})P(B|\bar{A})}$$</p>
+<p>由题设条件得</p>
+<p class="dmath">$$P(A)=0.75,\quad P(\bar{A})=0.25,\quad P(B|A)=0.9,\quad P(B|\bar{A})=0.3$$</p>
+<p>所以</p>
+<p class="dmath">$$P(A|B)=\frac{0.75\times 0.9}{0.75\times 0.9+0.25\times 0.3}=0.9$$</p></div>
+</div></section>
+<section class="q-card" id="q-4-4" data-qid="c1-4.4">
+<div class="q-head"><span class="q-num">【4.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设一个仓库里有十箱同样规格的产品，已知其中的五箱，三箱，二箱依次是甲、乙、丙厂生产的，且已知甲、乙、丙厂生产的该种产品的次品率依次为 $\dfrac{1}{10},\dfrac{1}{15},\dfrac{1}{20}$. 从这十箱产品中任取一箱，再从中任取一件产品. 试求取得正品的概率.<br>如果已知取出的产品是正品，问它是甲厂生产的概率是多少?</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设事件 $A=$"取得产品为正品"，<br>$B_1=$"取得产品是甲厂生产的"，<br>$B_2=$"取得产品是乙厂生产的"，<br>$B_3=$"取得产品是丙厂生产的"，<br>那么，事件 $B_1,B_2,B_3$ 是一完备事件组. 所以</p>
+<p class="dmath">$$P(A)=P(B_1)P(A|B_1)+P(B_2)P(A|B_2)+P(B_3)P(A|B_3)$$</p>
+<p>而</p>
+<p class="dmath">$$P(B_1)=\frac{5}{10},\quad P(B_2)=\frac{3}{10},\quad P(B_3)=\frac{2}{10}$$</p>
+<p class="dmath">$$P(A|B_1)=1-\frac{1}{10}=\frac{9}{10}$$</p>
+<p class="dmath">$$P(A|B_2)=1-\frac{1}{15}=\frac{14}{15}$$</p>
+<p class="dmath">$$P(A|B_3)=1-\frac{1}{20}=\frac{19}{20}$$</p>
+<p>所以</p>
+<p class="dmath">$$P(A)=\frac{5}{10}\cdot\frac{9}{10}+\frac{3}{10}\cdot\frac{14}{15}+\frac{2}{10}\cdot\frac{19}{20}=\frac{92}{100}=0.92$$</p>
+<p class="dmath">$$P(B_1|A)=\frac{P(AB_1)}{P(A)}=\frac{P(B_1)P(A|B_1)}{P(A)}=\dfrac{\dfrac{5}{10}\cdot\dfrac{9}{10}}{\dfrac{92}{100}}=\frac{45}{92}=0.4891.$$</p></div>
+</div></section>
+<section class="q-card" id="q-4-5" data-qid="c1-4.5">
+<div class="q-head"><span class="q-num">【4.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>玻璃杯成箱出售，每箱 20 只，假设各箱含 0,1,2 只残次品的概率相应为 0.8,0.1 和 0.1，一顾客欲购一箱玻璃杯，在购买时售货员随意取一箱，而顾客开箱随机地查看 4 只，若无残次品，则买下该箱玻璃杯，否则退回. 试求：<br>（1）顾客买下该箱的概率 $\alpha$；<br>（2）在顾客买下的一箱中，确实没有残次品的概率 $\beta$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 令 $A$ 表示事件"顾客买下所查看的一箱玻璃杯"，$B_i$ 表示事件"箱中恰有 $i$ 件残次品"，$i=0,1,2$.<br>根据题意</p>
+<p class="dmath">$$P(B_0)=0.8,\quad P(B_1)=P(B_2)=0.1$$</p>
+<p class="dmath">$$P(A|B_0)=1,\quad P(A|B_1)=\frac{C_{19}^4}{C_{20}^4}=\frac{4}{5},\quad P(A|B_2)=\frac{C_{18}^4}{C_{20}^4}=\frac{12}{19},$$</p>
+<p>（1）由全概率公式</p>
+<p class="dmath">$$\alpha=P(A)=\sum_{i=0}^{2}P(A|B_i)P(B_i)=0.8\times 1+0.1\times\frac{4}{5}+0.1\times\frac{12}{19}=0.94.$$</p>
+<p>（2）由贝叶斯公式</p>
+<p class="dmath">$$\beta=P(B_0|A)=\frac{P(A|B_0)P(B_0)}{P(A)}=\frac{1\times 0.8}{0.94}\approx 0.85.$$</p></div>
+</div></section>
+<h2 class="sec-title" id="sec-5">§5 独立性</h2>
+<div class="know-box"><p>**1. 两事件相互独立**<br>如果事件 $A$ 发生的可能性不受事件 $B$ 发生与否的影响，也就是 $P(A|B)=P(A)$，则称事件 $A$ 对于事件 $B$ 相互独立. 若 $A$ 对于 $B$ 独立，则 $B$ 对于 $A$ 也独立，那么就称事件 $A$ 与事件 $B$ 相互独立.<br>基本性质：<br>（1）$A$ 与 $B$ 独立 $\Leftrightarrow P(AB)=P(A)P(B)$；<br>（2）若 $A$ 与 $B$ 独立，则 $A$ 与 $\bar{B}$、$\bar{A}$ 与 $B$、$\bar{A}$ 与 $\bar{B}$ 中的每一对事件都相互独立.<br>**2. $n$ 个事件相互独立**<br>$n\ (n&gt;2)$ 个事件 $A_1,\cdots,A_n$ 中任意一个事件发生的可能性都不受其他一个或多个事件发生与否的影响，则称 $A_1,\cdots,A_n$ 相互独立.<br>基本性质：<br>（1）如果事件 $A_1,\cdots,A_n$ 相互独立，则对于任意 $k\ (1&lt;k\le n)$ 和任意 $1\le i_1&lt;i_2&lt;\cdots&lt;i_k\le n$，$P(A_{i_1}A_{i_2}\cdots A_{i_k})=P(A_{i_1})P(A_{i_2})\cdots P(A_{i_k})$ 成立.<br>（2）如果事件 $A_1,\cdots,A_n$ 相互独立，则将 $A_1,\cdots,A_n$ 中任意多个事件换成它们的逆事件，所得的 $n$ 个事件仍相互独立.<br>（3）如果事件 $A_1,\cdots,A_n$ 相互独立，则 $P\big(\sum_{i=1}^{n}A_i\big)=1-\prod_{i=1}^{n}P(\bar{A}_i)$<br>**3. 重复独立试验**<br>在 $n$ 次试验中，若任意一次试验的诸结果是相互独立的，则称这 $n$ 次试验为重复独立试验或独立试验序列.<br>（1）伯努利模型：假定一次试验中只有事件 $A$ 发生或 $\bar{A}$ 发生，每次试验的结果与其他各次试验结果无关，这样的 $n$ 次重复试验，称为 $n$ 重伯努利试验或伯努利概型.<br>（2）二项概率公式：设一次试验中事件 $A$ 发生的概率为 $p\ (0&lt;p&lt;1)$，则在 $n$ 重伯努利试验中，事件 $A$ 恰好发生 $k$ 次的概率为 $p_k=C_n^kp^kq^{n-k}$，$k=0,1,\cdots,n$. 其中 $q=1-p$.</p></div>
+<div class="block-title">基本题型</div>
+<div class="block-title">题型1 独立性的判断</div>
+<section class="q-card" id="q-5-1" data-qid="c1-5.1">
+<div class="q-head"><span class="q-num">【5.1】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $0&lt;P(A)&lt;1$，$0&lt;P(B)&lt;1$，$P(A|B)+P(\bar{A}|\bar{B})=1$，那么下列正确的选项是（　）.<br>（A）$A$ 与 $B$ 相互独立　　　　（B）$A$ 与 $B$ 相互对立<br>（C）$A$ 与 $B$ 互不相容　　　　（D）$A$ 与 $B$ 互不独立</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　因为 $P(A|B)=\dfrac{P(AB)}{P(B)}$，$P(\bar{A}|\bar{B})=\dfrac{P(\bar{A}\bar{B})}{P(\bar{B})}=\dfrac{1-P(A\cup B)}{1-P(B)}$，<br>所以　$1=\dfrac{P(AB)}{P(B)}+\dfrac{1-P(A\cup B)}{1-P(B)}$，<br>整理得 $P(AB)[1-P(B)]=P(B)[P(A)-P(AB)]$.<br>从而 $P(AB)=P(B)[P(AB)+P(A\bar{B})]=P(B)P[A(B+\bar{B})]=P(B)P(A)$.</p></div>
+<div class="ans-line">最终答案：<p>故应选择(A).<br>解法二　注意到 $P(\bar{A}|\bar{B})=1-P(A|\bar{B})$，又 $P(A|\bar{B})=\dfrac{P(A\bar{B})}{P(\bar{B})}$<br>由题意知 $1=P(A|B)+P(\bar{A}|\bar{B})=P(A|B)+1-P(A|\bar{B})$，即</p>
+<p class="dmath">$$P(A|B)=P(A|\bar{B})$$</p>
+<p>那么　$\dfrac{P(AB)}{P(B)}=\dfrac{P(A\bar{B})}{P(\bar{B})}=\dfrac{P(A)-P(AB)}{1-P(B)}$<br>下同，故略.</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　本例的解答过程实际上意味着：当 $0&lt;P(A)&lt;1$，$0&lt;P(B)&lt;1$ 时，事件 $A$ 与 $B$ 相互独立 $\Leftrightarrow P(A|B)+P(\bar{A}|\bar{B})=1\Leftrightarrow P(A|B)=P(A|\bar{B})$.</p></div>
+</div></section>
+<section class="q-card" id="q-5-2" data-qid="c1-5.2">
+<div class="q-head"><span class="q-num">【5.2】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A,B,C$ 三个事件两两独立，则 $A,B,C$ 相互独立的充分必要条件是（　）.<br>（A）$A$ 与 $BC$ 独立　　　　（B）$AB$ 与 $A\cup C$ 独立<br>（C）$AB$ 与 $AC$ 独立　　　　（D）$A\cup B$ 与 $A\cup C$ 独立</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>分析　两两独立和相互独立是两个容易混淆的概念，相互独立则两两独立，反之不真，若 $A,B,C$ 是两两独立的三个事件，则当还需满足条件</p>
+<p class="dmath">$$P(ABC)=P(A)P(B)P(C)$$</p>
+<p>时才相互独立.<br>解　由题意，$P(ABC)=P(A)P(B)P(C)=P(A)P(BC)$，即当 $A$ 与 $BC$ 独立时，$A,B,C$ 相互独立，故选(A).</p></div>
+</div></section>
+<section class="q-card" id="q-5-3" data-qid="c1-5.3">
+<div class="q-head"><span class="q-num">【5.3】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>对于任意二事件 $A$ 和 $B$，（　）<br>（A）若 $AB\ne\varnothing$，则 $A,B$ 一定独立　　　　（B）若 $AB\ne\varnothing$，则 $A,B$ 有可能独立<br>（C）若 $AB=\varnothing$，则 $A,B$ 一定独立　　　　（D）若 $AB=\varnothing$，则 $A,B$ 一定不独立</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>分析　"独立"与"互斥"是两个不同的概念，本题利用独立的充要条件 $P(AB)=P(A)P(B)$ 判断，可得正确选项(B).<br>解　若 $AB=\varnothing$，当 $P(A),P(B)$ 中至少有一个等于 0 时，(D)不成立；<br>当 $P(A),P(B)$ 均大于 0 时，(C)不成立；<br>若 $AB\ne\varnothing$，如果 $P(AB)=P(A)P(B)$，则 $A$ 与 $B$ 独立，否则 $A$ 与 $B$ 不独立.</p></div>
+<div class="ans-line">最终答案：<p>故应选(B).</p></div>
+</div></section>
+<section class="q-card" id="q-5-4" data-qid="c1-5.4">
+<div class="q-head"><span class="q-num">【5.4】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>将一枚硬币独立地掷两次，引进事件：$A_1=$\{掷第一次出现正面\}，$A_2=$\{掷第二次出现正面\}，$A_3=$\{正、反面各出现一次\}，$A_4=$\{正面出现两次\}，则事件（　）.<br>（A）$A_1,A_2,A_3$ 相互独立　　　　（B）$A_2,A_3,A_4$ 相互独立<br>（C）$A_1,A_2,A_3$ 两两独立　　　　（D）$A_2,A_3,A_4$ 两两独立</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　按照相互独立与两两独立的定义进行验算即可，注意应先检查两两独立，若成立，再检验是否相互独立.<br>因为 $P(A_1)=\dfrac{1}{2}$，$P(A_2)=\dfrac{1}{2}$，$P(A_3)=\dfrac{1}{2}$，$P(A_4)=\dfrac{1}{4}$<br>且　$P(A_1A_2)=\dfrac{1}{4}$，$P(A_1A_3)=\dfrac{1}{4}$<br>$P(A_2A_3)=\dfrac{1}{4}$，$P(A_2A_4)=\dfrac{1}{4}$<br>$P(A_1A_2A_3)=0$<br>可见有 $P(A_1A_2)=P(A_1)P(A_2)$<br>$P(A_1A_3)=P(A_1)P(A_3)$<br>$P(A_2A_3)=P(A_2)P(A_3)$<br>$P(A_1A_2A_3)\ne P(A_1)P(A_2)P(A_3)$<br>$P(A_2A_4)\ne P(A_2)P(A_4)$<br>故 $A_1,A_2,A_3$ 两两独立但不相互独立；$A_2,A_3,A_4$ 不两两独立更不相互独立.</p></div>
+<div class="ans-line">最终答案：<p>故应选(C)</p></div>
+<div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　本题用排除法更简便，因为 $A_3,A_4$ 互斥，故 $A_3,A_4$ 不相互独立，从而(B)、(D)排除. 如果(A)正确，则(C)也正确，作为单项选择题必选(C).</p></div>
+</div></section>
+<div class="block-title">题型2 独立性的应用</div>
+<section class="q-card" id="q-5-5" data-qid="c1-5.5">
+<div class="q-head"><span class="q-num">【5.5】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>三人独立地去破译一份密码，已知各人能译出的概率分别为 $\dfrac{1}{5}$，$\dfrac{1}{3}$，$\dfrac{1}{4}$，问三人中至少有一个能将此密码译出的概率是多少？</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　设 $A,B,C$ 分别表示三人各自能够译出密码，根据题意 $A,B,C$ 相互独立，且</p>
+<p class="dmath">$$P(A)=\dfrac{1}{5},\quad P(B)=\dfrac{1}{3},\quad P(C)=\dfrac{1}{4}$$</p>
+<p>则所求概率为<br>$P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)$<br>$=P(A)+P(B)+P(C)-P(A)P(B)-P(A)P(C)-P(B)P(C)+P(A)P(B)P(C)$<br>$=\dfrac{1}{5}+\dfrac{1}{3}+\dfrac{1}{4}-\dfrac{1}{5}\times\dfrac{1}{3}-\dfrac{1}{5}\times\dfrac{1}{4}-\dfrac{1}{3}\times\dfrac{1}{4}+\dfrac{1}{5}\times\dfrac{1}{3}\times\dfrac{1}{4}=0.6.$<br>解法二　$P(A\cup B\cup C)=1-P(\overline{A\cup B\cup C})=1-P(\bar{A}\bar{B}\bar{C})$<br>$=1-P(\bar{A})P(\bar{B})P(\bar{C})=1-\dfrac{4}{5}\cdot\dfrac{2}{3}\cdot\dfrac{3}{4}=\dfrac{3}{5}.$</p></div>
+</div></section>
+<section class="q-card" id="q-5-6" data-qid="c1-5.6">
+<div class="q-head"><span class="q-num">【5.6】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一实习生用一台机器接连独立地制造 3 个同种零件，第 $i$ 个零件是不合格品的概率 $p_i=\dfrac{1}{1+i}$（$i=1,2,3$），以 $X$ 表示 3 个零件中合格品的个数，求 $P\{X=2\}$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设 $A_i$ 表示第 $i$ 个零件是不合格品，则<br>$P(A_i)=p_i=\dfrac{1}{i+1}\quad(i=1,2,3)$<br>$P(X=2)=P(A_1\bar{A}_2\bar{A}_3+\bar{A}_1A_2\bar{A}_3+\bar{A}_1\bar{A}_2A_3)$</p>
+<p class="dmath">$$=P(A_1)P(\bar{A}_2)P(\bar{A}_3)+P(\bar{A}_1)P(A_2)P(\bar{A}_3)+P(\bar{A}_1)P(\bar{A}_2)P(A_3)$$</p>
+<p class="dmath">$$=\frac{1}{2}\Big(1-\frac{1}{3}\Big)\Big(1-\frac{1}{4}\Big)+\frac{1}{2}\cdot\frac{1}{3}\Big(1-\frac{1}{4}\Big)+\frac{1}{2}\Big(1-\frac{1}{3}\Big)\frac{1}{4}=\frac{11}{24}.$$</p>
+<p>【5.7】人的血型为 $O,A,B,AB$ 型的概率分别为 $0.46,0.40,0.11,0.03$,今任意挑选五人，求下列事件的概率.<br>(1)恰有两人为 $O$ 型；<br>(2)三人为 $O$ 型,二人为 $A$ 型；<br>(3)没有 $AB$ 型.<br>解 本题可利用独立性解决,其中(1)、(3)可视为伯努利概型.<br>(1)两人为 $O$ 型,三人为非 $O$ 型,其中每人为 $O$ 型的概率为 $0.46$,为非 $O$ 型的概率为 $1-0.46=0.54$.<br>故 $p_1=C_5^2\cdot(0.46)^2\cdot(0.54)^3=0.333$.<br>(2)三人为 $O$ 型,二人为 $A$ 型,共有 $C_5^3$ 种情形，<br>故 $p_2=C_5^3\cdot(0.46)^3\cdot(0.4)^2=0.156$.<br>(3)没有 $AB$ 型,即五人都非 $AB$ 型,而每个人非 $AB$ 型的概率为 $1-0.03=0.97$，<br>故 $p_3=(0.97)^5=0.859$.<br>【5.8】设两两独立的三事件 $A,B,C$ 满足条件：$ABC=\varnothing$,$P(A)=P(B)=P(C)$,且已知 $P(A\cup B\cup C)=\dfrac{9}{16}$,则 $P(A)=$______.<br>解 $P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)$</p>
+<p class="dmath">$$=P(A)+P(B)+P(C)-P(A)P(B)-P(A)P(C)-P(B)P(C)$$</p>
+<p class="dmath">$$=3P(A)-3[P(A)]^2,$$</p>
+<p>那么根据题意得</p>
+<p class="dmath">$$3P(A)-3[P(A)]^2=\frac{9}{16},\quad\text{即}[P(A)]^2-P(A)+\frac{3}{16}=0.$$</p>
+<p>解之得 $P(A)=\dfrac{1}{4}$ 或 $\dfrac{3}{4}$.<br>注意到 $P(A\cup B\cup C)=\dfrac{9}{16}$,故 $P(A)=\dfrac{3}{4}$ 不合题意,应该舍去.那么 $P(A)=\dfrac{1}{4}$.<br>【5.9】设两个相互独立的事件 $A$ 和 $B$ 都不发生的概率为 $\dfrac{1}{9}$,$A$ 发生 $B$ 不发生的概率与 $B$ 发生 $A$ 不发生的概率相等,则 $P(A)=$______.<br>解 只需计算 $P(\bar{A})$,注意到 $A,B$ 相互独立,$P(A\bar{B})=P(\bar{A}B)$,$P(\bar{A}\bar{B})=\dfrac{1}{9}$,显然 $P(A)=P(AB)+P(A\bar{B})=P(AB)+P(\bar{A}B)=P(B)$,那么 $P(\bar{A})=P(\bar{B})$,又 $\bar{A}$ 与 $\bar{B}$ 相互独立,则</p>
+<p class="dmath">$$\frac{1}{9}=P(\bar{A}\bar{B})=P(\bar{A})P(\bar{B})=[P(\bar{A})]^2,$$</p>
+<p>即</p>
+<p class="dmath">$$P(\bar{A})=\frac{1}{3},\qquad P(A)=\frac{2}{3}.$$</p>
+<p>点评 本题也可直接使用独立的性质,$\bar{A}$ 与 $\bar{B}$、$A$ 与 $\bar{B}$、$\bar{A}$ 与 $B$ 都独立,则得到</p>
+<p class="dmath">$$P(\bar{A}\bar{B})=P(\bar{A})P(\bar{B})$$</p>
+<p class="dmath">$$P(A\bar{B})=P(A)P(\bar{B})$$</p>
+<p class="dmath">$$P(\bar{A}B)=P(\bar{A})P(B)$$</p>
+<p>方法更加简便.</p></div>
+</div></section>
+<div class="block-title">题型3:关于独立重复试验的题目</div>
+<div class="block-title">题型4:可靠性问题</div>
+<h2 class="sec-title" id="sec-6">§6. 综合提高题型</h2>
+<div class="block-title">题型1:关于事件关系及概率的判断</div>
+<div class="block-title">题型2:利用公式求概率</div>
+<section class="q-card" id="q-6-19" data-qid="c1-6.19">
+<div class="q-head"><span class="q-num">【6.19】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>(1) 设 $A,B,C$ 是三事件，且 $P(A)=P(B)=P(C)=\dfrac{1}{4}$，$P(AB)=P(BC)=0$，$P(AC)=\dfrac{1}{8}$，求 $A,B,C$ 至少有一个发生的概率.<br>(2) 已知 $P(A)=\dfrac{1}{2}$，$P(B)=\dfrac{1}{3}$，$P(C)=\dfrac{1}{5}$，$P(AB)=\dfrac{1}{10}$，$P(AC)=\dfrac{1}{15}$，$P(BC)=\dfrac{1}{20}$，$P(ABC)=\dfrac{1}{30}$，求 $A\cup B,\bar{A}\bar{B},A\cup B\cup C,\bar{A}\bar{B}\bar{C},\bar{A}\bar{B}\cup C$ 的概率.<br>(3) 已知 $P(A)=\dfrac{1}{2}$，①若 $A,B$ 互不相容，求 $P(A\bar{B})$；②若 $P(AB)=\dfrac{1}{8}$，求 $P(A\bar{B})$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>(1) $P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(AB)-P(BC)-P(AC)+P(ABC)$</p>
+<p class="dmath">$$=\frac{5}{8}+P(ABC).$$</p>
+<p>由 $ABC\subset AB$，已知 $P(AB)=0$，故 $0\le P(ABC)\le P(AB)=0$，得 $P(ABC)=0$.<br>所求概率为 $P(A\cup B\cup C)=\dfrac{5}{8}$.<br>(2) $P(A\cup B)=P(A)+P(B)-P(AB)=\dfrac{1}{2}+\dfrac{1}{3}-\dfrac{1}{10}=\dfrac{11}{15}$.<br>$P(\bar{A}\bar{B})=P(\overline{A\cup B})=1-P(A\cup B)=\dfrac{4}{15}$.<br>$P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC)+P(ABC)$</p>
+<p class="dmath">$$=\frac{1}{2}+\frac{1}{3}+\frac{1}{5}-\frac{1}{10}-\frac{1}{15}-\frac{1}{20}+\frac{1}{30}=\frac{17}{20}.$$</p>
+<p>$P(\bar{A}\bar{B}\bar{C})=P(\overline{A\cup B\cup C})=1-P(A\cup B\cup C)=\dfrac{3}{20}$.<br>$P(\bar{A}\bar{B}C)=P(\bar{A}\bar{B}-\bar{A}\bar{B}\bar{C})=P(\bar{A}\bar{B})-P(\bar{A}\bar{B}\bar{C})=\dfrac{4}{15}-\dfrac{3}{20}=\dfrac{7}{60}$.<br>$P(\bar{A}\bar{B}\cup C)=P(\bar{A}\bar{B})+P(C)-P(\bar{A}\bar{B}C)=\dfrac{4}{15}+\dfrac{1}{5}-\dfrac{7}{60}=\dfrac{7}{20}$.<br>(3) ① $P(A\bar{B})=P(A(S-B))=P(A-AB)=P(A)-P(AB)=\dfrac{1}{2}$.<br>② $P(A\bar{B})=P(A(S-B))=P(A-AB)=P(A)-P(AB)=\dfrac{1}{2}-\dfrac{1}{8}=\dfrac{3}{8}$.</p></div>
+</div></section>
+<div class="block-title">题型3：概率的综合及应用</div>
+<section class="q-card" id="q-6-20" data-qid="c1-6.20">
+<div class="q-head"><span class="q-num">【6.20】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某人忘记了牡丹卡密码的最后一位数字，因而他随机拨号，求他拨号不超过三次而选正确的概率，若已知最后一个数是偶数，那么此概率是多少？</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　设 $A_i=\{$第 $i$ 次拨号拨对$\}$，$i=1,2,3$，$A=\{$拨号不超过 3 次而拨对$\}$，则 $A=A_1+\bar{A}_1A_2+\bar{A}_1\bar{A}_2A_3$，且三者互斥，故有</p>
+<p class="dmath">$$P(A)=P(A_1)+P(\bar{A}_1)P(A_2\,|\,\bar{A}_1)+P(\bar{A}_1)P(\bar{A}_2\,|\,\bar{A}_1)P(A_3\,|\,\bar{A}_1\bar{A}_2),$$</p>
+<p>于是<br>(1) $P(A)=\dfrac{1}{10}+\dfrac{9}{10}\times\dfrac{1}{9}+\dfrac{9}{10}\times\dfrac{8}{9}\times\dfrac{1}{8}=\dfrac{3}{10}$<br>(2) $P(B)=\dfrac{1}{5}+\dfrac{4}{5}\times\dfrac{1}{4}+\dfrac{4}{5}\times\dfrac{3}{4}\times\dfrac{1}{3}=\dfrac{3}{5}$.<br>解法二　$\bar{A}=\{$拨号三次都不对$\}$，故</p>
+<p class="dmath">$$P(A)=1-P(\bar{A})=1-P(\bar{A}_1\bar{A}_2\bar{A}_3)=1-P(\bar{A}_1)P(\bar{A}_2\,|\,\bar{A}_1)P(\bar{A}_3\,|\,\bar{A}_1\bar{A}_2)$$</p>
+<p class="dmath">$$=1-\frac{9}{10}\times\frac{8}{9}\times\frac{7}{8}=\frac{3}{10}$$</p>
+<p>同理 $P(B)=1-\dfrac{4}{5}\times\dfrac{3}{4}\times\dfrac{2}{3}=\dfrac{3}{5}$.</p></div>
+</div></section>
+<section class="q-card" id="q-6-21" data-qid="c1-6.21">
+<div class="q-head"><span class="q-num">【6.21】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>一学生接连参加同一课程的两次考试，第一次考试及格的概率为 $p$，若第一次及格，则第二次及格的概率也为 $p$；若第一次不及格则第二次及格的概率为 $\dfrac{p}{2}$.<br>(1) 若至少有一次及格他能取得某种资格，求他取得该资格的概率.<br>(2) 若已知他第二次已经及格，求他第一次及格的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　(1) 设 $A=$“他取得该资格”，$B_i=$“第 $i$ 次及格”，$i=1,2$.<br>则 $A=B_1+B_2$，$B_2=B_1B_2+\bar{B}_1B_2$</p>
+<p class="dmath">$$P(A)=P(B_1)+P(B_2)-P(B_1B_2)=p+P(B_1B_2)+P(\bar{B}_1B_2)-P(B_1B_2)$$</p>
+<p class="dmath">$$=p+P(\bar{B}_1)P(B_2\,|\,\bar{B}_1)=p+(1-p)\cdot\frac{p}{2}=\frac{1}{2}(3p-p^2)$$</p>
+<p>(2) 所求概率为</p>
+<p class="dmath">$$P(B_1\,|\,B_2)=\frac{P(B_1B_2)}{P(B_2)}=\frac{P(B_1)P(B_2\,|\,B_1)}{P(B_1)P(B_2\,|\,B_1)+P(\bar{B}_1)P(B_2\,|\,\bar{B}_1)}$$</p>
+<p class="dmath">$$=\frac{p^2}{p^2+(1-p)\dfrac{p}{2}}=\frac{2p^2}{p^2+p}=\frac{2p}{p+1}$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-22" data-qid="c1-6.22">
+<div class="q-head"><span class="q-num">【6.22】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>盒中有 12 个乒乓球，其中 9 个是新的，第一次比赛时从盒中任取 3 个，用后仍放回盒中，第二次比赛时再从盒中任取 3 个，求第二次取出的球都是新球的概率，若已知第二次取出的球都是新球，求第一次取到的球都是新球的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设 $A_i=$“第一次取出 $i$ 个新球”，$i=0,1,2,3$.<br>$B_j=$“第二次取出 $j$ 个新球”，$j=0,1,2,3$.<br>由于 $A_0,A_1,A_2,A_3$ 是完备事件组，且</p>
+<p class="dmath">$$P(A_i)=\frac{C_9^i C_3^{3-i}}{C_{12}^3},\qquad P(B_3\,|\,A_i)=\frac{C_{9-i}^{3}}{C_{12}^{3}}\qquad(i=0,1,2,3)$$</p>
+<p>由全概率公式可得：</p>
+<p class="dmath">$$P(B_3)=\sum_{i=0}^{3}P(A_i)P(B_3\,|\,A_i)=\sum_{i=0}^{3}\left(\frac{C_9^i C_3^{3-i}}{C_{12}^3}\times\frac{C_{9-i}^{3}}{C_{12}^{3}}\right)=\frac{441}{3025}$$</p>
+<p>由贝叶斯公式得：</p>
+<p class="dmath">$$P(A_3\,|\,B_3)=\frac{P(A_3)P(B_3\,|\,A_3)}{P(B_3)}=0.238$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-23" data-qid="c1-6.23">
+<div class="q-head"><span class="q-num">【6.23】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>已知 100 件产品中有 10 件正品，每次使用这些正品时肯定不会发生故障，而在每次使用非正品时均有 0.1 的可能性发生故障，现从这 100 件产品中随机抽取一件，若使用了 $n$ 次均<br>未发生故障，问 $n$ 为多大时，才能有 70% 的把握认为所得的产品为正品.<br>解　设 $A_1=\{$取出正品$\}$，$A_2=\{$取出非正品$\}$，$B=\{$使用 $n$ 次均无故障$\}$，则</p>
+<p class="dmath">$$P(A_1)=\frac{10}{100},\qquad P(A_2)=\frac{90}{100},$$</p>
+<p>按题设应有 $P(A_1\,|\,B)\ge 0.70$，而</p>
+<p class="dmath">$$P(A_1\,|\,B)=\frac{P(A_1)P(B\,|\,A_1)}{P(A_1)P(B\,|\,A_1)+P(A_2)P(B\,|\,A_2)}=\frac{0.1\times 1}{0.1\times 1+0.9\times(0.9)^n}$$</p>
+<p>所以应是 $\dfrac{0.1}{0.1+0.9^{n+1}}\ge 0.7$，得 $n\ge 29$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+</div></section>
+<section class="q-card" id="q-6-24" data-qid="c1-6.24">
+<div class="q-head"><span class="q-num">【6.24】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>将两信息分别编码为 A 和 B 传递出去，接收站收到时，A 被误收作 B 的概率为 0.02，而 B 被误收作 A 的概率为 0.01，信息 A 与信息 B 传递的频繁程度为 2:1，若接收站收到的信息是 A，问原发信息是 A 的概率是多少？</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设 $B_1,B_2$ 分别表示发报台发出信号“A”及“B”，又以 $A_1,A_2$ 分别表示收报台收到信号“A”及“B”，则有</p>
+<p class="dmath">$$P(B_1)=\frac{2}{3}\qquad\qquad P(B_2)=\frac{1}{3}$$</p>
+<p class="dmath">$$P(A_1\,|\,B_1)=0.98\qquad\qquad P(A_2\,|\,B_1)=0.02$$</p>
+<p class="dmath">$$P(A_1\,|\,B_2)=0.01\qquad\qquad P(A_2\,|\,B_2)=0.99$$</p>
+<p>从而</p>
+<p class="dmath">$$P(B_1\,|\,A_1)=\frac{P(B_1)\cdot P(A_1\,|\,B_1)}{P(B_1)P(A_1\,|\,B_1)+P(B_2)P(A_1\,|\,B_2)}=\frac{\dfrac{2}{3}\times 0.98}{\dfrac{2}{3}\times 0.98+\dfrac{1}{3}\times 0.01}=\frac{196}{197}$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-25" data-qid="c1-6.25">
+<div class="q-head"><span class="q-num">【6.25】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>甲、乙、丙三门高射炮向同一架飞机射击，设甲、乙、丙炮射中飞机的概率分别是 0.4，0.5，0.7. 又设若只有一门炮射中，飞机坠毁的概率为 0.2；若有两门炮射中，飞机坠毁的概率为 0.6；若三门炮都射中，飞机必坠毁. 试求飞机坠毁的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设 $B=$“飞机坠毁”，$A_i=$“$i$ 门炮射中飞机”（$i=1,2,3$）. 显然 $A_1,A_2,A_3$ 构成完备事件组. 三门高射炮各自射击飞机，射中与否相互独立，按加法公式及乘法公式，得</p>
+<p class="dmath">$$P(A_1)=0.4\times(1-0.5)\times(1-0.7)+(1-0.4)\times 0.5\times(1-0.7)+(1-0.4)$$</p>
+<p class="dmath">$$\times(1-0.5)\times 0.7=0.36$$</p>
+<p class="dmath">$$P(A_2)=0.4\times 0.5\times(1-0.7)+0.4\times(1-0.5)\times 0.7+(1-0.4)\times 0.5\times 0.7$$</p>
+<p class="dmath">$$=0.41$$</p>
+<p class="dmath">$$P(A_3)=0.4\times 0.5\times 0.7=0.14$$</p>
+<p>再由题意知</p>
+<p class="dmath">$$P(B\,|\,A_1)=0.2,\qquad P(B\,|\,A_2)=0.6\qquad P(B\,|\,A_3)=1$$</p>
+<p>利用全概率公式，得</p>
+<p class="dmath">$$P(B)=\sum_{i=1}^{3}P(A_i)P(B\,|\,A_i)=0.36\times 0.2+0.41\times 0.6+0.14\times 1=0.458$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-26" data-qid="c1-6.26">
+<div class="q-head"><span class="q-num">【6.26】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设有来自三个地区的各 10 名，15 名和 25 名考生的报名表，其中女生的报名表分别为 3 份，7 份和 5 份. 随机地取一个地区的报名表，从中先后抽出两份.<br>(1) 求先抽到的一份是女生表的概率 $p$；<br>(2) 已知后抽到的一份是男生表，求先抽到的一份是女生表的概率 $q$.<br>解　令 $A_i$ 表示事件“第 $i$ 次取出的是女生表”，$i=1,2$.<br>$B_j$ 表示事件“报名表来自第 $j$ 个地区的考生”，$j=1,2,3$.<br>根据题意</p>
+<p class="dmath">$$P(B_1)=\frac{1}{3},\qquad P(B_2)=\frac{1}{3},\qquad P(B_3)=\frac{1}{3},$$</p>
+<p class="dmath">$$P(A_1\,|\,B_1)=\frac{3}{10},\qquad P(A_1\,|\,B_2)=\frac{7}{15},\qquad P(A_1\,|\,B_3)=\frac{5}{25}$$</p>
+<p>(1) 由全概率公式</p>
+<p class="dmath">$$p=P(A_1)=\sum_{i=1}^{3}P(B_i)P(A_1\,|\,B_i)=\frac{1}{3}\left(\frac{3}{10}+\frac{7}{15}+\frac{5}{25}\right)=\frac{29}{90}.$$</p>
+<p>(2) 由条件概率公式</p>
+<p class="dmath">$$q=P(A_1\,|\,\bar{A}_2)=\frac{P(A_1\bar{A}_2)}{P(\bar{A}_2)}，只需计算 P(\bar{A}_2) 和 P(A_1\bar{A}_2)$$</p>
+<p>由题意</p>
+<p class="dmath">$$P(\bar{A}_2\,|\,B_1)=\frac{7}{10},\qquad P(\bar{A}_2\,|\,B_2)=\frac{8}{15},\qquad P(\bar{A}_2\,|\,B_3)=\frac{20}{25},$$</p>
+<p class="dmath">$$P(A_1\bar{A}_2\,|\,B_1)=\frac{C_3^1 C_7^1}{P_{10}^2}=\frac{7}{30},\qquad P(A_1\bar{A}_2\,|\,B_2)=\frac{C_7^1 C_8^1}{P_{15}^2}=\frac{8}{30},$$</p>
+<p class="dmath">$$P(A_1\bar{A}_2\,|\,B_3)=\frac{C_5^1 C_{20}^1}{P_{25}^2}=\frac{5}{30},$$</p>
+<p>那么 $P(\bar{A}_2)=\displaystyle\sum_{i=1}^{3}P(B_i)P(\bar{A}_2\,|\,B_i)=\frac{1}{3}\left(\frac{8}{15}+\frac{20}{25}+\frac{7}{10}\right)=\frac{61}{90}$，</p>
+<p class="dmath">$$P(A_1\bar{A}_2)=\sum_{i=1}^{3}P(B_i)P(A_1\bar{A}_2\,|\,B_i)=\frac{1}{3}\left(\frac{7}{30}+\frac{8}{30}+\frac{5}{30}\right)=\frac{20}{90}，$$</p>
+<p>所以 $q=\dfrac{P(A_1\bar{A}_2)}{P(\bar{A}_2)}=\dfrac{\dfrac{20}{90}}{\dfrac{61}{90}}=\dfrac{20}{61}$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+</div></section>
+<section class="q-card" id="q-6-27" data-qid="c1-6.27">
+<div class="q-head"><span class="q-num">【6.27】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设根据以往记录的数据分析，某船只运输的某种物品损坏的情况共有三种：损坏 2%（这事件记为 $A_1$），损坏 10%（事件 $A_2$），损坏 90%（事件 $A_3$），且知 $P(A_1)=0.8$，$P(A_2)=0.15$，$P(A_3)=0.05$. 现在从已被运输的物品中随机地取 3 件，发现这 3 件都是好的（这一事件记为 $B$），试求 $P(A_1\,|\,B),P(A_2\,|\,B),P(A_3\,|\,B)$（这里设物品件数多，取出一件后不影响后一件是否为好品的概率）.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　从三种情况中取得一件产品为好产品的概率分别为 98%，90%，10%，于是有</p>
+<p class="dmath">$$P(B\,|\,A_1)=(0.98)^3,\qquad P(B\,|\,A_2)=(0.90)^3,\qquad P(B\,|\,A_3)=(0.1)^3，$$</p>
+<p>又因为 $A_1,A_2,A_3$ 是 S 的一个划分，且</p>
+<p class="dmath">$$P(A_1)=0.8,\qquad P(A_2)=0.15,\qquad P(A_3)=0.05，$$</p>
+<p>由全概率公式</p>
+<p class="dmath">$$P(B)=P(B\,|\,A_1)P(A_1)+P(B\,|\,A_2)P(A_2)+P(B\,|\,A_3)P(A_3)$$</p>
+<p class="dmath">$$=(0.98)^3\times 0.8+(0.90)^3\times 0.15+(0.1)^3\times 0.05=0.862336，$$</p>
+<p>由贝叶斯公式</p>
+<p class="dmath">$$P(A_1\,|\,B)=\frac{P(B\,|\,A_1)P(A_1)}{\displaystyle\sum_{i=1}^{3}P(B\,|\,A_i)P(A_i)}=\frac{0.752936}{0.862336}=0.8731.$$</p>
+<p>同理 $P(A_2\,|\,B)=0.1268$，$P(A_3\,|\,B)=0.0001$.</p></div>
+</div></section>
+<section class="q-card" id="q-6-28" data-qid="c1-6.28">
+<div class="q-head"><span class="q-num">【6.28】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>将 A，B，C 三个字母之一输入信道，输出为原字母的概率为 $\alpha$，而输出为其他一字母的概率都是 $\dfrac{1-\alpha}{2}$，今将字母串 AAAA，BBBB，CCCC 之一输入信道，输入 AAAA，BBBB，CCCC 的概率分别为 $p_1,p_2,p_3$（$p_1+p_2+p_3=1$），已知输出为 ABCA，问输入的是 AAAA 的概率是多少？（设信道传输每个字母的工作是相互独立的）.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　用 A 表示输入 AAAA 的事件，用 B 表示输入 BBBB 的事件，用 C 表示输入 CCCC 的事件，用 H 表示输出 ABCA，由于每个字母的输出是相互独立的，于是有</p>
+<p class="dmath">$$P(H\,|\,A)=\alpha^2\left(\frac{1-\alpha}{2}\right)^2=\frac{\alpha^2(1-\alpha)^2}{4},$$</p>
+<p class="dmath">$$P(H\,|\,B)=\alpha\left(\frac{1-\alpha}{2}\right)^3=\frac{\alpha(1-\alpha)^3}{8},$$</p>
+<p class="dmath">$$P(H\,|\,C)=\alpha\left(\frac{1-\alpha}{2}\right)^3=\frac{\alpha(1-\alpha)^3}{8},$$</p>
+<p>又 $P(A)=p_1$，$P(B)=p_2$，$P(C)=p_3$，由贝叶斯公式得</p>
+<p class="dmath">$$P(A\,|\,H)=\frac{P(H\,|\,A)\cdot P(A)}{P(H\,|\,A)\cdot P(A)+P(H\,|\,B)\cdot P(B)+P(H\,|\,C)\cdot P(C)}$$</p>
+<p class="dmath">$$=\frac{\dfrac{\alpha^2(1-\alpha)^2}{4}\cdot p_1}{\dfrac{\alpha^2(1-\alpha)^2}{4}\cdot p_1+\dfrac{\alpha(1-\alpha)^3}{8}\cdot p_2+\dfrac{\alpha(1-\alpha)^3}{8}\cdot p_3}$$</p>
+<p class="dmath">$$=\frac{2\alpha p_1}{(3\alpha-1)p_1+1-\alpha}.$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-29" data-qid="c1-6.29">
+<div class="q-head"><span class="q-num">【6.29】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>A，B，C 三人在同一办公室工作，房间里有三部电话，据统计知，打给 A，B，C 电话的概率分别为 $\dfrac{2}{5},\dfrac{2}{5},\dfrac{1}{5}$，他们三人常因工作外出，A，B，C 外出的概率分别为 $\dfrac{1}{2},\dfrac{1}{4},\dfrac{1}{4}$，设三人的行动相互独立，求<br>(1) 无人接电话的概率；　　(2) 被呼叫人在办公室的概率；<br>若某一段时间打进 3 个电话，求<br>(3) 这 3 个电话打给同一个人的概率；　(4) 这 3 个电话打给不相同的人的概率；<br>(5) 这 3 个电话都打给 B 而 B 却都不在的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　以 A，B，C 表示电话打给 A，B，C，$A_1,B_1,C_1$ 表示 A，B，C 在办公室.<br>(1) 设 $D_1=$“无人接电话”，则</p>
+<p class="dmath">$$D_1=\bar{A}_1\bar{B}_1\bar{C}_1，$$</p>
+<p class="dmath">$$P(D_1)=P(\bar{A}_1\bar{B}_1\bar{C}_1)=P(\bar{A}_1)P(\bar{B}_1)P(\bar{C}_1)=\frac{1}{2}\cdot\frac{1}{4}\cdot\frac{1}{4}=\frac{1}{32}$$</p>
+<p>(2) 设 $D_2=$“被呼叫人在办公室”，则</p>
+<p class="dmath">$$D_2=AA_1+BB_1+CC_1$$</p>
+<p class="dmath">$$P(D_2)=P(AA_1)+P(BB_1)+P(CC_1)=\frac{2}{5}\cdot\frac{1}{2}+\frac{2}{5}\cdot\frac{3}{4}+\frac{1}{5}\cdot\frac{3}{4}=\frac{13}{20}$$</p>
+<p>(3) 设 $D_3=$“3 个电话打给同一个人”<br>3 个电话都打给 A 的概率为 $[P(A)]^3=\dfrac{8}{125}$<br>3 个电话都打给 B 的概率为 $[P(B)]^3=\dfrac{8}{125}$<br>3 个电话都打给 C 的概率为 $[P(C)]^3=\dfrac{1}{125}$<br>所以</p>
+<p class="dmath">$$P(D_3)=\frac{8}{125}+\frac{8}{125}+\frac{1}{125}=\frac{17}{125}.$$</p>
+<p>(4) 设 $D_4=$“3 个电话打给不同的人”. 第一个电话打给 A，第二个打给 B，第三个打给 C 的概率为</p>
+<p class="dmath">$$P(ABC)=\frac{2}{5}\cdot\frac{2}{5}\cdot\frac{1}{5}=\frac{4}{125}$$</p>
+<p>这样的事件有 $3!=6$ 个，所以</p>
+<p class="dmath">$$P(D_4)=\frac{4\times 3!}{125}=\frac{24}{125}$$</p>
+<p>(5) 设 $D_5=$“3 个电话都打给 B 但 B 都不在”，则</p>
+<p class="dmath">$$P(D_5)=[P(\bar{B}_1\,|\,B)]^3=\left(\frac{1}{4}\right)^3=\frac{1}{64}.$$</p></div>
+</div></section>
+<div class="block-title">题型4：关于事件独立性与独立重复试验的问题</div>
+<section class="q-card" id="q-6-30" data-qid="c1-6.30">
+<div class="q-head"><span class="q-num">【6.30】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 A，B 是任意二事件，其中 A 的概率不等于 0 和 1，证明 $P(B\,|\,A)=P(B\,|\,\bar{A})$ 是事件 A 与 B 独立的充分必要条件.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证　由于 A 的概率不等于 0 和 1，知题中两个条件概率都存在.<br>(1) 必要性. 由事件 A 与 B 独立，知事件 $\bar{A}$ 与 B 也独立. 因此 $P(B\,|\,A)=P(B)$，$P(B\,|\,\bar{A})=P(B)$，从而 $P(B\,|\,A)=P(B\,|\,\bar{A})$.<br>(2) 充分性. 由 $P(B\,|\,A)=P(B\,|\,\bar{A})$，可见</p>
+<p class="dmath">$$\frac{P(AB)}{P(A)}=\frac{P(\bar{A}B)}{P(\bar{A})}=\frac{P(B)-P(AB)}{1-P(A)},$$</p>
+<p class="dmath">$$P(AB)[1-P(A)]=P(A)P(B)-P(A)P(AB),$$</p>
+<p class="dmath">$$P(AB)=P(A)P(B).$$</p>
+<p>因此 A 与 B 独立.</p></div>
+</div></section>
+<section class="q-card" id="q-6-31" data-qid="c1-6.31">
+<div class="q-head"><span class="q-num">【6.31】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>加工某一零件共需经过四道工序，设第一、二、三、四道工序的次品率分别为 0.02，0.03，0.05 和 0.03. 假设各道工序是互不影响的，求加工出来的零件的次品率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设 $A_i=$“第 $i$ 道工序出次品”，$i=1,2,3,4$；$A=$“零件为次品”，则 $A=A_1\cup A_2\cup A_3\cup A_4$.<br>由题设，$A_1,A_2,A_3,A_4$ 相互独立，故 $\bar{A}_1,\bar{A}_2,\bar{A}_3,\bar{A}_4$ 也相互独立，从而</p>
+<p class="dmath">$$P(A)=P(A_1\cup A_2\cup A_3\cup A_4)=1-P(\overline{A_1\cup A_2\cup A_3\cup A_4})$$</p>
+<p class="dmath">$$=1-P(\bar{A}_1\bar{A}_2\bar{A}_3\bar{A}_4)=1-P(\bar{A}_1)P(\bar{A}_2)P(\bar{A}_3)P(\bar{A}_4)$$</p>
+<p class="dmath">$$=1-0.98\times 0.97\times 0.95\times 0.97=0.124.$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-32" data-qid="c1-6.32">
+<div class="q-head"><span class="q-num">【6.32】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设第一只盒子中装有 3 只蓝球，2 只绿球，2 只白球；第二只盒子中装有 2 只蓝球，3 只绿球，4 只白球，独立地分别在两只盒子中各取一只球.<br>(1) 求至少有一只蓝球的概率；<br>(2) 求有一只蓝球一只白球的概率；<br>(3) 已知至少有一只蓝球，求有一只蓝球一只白球的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设 $B_i=$“从第 $i$ 盒中取得蓝球”，$C_i=$“从第 $i$ 盒中取得白球”，$D_i=$“从第 $i$ 盒中取得绿球”，$i=1,2$.<br>(1) 设 A=“至少有一只蓝球”，则</p>
+<p class="dmath">$$A=B_1\cup B_2,$$</p>
+<p class="dmath">$$P(A)=P(B_1)+P(B_2)-P(B_1B_2)=\frac{3}{7}+\frac{2}{9}-\frac{3}{7}\cdot\frac{2}{9}=\frac{5}{9}.$$</p>
+<p>(2) 设 B=“有一只蓝球一只白球”，则</p>
+<p class="dmath">$$B=B_1C_2+B_2C_1$$</p>
+<p class="dmath">$$P(B)=P(B_1C_2)+P(B_2C_1)=\frac{3}{7}\cdot\frac{4}{9}+\frac{2}{9}\cdot\frac{2}{7}=\frac{16}{63}.$$</p>
+<p>(3) 所求概率为</p>
+<p class="dmath">$$P(B\,|\,A)=\frac{P(AB)}{P(A)}=\frac{P(B)}{P(A)}=\frac{\dfrac{16}{63}}{\dfrac{35}{63}}=\frac{16}{35}.$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-33" data-qid="c1-6.33">
+<div class="q-head"><span class="q-num">【6.33】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>今有甲、乙两名射手轮流对同一目标进行射击，甲命中的概率为 $p_1$，乙命中的概率为 $p_2$，甲先射，谁先命中谁得胜，分别求甲、乙二人获胜的概率.<br>分析　一般假定甲、乙二人射击命中与否是相互独立的，问题在于如何表示出事件“甲获胜”、“乙获胜”，若令 A、B 分别表示“甲获胜”、“乙获胜”，$A_i,B_i$（$i=1,2,\cdots$）分别表示“甲第 $i$ 次射击命中”、“乙第 $i$ 次射击命中”，则有</p>
+<p class="dmath">$$A=A_1\cup\bar{A}_1\bar{B}_1A_2\cup\bar{A}_1\bar{B}_1\bar{A}_2\bar{B}_2A_3\cup\cdots$$</p>
+<p class="dmath">$$B=\bar{A}_1B_1\cup\bar{A}_1\bar{B}_1\bar{A}_2B_2\cup\bar{A}_1\bar{B}_1\bar{A}_2\bar{B}_2\bar{A}_3B_3\cup\cdots$$</p>
+<p>再注意到 A，B 表示式中的诸事件互不相容，剩下的问题是利用加法公式和独立性计算 $P(A),P(B)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　令 A，B 分别表示“甲获胜”、“乙获胜”，$A_i,B_i$（$i=1,2,\cdots$）分别表示“甲第 $i$ 次射击命中”、“乙第 $i$ 次射击命中”，则有</p>
+<p class="dmath">$$A=A_1\cup\bar{A}_1\bar{B}_1A_2\cup\bar{A}_1\bar{B}_1\bar{A}_2\bar{B}_2A_3\cup\cdots$$</p>
+<p class="dmath">$$B=\bar{A}_1B_1\cup\bar{A}_1\bar{B}_1\bar{A}_2B_2\cup\bar{A}_1\bar{B}_1\bar{A}_2\bar{B}_2\bar{A}_3B_3\cup\cdots$$</p>
+<p>因而</p>
+<p class="dmath">$$P(A)=P(A_1)+P(\bar{A}_1\bar{B}_1A_2)+P(\bar{A}_1\bar{B}_1\bar{A}_2\bar{B}_2A_3)+\cdots$$</p>
+<p class="dmath">$$=P(A_1)+P(\bar{A}_1)P(\bar{B}_1)P(A_2)$$</p>
+<p class="dmath">$$+P(\bar{A}_1)P(\bar{B}_1)P(\bar{A}_2)P(\bar{B}_2)P(A_3)+\cdots$$</p>
+<p class="dmath">$$=p_1+(1-p_1)(1-p_2)p_1+(1-p_1)^2(1-p_2)^2p_1+\cdots$$</p>
+<p class="dmath">$$=\frac{p_1}{1-(1-p_1)(1-p_2)}=\frac{p_1}{p_1+p_2-p_1p_2}$$</p>
+<p class="dmath">$$P(B)=P(\bar{A}_1B_1)+P(\bar{A}_1\bar{B}_1\bar{A}_2B_2)+P(\bar{A}_1\bar{B}_1\bar{A}_2\bar{B}_2\bar{A}_3B_3)+\cdots$$</p>
+<p class="dmath">$$=P(\bar{A}_1)P(B_1)+P(\bar{A}_1)P(\bar{B}_1)P(\bar{A}_2)P(B_2)$$</p>
+<p class="dmath">$$+P(\bar{A}_1)P(\bar{B}_1)P(\bar{A}_2)P(\bar{B}_2)P(\bar{A}_3)P(B_3)+\cdots$$</p>
+<p class="dmath">$$=(1-p_1)p_2+(1-p_1)^2(1-p_2)p_2+(1-p_1)^3(1-p_2)^2p_2+\cdots$$</p>
+<p class="dmath">$$=\frac{(1-p_1)p_2}{1-(1-p_1)(1-p_2)}=\frac{(1-p_1)p_2}{p_1+p_2-p_1p_2}$$</p>
+<p>另外，由 A 与 B 互为逆事件，则 $P(B)=1-P(A)$，也可得到结论.</p></div>
+</div></section>
+<section class="q-card" id="q-6-34" data-qid="c1-6.34">
+<div class="q-head"><span class="q-num">【6.34】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>甲、乙两人投篮命中率分别为 0.7 与 0.8，每人投篮 3 次，求：<br>(1) 两人进球数相等的概率；<br>(2) 甲比乙进球多的概率.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　甲、乙各投篮 3 次，分别为 3 重伯努利概型.<br>设 $A_i=${甲在 3 次投篮中投入 $i$ 个球}，$i=0,1,2,3$，<br>$B_i=${乙在 3 次投篮中投入 $i$ 个球}，$i=0,1,2,3$，<br>$C=${甲、乙两人进球数相等}，<br>$D=${甲比乙进球多}.<br>又知 $A_i$ 与 $B_i$（$i=0,1,2,3$）是独立的，所以</p>
+<p class="dmath">$$P(A_0)=0.3^3=0.027,\qquad\qquad P(A_1)=C_3^1\times 0.7\times 0.3^2=0.189，$$</p>
+<p class="dmath">$$P(A_2)=C_3^2\times 0.7^2\times 0.3=0.411,\qquad P(A_3)=0.7^3=0.343$$</p>
+<p>同理可得</p>
+<p class="dmath">$$P(B_0)=0.008,\quad P(B_1)=0.096,\quad P(B_2)=0.384,\quad P(B_3)=0.512$$</p>
+<p>(1) 因为 $A_0B_0,A_1B_1,A_2B_2,A_3B_3$ 两两互不相容，所以</p>
+<p class="dmath">$$P(C)=P(A_0B_0+A_1B_1+A_2B_2+A_3B_3)$$</p>
+<p class="dmath">$$=P(A_0B_0)+P(A_1B_1)+P(A_2B_2)+P(A_3B_3)$$</p>
+<p class="dmath">$$=P(A_0)P(B_0)+P(A_1)P(B_1)+P(A_2)P(B_2)+P(A_3)P(B_3)$$</p>
+<p>$=0.36332$<br>(2)$P(D)=P(A_1B_0+A_2B_0+A_3B_0+A_2B_1+A_3B_1+A_3B_2)$<br>$=P(A_1)P(B_0)+P(A_2)P(B_0)+P(A_3)P(B_0)+P(A_2)P(B_1)$<br>$+P(A_3)P(B_1)+P(A_3)P(B_2)$<br>$=0.21476$.</p></div>
+</div></section>
+<section class="q-card" id="q-6-35" data-qid="c1-6.35">
+<div class="q-head"><span class="q-num">【6.35】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>某人向同一目标独立重复射击,每次射击命中目标的概率为 $p(0&lt;p&lt;1)$,则此人第4次射击恰好第二次命中目标的概率为(   ).<br>(A)$3p(1-p)^2$   (B)$6p(1-p)^2$   (C)$3p^2(1-p)^2$   (D)$6p^2(1-p)^2$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设 $A=$"第4次射击恰好第二次命中目标",则 $A$ 表示共射击4次,其中前3次只有1次击中目标,且第4次击中目标. 因此</p>
+<p class="dmath">$$P(A)=[C_3^1p(1-p)^2]\cdot p=3p^2(1-p)^2$$</p></div>
+<div class="ans-line">最终答案：<p>故应选(C)</p></div>
+</div></section>
+<section class="q-card" id="q-6-36" data-qid="c1-6.36">
+<div class="q-head"><span class="q-num">【6.36】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>(1)设有四个独立工作的元件 $1,2,3,4$. 它们的可靠性分别为 $p_1,p_2,p_3,p_4$,将它们按图1-6.36-1方式联接;</p>
+<div class="fig-desc">图1-6.36-1：元件1串联在左端,其后接并联的两条支路：上支路为元件2与元件3串联,下支路为元件4,两支路右端汇合输出.</div>
+<p>(2)设有五个独立工作的元件 $1,2,3,4,5$,它们的可靠性分别为均为 $p$,将它们按图1-6.36-2的方式联接,试分别求这两个系统的可靠性.</p>
+<div class="fig-desc">图1-6.36-2：桥式联接.左端分上下两条支路：上支路为元件1,下支路为元件4;元件3竖直跨接在上下两支路中点之间;右半上支路为元件2,下支路为元件5,两支路在右端汇合输出.</div></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 设系统正常工作为事件 $A$,$B_i=$"第 $i$ 个元件正常工作",$i=1,2,3,4,5$.<br>(1)$A=B_1B_2B_3+B_1B_4$</p>
+<p class="dmath">$$P(A)=P(B_1B_2B_3)+P(B_1B_4)-P(B_1B_2B_3B_4)=p_1p_2p_3+p_1p_4-p_1p_2p_3p_4$$</p>
+<p>(2)$A=B_1B_2+B_1B_3B_5+B_4B_5+B_4B_3B_2$</p>
+<p class="dmath">$$\begin{aligned}$$</p>
+<p>P(A)&amp;=P(B_1B_2)+P(B_1B_3B_5)+P(B_4B_5)+P(B_4B_3B_2)-P(B_1B_2B_3B_5)\\<br>&amp;-P(B_1B_2B_4B_5)-P(B_1B_2B_3B_4)-P(B_1B_2B_3B_4B_5)-P(B_1B_3B_4B_5)\\<br>&amp;-P(B_2B_3B_4B_5)+P(B_1B_2B_3B_4B_5)+P(B_1B_2B_3B_4B_5)+P(B_1B_2B_3B_4B_5)\\<br>&amp;+P(B_1B_2B_3B_4B_5)-P(B_1B_2B_3B_4B_5)\\<br>&amp;=2p^2+2p^3-5p^4+2p^5.<br>\end{aligned}$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-37" data-qid="c1-6.37">
+<div class="q-head"><span class="q-num">【6.37】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>如果一危险情况 $C$ 发生时,一电路闭合并发出警报,我们可以借用两个或多个开关并联以改善可靠性,在 $C$ 发生时这些开关每一个都应闭合,且若至少一个开关闭合了,警报就发出,如果两个这样的开关并联,它们每个具有0.96的可靠性(即在情况 $C$ 发生时闭合的概率),<br>(1)这时系统的可靠性(即闭合电路的概率)是多少?<br>(2)如果需要有一个可靠性至少为0.9999的系统,则至少需要用多少只开关并联?这里各开关闭合与否都是相互独立的.</p>
+<div class="fig-desc">图1-6.37：三条并联支路的电路图,每条支路上各有一个开关,自上而下开关标号为1、2、3,左端汇合输入,右端汇合输出.</div></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 (1)设 $A_i$ 表示第 $i$ 个开关闭合,$A$ 表示电路闭合,于是 $A=A_1\cup A_2$. 由题意当两个开关并联时 $P(A_i)=0.96$. 再由 $A_1,A_2$ 的独立性得:</p>
+<p class="dmath">$$P(A)=P(A_1\cup A_2)=P(A_1)+P(A_2)-P(A_1A_2)=P(A_1)+P(A_2)-P(A_1)\cdot P(A_2)$$</p>
+<p class="dmath">$$=2\times0.96-(0.96)^2=0.9984$$</p>
+<p>或 $P(A)=1-P(\bar{A})=1-P(\bar{A}_1\bar{A}_2)=1-(1-0.96)(1-0.96)=0.9984$<br>(2)设至少需要 $n$ 个开关闭合,则</p>
+<p class="dmath">$$P(A)=P(\bigcup_{i=1}^{n}A_i)=1-\prod_{i=1}^{n}[1-P(A_i)]=1-0.04^n\ge0.9999$$</p>
+<p class="dmath">$$0.4^n\le0.0001$$</p>
+<p>所以 $n\ge\dfrac{\lg 0.0001}{\lg 0.04}\approx2.86$.</p></div>
+<div class="ans-line">最终答案：<p>故至少需要3只开关并联.</p></div>
+</div></section>
+<div class="block-title">题型5 证明题</div>
+<section class="q-card" id="q-6-38" data-qid="c1-6.38">
+<div class="q-head"><span class="q-num">【6.38】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设 $A,B$ 是两个事件.<br>(1)已知 $A\bar{B}=\bar{A}B$,验证 $A=B$.<br>(2)验证事件 $A$ 和事件 $B$ 恰有一个发生的概率为 $P(A)+P(B)-2P(AB)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证 (1)假设 $A\bar{B}=\bar{A}B$,故有 $(A\bar{B})\cup(AB)=(\bar{A}B)\cup(AB)$,<br>从而 $A(\bar{B}\cup B)=(\bar{A}\cup A)B$,即 $AS=SB$,故有 $A=B$.<br>(2)$A,B$ 恰好有一个发生的事件为 $A\bar{B}\cup\bar{A}B$,其概率为</p>
+<p class="dmath">$$P(A\bar{B}\cup\bar{A}B)=P(A\bar{B})+P(\bar{A}B)=P(A(S-B))+P(B(S-A))$$</p>
+<p class="dmath">$$=P(A-AB)+P(B-AB)=P(A)+P(B)-2P(AB).$$</p></div>
+</div></section>
+<section class="q-card" id="q-6-39" data-qid="c1-6.39">
+<div class="q-head"><span class="q-num">【6.39】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设本题涉及的事件均有意义,设 $A,B$ 都是事件.<br>(1)已知 $P(A)&gt;0$,证明 $P(AB|A)\ge P(AB|A\cup B)$.<br>(2)若 $P(A|B)=1$,证明 $P(\bar{B}|\bar{A})=1$.<br>(3)若设 $C$ 也是事件,且有 $P(A|C)\ge P(B|C)$,$P(A|\bar{C})\ge P(B|\bar{C})$,证明 $P(A)\ge P(B)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证 (1)若 $P(A)&gt;0$,要证 $P(AB|A)\ge P(AB|A\cup B)$.<br>上式左边等于 $\dfrac{P(AB)}{P(A)}$,上式右边等于 $\dfrac{P(AB)}{P(A\cup B)}$.<br>因为 $A\cup B\supset A$,$P(A\cup B)\ge P(A)$,故有 $\dfrac{P(AB)}{P(A)}\ge\dfrac{P(AB)}{P(A\cup B)}$,<br>即 $P(AB|A)\ge P(AB|A\cup B)$.<br>(2)由 $P(A|B)=1$ 得 $\dfrac{P(AB)}{P(B)}=1$,<br>即</p>
+<p class="dmath">$$P(AB)=P(B).$$</p>
+<p>①<br>于是</p>
+<p class="dmath">$$P(\bar{B}|\bar{A})=\frac{P(\bar{A}\bar{B})}{P(\bar{A})}=\frac{P(\overline{A\cup B})}{P(\bar{A})}=\frac{1-P(A\cup B)}{1-P(A)}=\frac{1-P(A)-P(B)+P(AB)}{1-P(A)}.$$</p>
+<p>由①式得到</p>
+<p class="dmath">$$P(\bar{B}|\bar{A})=\frac{1-P(A)}{1-P(A)}=1.$$</p>
+<p>(3)由假设 $P(A|C)\ge P(B|C)$,而</p>
+<p class="dmath">$$P(A|C)=\frac{P(AC)}{P(C)},\quad P(B|C)=\frac{P(BC)}{P(C)},$$</p>
+<p>因此</p>
+<p class="dmath">$$P(AC)\ge P(BC).$$</p>
+<p>②<br>同样由 $P(A|\bar{C})\ge P(B|\bar{C})$ 就有</p>
+<p class="dmath">$$P(A\bar{C})\ge P(B\bar{C}).$$</p>
+<p>③<br>由③式可知</p>
+<p class="dmath">$$P(A(S-C))\ge P(B(S-C)),$$</p>
+<p>得 $P(A)-P(AC)\ge P(B)-P(BC)$,<br>或 $P(A)-P(B)\ge P(AC)-P(BC)$,<br>由②式,得知<br>$P(A)-P(B)\ge0$,即 $P(A)\ge P(B)$.</p></div>
+</div></section>
+<section class="q-card" id="q-6-40" data-qid="c1-6.40">
+<div class="q-head"><span class="q-num">【6.40】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设事件 $A,B,C$ 相互独立,证明:<br>(1)$C$ 与 $AB$ 相互独立.<br>(2)$C$ 与 $A\cup B$ 相互独立.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证 因 $A,B,C$ 相互独立,故</p>
+<p class="dmath">$$P(AB)=P(A)P(B),\quad P(BC)=P(B)P(C),\quad P(CA)=P(C)P(A),$$</p>
+<p class="dmath">$$P(ABC)=P(A)P(B)P(C),$$</p>
+<p>从而<br>(1)$P(C(AB))=P(CAB)=P(C)P(A)P(B)=P(C)P(AB)$,<br>这表示 $C$ 与 $AB$ 相互独立.<br>(2)$P(C(A\cup B))=P(CA\cup CB)=P(CA)+P(CB)-P(CAB)$</p>
+<p class="dmath">$$=P(C)P(A)+P(C)P(B)-P(C)P(A)P(B)$$</p>
+<p class="dmath">$$=P(C)[P(A)+P(B)-P(AB)]=P(C)P(A\cup B),$$</p>
+<p>故 $C$ 与 $A\cup B$ 相互独立.</p></div>
+</div></section>
+<section class="q-card" id="q-6-41" data-qid="c1-6.41">
+<div class="q-head"><span class="q-num">【6.41】</span><span>
+<button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
+<div class="q-body"><p>设事件 $A$ 的概率 $P(A)=0$,证明对于任意另一事件 $B$,有 $A,B$ 相互独立.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证 因为 $AB\subset A$,故若 $P(A)=0$,则</p>
+<p class="dmath">$$0\le P(AB)\le P(A)=0,$$</p>
+<p>从而</p>
+<p class="dmath">$$P(AB)=0=P(B)\cdot 0=P(B)P(A),$$</p>
+<p>由独立性定义,$A$ 与 $B$ 相互独立.</p></div>
+</div></section>
+<div class="prev-next">
+<a href="chapter-08.html">← 上一章</a>
+<a href="chapter-02.html">下一章 →</a>
+</div>
+</div></main></div>
+<div class="q-nav"><button class="icon-btn" id="prevQ" title="上一题">↑</button><button class="icon-btn" id="nextQ" title="下一题">↓</button></div><script src="../assets/katex/katex.min.js?v=1"></script>
+<script src="../assets/katex/auto-render.min.js?v=1"></script>
+<script src="../assets/script.js?v=1"></script>
+</body>
+</html>
