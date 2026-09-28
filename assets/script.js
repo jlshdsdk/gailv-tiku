@@ -93,6 +93,15 @@
           if (r.top < vh + 600 && r.bottom > -200) renderIn(c);
         });
       }, 250), { passive: true });
+      /* 终极兜底：加载 1.5s 后分块渐进渲染全部剩余题（每批 8 题），
+         确保任何环境（IO 失效/滚动受限的嵌入视图）都不会留下未渲染公式 */
+      (function progressive(start) {
+        setTimeout(function () {
+          var rest = cards.filter(function (c) { return !c.dataset.katexDone; });
+          rest.slice(0, 8).forEach(renderIn);
+          if (rest.length > 8) progressive(start);
+        }, start);
+      })(1500);
     }
   } else {
     /* 首页无公式，直接标记完成 */
