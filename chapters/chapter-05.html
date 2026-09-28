@@ -350,13 +350,13 @@
 <section class="q-card" id="q-1-26" data-qid="c5-1.26">
 <div class="q-head"><span class="q-num">【1.26】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>据以往经验, 某种电气元件的寿命服从均值为 100 小时的指数分布, 现随机地取 16<br>只，设它们的寿命是相互独立的，求这 16 只元件的寿命的总和大于 1920 小时的概率.<br>解 记 16 只电气元件的寿命分别为 $X_1, X_2, \cdots, X_{16}$，则这 16 只元件的寿命之和为 $\sum\limits_{i=1}^{16} X_i$，依题意，$E(X_i)=100$，$D(X_i)=100^2$，根据独立同分布的中心极限定理</p>
+<div class="q-body"><p>据以往经验, 某种电气元件的寿命服从均值为 100 小时的指数分布, 现随机地取 16<br>只，设它们的寿命是相互独立的，求这 16 只元件的寿命的总和大于 1920 小时的概率.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解 记 16 只电气元件的寿命分别为 $X_1, X_2, \cdots, X_{16}$，则这 16 只元件的寿命之和为 $\sum\limits_{i=1}^{16} X_i$，依题意，$E(X_i)=100$，$D(X_i)=100^2$，根据独立同分布的中心极限定理</p>
 <p class="dmath">$$Z=\frac{\sum\limits_{i=1}^{16} X_i - 16 \times 100}{4 \times 100}=\frac{X-1600}{400}$$</p>
 <p>近似地服从 $N(0,1)$，于是</p>
 <p class="dmath">$$P\{X&gt;1920\}=1-P\{X\le 1920\}=1-P\left\{\frac{X-1600}{400}\le\frac{1920-1600}{400}\right\}$$</p>
 <p class="dmath">$$\approx 1-\Phi(0.8)=0.2119.$$</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-1-27" data-qid="c5-1.27">
 <div class="q-head"><span class="q-num">【1.27】</span><span>

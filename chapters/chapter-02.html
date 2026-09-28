@@ -766,9 +766,9 @@
 <section class="q-card" id="q-5-6" data-qid="c2-5.6">
 <div class="q-head"><span class="q-num">【5.6】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>设 $X$ 为随机变量，若矩阵 $A=\begin{pmatrix}2 &amp; 3 &amp; 2\\ 0 &amp; -2 &amp; -X\\ 0 &amp; 1 &amp; 0\end{pmatrix}$ 的特征值全为实数的概率为 $0.5$，则（　　）.<br>(A) $X$ 服从区间 $[0,2]$ 的均匀分布　　(B) $X$ 服从二项分布 $B(2,0.5)$<br>(C) $X$ 服从参数为 $1$ 的指数分布　　(D) $X$ 服从正态分布 $N(0,1)$</p></div>
+<div class="q-body"><p>设 $X$ 为随机变量，若矩阵 $A=\begin{bmatrix}2 &amp; 3 &amp; 2\\ 0 &amp; -2 &amp; -X\\ 0 &amp; 1 &amp; 0\end{bmatrix}$ 的特征值全为实数的概率为 $0.5$，则（　　）.<br>(A) $X$ 服从区间 $[0,2]$ 的均匀分布　　(B) $X$ 服从二项分布 $B(2,0.5)$<br>(C) $X$ 服从参数为 $1$ 的指数分布　　(D) $X$ 服从正态分布 $N(0,1)$</p></div>
 <div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由 $|\lambda E-A|=\begin{pmatrix}\lambda-2 &amp; -3 &amp; -2\\ 0 &amp; \lambda+2 &amp; X\\ 0 &amp; -1 &amp; \lambda\end{pmatrix}=(\lambda-2)(\lambda^2+2\lambda+X)$，而其特征值全为实数的概率 $P\{2^2-4X\ge 0\}=P\{X\le 1\}=0.5$，可见当 $X$ 服从 $[0,2]$ 上均匀分布时成立.</p></div>
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由 $|\lambda E-A|=\begin{vmatrix}\lambda-2 &amp; -3 &amp; -2\\ 0 &amp; \lambda+2 &amp; X\\ 0 &amp; -1 &amp; \lambda\end{vmatrix}=(\lambda-2)(\lambda^2+2\lambda+X)$，而其特征值全为实数的概率 $P\{2^2-4X\ge 0\}=P\{X\le 1\}=0.5$，可见当 $X$ 服从 $[0,2]$ 上均匀分布时成立.</p></div>
 <div class="ans-line">最终答案：<p>故应选(A).</p></div>
 </div></section>
 <section class="q-card" id="q-5-7" data-qid="c2-5.7">
@@ -777,7 +777,6 @@
 <div class="q-body"><p>设随机变量 $X$ 的密度函数为 $f_X(x)$，则 $Y=3-2X$ 的密度函数为（　　）.<br>(A) $-\dfrac{1}{2}f_X\left(-\dfrac{y-3}{2}\right)$　　(B) $\dfrac{1}{2}f_X\left(-\dfrac{y-3}{2}\right)$<br>(C) $-\dfrac{1}{2}f_X\left(-\dfrac{y+3}{2}\right)$　　(D) $\dfrac{1}{2}f_X\left(-\dfrac{y+3}{2}\right)$</p></div>
 <div class="sol-wrap collapsed">
 <hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　本题是求连续型随机变量函数的概率密度，因为 $Y=g(X)$ 是单调函数，由公式法可知(B)正确.</p></div>
-<div class="ans-line">最终答案：<p>(B)正确.</p></div>
 </div></section>
 <section class="q-card" id="q-5-8" data-qid="c2-5.8">
 <div class="q-head"><span class="q-num">【5.8】</span><span>
@@ -811,7 +810,7 @@
 <hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$P\{X=1\}=P\{X\le 1\}-P\{X&lt;1\}=F(1)-F(1-0)=(1-\mathrm{e}^{-1})-\dfrac{1}{2}=\dfrac{1}{2}-\mathrm{e}^{-1}$.</p></div>
 <div class="ans-line">最终答案：<p>故应选(C)</p></div>
 </div></section>
-<div class="block-title">题型2:利用随机变量的分布求概率</div>
+<div class="block-title">题型二　利用随机变量的分布求概率</div>
 <section class="q-card" id="q-5-11" data-qid="c2-5.11">
 <div class="q-head"><span class="q-num">【5.11】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
@@ -973,12 +972,12 @@
 <section class="q-card" id="q-5-25" data-qid="c2-5.25">
 <div class="q-head"><span class="q-num">【5.25】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>设随机变量 $X$ 的概率密度为<br>（1）$f(x)=\begin{cases} 2\left(1-\dfrac{1}{x^3}\right), &amp; 1\le x\le 2 \\ 0, &amp; \text{其他} \end{cases}$ \hfill （2）$f(x)=\begin{cases} x, &amp; 0\le x&lt;1 \\ 2-x, &amp; 1\le x&lt;2 \\ 0, &amp; \text{其他} \end{cases}$<br>求 $X$ 的分布函数 $F(x)$.<br>解　(1)当 $x&lt;1$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=0$<br>当 $1\le x&lt;2$ 时，$F(x)=\int_{1}^{x}2\left(1-\frac{1}{t^{2}}\right)\mathrm{d}t=2x+\frac{2}{x}-4$<br>当 $x\ge 2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{1}^{2}2\left(1-\frac{1}{x^{2}}\right)\mathrm{d}x=1$<br>故 $X$ 的分布函数为</p>
+<div class="q-body"><p>设随机变量 $X$ 的概率密度为<br>（1）$f(x)=\begin{cases} 2\left(1-\dfrac{1}{x^3}\right), &amp; 1\le x\le 2 \\ 0, &amp; \text{其他} \end{cases}$ \hfill （2）$f(x)=\begin{cases} x, &amp; 0\le x&lt;1 \\ 2-x, &amp; 1\le x&lt;2 \\ 0, &amp; \text{其他} \end{cases}$<br>求 $X$ 的分布函数 $F(x)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　(1)当 $x&lt;1$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=0$<br>当 $1\le x&lt;2$ 时，$F(x)=\int_{1}^{x}2\left(1-\frac{1}{t^{2}}\right)\mathrm{d}t=2x+\frac{2}{x}-4$<br>当 $x\ge 2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{1}^{2}2\left(1-\frac{1}{x^{2}}\right)\mathrm{d}x=1$<br>故 $X$ 的分布函数为</p>
 <p class="dmath">$$F(x)=\begin{cases}0, &amp; x&lt;1\\ 2x+\dfrac{2}{x}-4, &amp; 1\le x&lt;2\\ 1, &amp; x\ge 2\end{cases}$$</p>
 <p>(2)当 $x&lt;0$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=0$<br>当 $0\le x&lt;1$ 时，$F(x)=\int_{0}^{x}t\mathrm{d}t=\frac{x^{2}}{2}$<br>当 $1\le x&lt;2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{0}^{1}t\mathrm{d}t-\int_{1}^{x}(2-t)\mathrm{d}t=-\frac{x^{2}}{2}+2x-1$<br>当 $x\ge 2$ 时，$F(x)=\int_{-\infty}^{x}f(t)\mathrm{d}t=\int_{0}^{1}x\mathrm{d}x+\int_{1}^{2}(2-x)\mathrm{d}x=1$<br>故得 $X$ 的分布函数为</p>
 <p class="dmath">$$F(x)=\begin{cases}0, &amp; x&lt;0\\ \dfrac{x^{2}}{2}, &amp; 0\le x&lt;1\\ -\dfrac{x^{2}}{2}+2x-1, &amp; 1\le x&lt;2\\ 1, &amp; x\ge 2\end{cases}$$</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-5-26" data-qid="c2-5.26">
 <div class="q-head"><span class="q-num">【5.26】</span><span>

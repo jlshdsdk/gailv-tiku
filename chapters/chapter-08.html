@@ -150,75 +150,75 @@
 <section class="q-card" id="q-2-4" data-qid="c8-2.4">
 <div class="q-head"><span class="q-num">【2.4】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>某烟厂生产甲、乙两种香烟，独立地随机抽取容量大小相同的烟叶标本，测量尼古丁含量的毫克数，一实验室分别做了 6 次测定，数据记录如下：<br>甲　25　28　23　26　29　22<br>乙　28　23　30　25　21　27<br>假定尼古丁含量服从正态分布且具有相同的方差，试问在显著性水平 $\alpha=0.05$ 下，这两种香烟的尼古丁含量有无显著差异？<br>解　提出待检假设 $H_0:\mu_1=\mu_2$，$H_1:\mu_1\ne\mu_2$. 由于 $\sigma_1^2,\sigma_2^2$ 未知，但相等.<br>选取统计量，</p>
+<div class="q-body"><p>某烟厂生产甲、乙两种香烟，独立地随机抽取容量大小相同的烟叶标本，测量尼古丁含量的毫克数，一实验室分别做了 6 次测定，数据记录如下：<br>甲　25　28　23　26　29　22<br>乙　28　23　30　25　21　27<br>假定尼古丁含量服从正态分布且具有相同的方差，试问在显著性水平 $\alpha=0.05$ 下，这两种香烟的尼古丁含量有无显著差异？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　提出待检假设 $H_0:\mu_1=\mu_2$，$H_1:\mu_1\ne\mu_2$. 由于 $\sigma_1^2,\sigma_2^2$ 未知，但相等.<br>选取统计量，</p>
 <p class="dmath">$$T=\dfrac{\overline{X}-\overline{Y}}{\sqrt{\dfrac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}}\sqrt{\dfrac{1}{n_1}+\dfrac{1}{n_2}}},$$</p>
 <p>其中 $n_1=n_2=6$，当 $H_0$ 为真时，$T\sim t(6+6-2)=t(10)$；<br>对 $\alpha=0.05$，拒绝域为 $|T|\ge t_{0.025}(10)=2.2281$，且 $\overline{X}=25.5$，$\overline{Y}=25.67$，$S_1^2=7.5$，$S_2^2=11.07$，那么</p>
 <p class="dmath">$$|T|=\left|\dfrac{25.5-25.67}{\sqrt{\dfrac{5\times(7.5+11.07)}{10}}\sqrt{\dfrac{1}{6}+\dfrac{1}{6}}}\right|\approx0.099,$$</p>
 <p>因为 $|T|\approx0.099&lt;2.2281=t_{0.025}(10)$，从而接受 $H_0$，即认为两种香烟的尼古丁含量无显著差异.</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="ans-line">最终答案：<p>因为 $|T|\approx0.099&lt;2.2281=t_{0.025}(10)$，从而接受 $H_0$，即认为两种香烟的尼古丁含量无显著差异.</p></div>
 </div></section>
 <section class="q-card" id="q-2-5" data-qid="c8-2.5">
 <div class="q-head"><span class="q-num">【2.5】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>要求一种元件使用寿命不得低于 1000h，生产者从一批这种元件中随机抽取 25 件，测量其寿命的平均值为 950h，已知该种元件寿命服从标准差为 $\sigma=100$h 的正态分布. 试在显著性水平 $\alpha=0.05$ 下确定这批元件是否合格？设总体均值为 $\mu$，即需检验假设 $H_0:\mu\ge1000$，$H_1:\mu&lt;1000$.<br>解　$H_0:\mu\ge1000$，$H_1:\mu&lt;1000$.<br>此题中，$\sigma^2=10000$ 为已知，因此此检验问题的拒绝域为</p>
+<div class="q-body"><p>要求一种元件使用寿命不得低于 1000h，生产者从一批这种元件中随机抽取 25 件，测量其寿命的平均值为 950h，已知该种元件寿命服从标准差为 $\sigma=100$h 的正态分布. 试在显著性水平 $\alpha=0.05$ 下确定这批元件是否合格？设总体均值为 $\mu$，即需检验假设 $H_0:\mu\ge1000$，$H_1:\mu&lt;1000$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$H_0:\mu\ge1000$，$H_1:\mu&lt;1000$.<br>此题中，$\sigma^2=10000$ 为已知，因此此检验问题的拒绝域为</p>
 <p class="dmath">$$U=\dfrac{\overline{X}-\mu_0}{\dfrac{\sigma}{\sqrt{n}}}\le-u_\alpha\quad(\text{单边检验}，\alpha\text{ 不分半})；$$</p>
 <p>计算 $\alpha=0.05$，$\overline{x}=950$，$\sigma=100$，$n=25$，$u_{0.05}=1.645$，</p>
 <p class="dmath">$$u=\dfrac{950-1000}{\dfrac{100}{\sqrt{25}}}=-2.5&lt;-1.645,$$</p>
 <p>$u$ 落在拒绝域中，所以拒绝 $H_0$，即认为这批元件不合格.</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="ans-line">最终答案：<p>$u$ 落在拒绝域中，所以拒绝 $H_0$，即认为这批元件不合格.</p></div>
 </div></section>
 <section class="q-card" id="q-2-6" data-qid="c8-2.6">
 <div class="q-head"><span class="q-num">【2.6】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>下面列出的是某厂随机选取的 20 部部件的装配时间（分）：<br>9.8　10.4　10.6　9.6　9.7　9.9　10.9　11.1　9.6　10.2<br>10.3　9.6　9.9　11.2　10.6　9.8　10.5　10.1　10.5　9.7<br>设装配时间的总体服从正态分布 $N(\mu,\sigma^2)$，$\mu,\sigma^2$ 均未知，是否可以认为装配时间的均值显著大于 10（$\alpha=0.05$）？<br>解　需要检验的假设为 $H_0:\mu\le10$，$H_1:\mu&gt;10$.<br>$\sigma^2$ 未知，因此，拒绝域的形式为</p>
+<div class="q-body"><p>下面列出的是某厂随机选取的 20 部部件的装配时间（分）：<br>9.8　10.4　10.6　9.6　9.7　9.9　10.9　11.1　9.6　10.2<br>10.3　9.6　9.9　11.2　10.6　9.8　10.5　10.1　10.5　9.7<br>设装配时间的总体服从正态分布 $N(\mu,\sigma^2)$，$\mu,\sigma^2$ 均未知，是否可以认为装配时间的均值显著大于 10（$\alpha=0.05$）？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　需要检验的假设为 $H_0:\mu\le10$，$H_1:\mu&gt;10$.<br>$\sigma^2$ 未知，因此，拒绝域的形式为</p>
 <p class="dmath">$$T=\dfrac{\overline{X}-\mu_0}{\dfrac{S}{\sqrt{n}}}\ge t_\alpha(n-1),$$</p>
 <p>现在 $n=20$，$\alpha=0.05$，查表得 $t_\alpha(n-1)=1.7291$. 算得 $\overline{x}=10.2$，$s^2=0.26$，$s=0.51$.</p>
 <p class="dmath">$$t=\dfrac{10.2-10}{\dfrac{0.51}{\sqrt{20}}}=1.7537&gt;1.7291.$$</p>
 <p>因为 $t$ 落在拒绝域之内，故应拒绝 $H_0$，即认为装配时间的均值显著大于 10（分）.</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="ans-line">最终答案：<p>因为 $t$ 落在拒绝域之内，故应拒绝 $H_0$，即认为装配时间的均值显著大于 10（分）.</p></div>
 </div></section>
 <div class="block-title">题型2 正态总体方差的检验</div>
 <section class="q-card" id="q-2-7" data-qid="c8-2.7">
 <div class="q-head"><span class="q-num">【2.7】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>已知维尼纶纤度在正常条件下服从正态分布 $N(\mu,\ 0.048^2)$. 某日抽取 5 根纤维，测得其纤度为 1.32，1.55，1.36，1.40，1.44. 问这一天纤度总体方差是否正常？（$\alpha=0.05$）<br>解　根据题意，建立检验假设 $H_0:\sigma^2=\sigma_0^2=0.048^2$，$H_1:\sigma^2\ne\sigma_0^2$.<br>由于 $\mu$ 未知，故在 $H_0$ 成立条件下选取统计量如下</p>
+<div class="q-body"><p>已知维尼纶纤度在正常条件下服从正态分布 $N(\mu,\ 0.048^2)$. 某日抽取 5 根纤维，测得其纤度为 1.32，1.55，1.36，1.40，1.44. 问这一天纤度总体方差是否正常？（$\alpha=0.05$）</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　根据题意，建立检验假设 $H_0:\sigma^2=\sigma_0^2=0.048^2$，$H_1:\sigma^2\ne\sigma_0^2$.<br>由于 $\mu$ 未知，故在 $H_0$ 成立条件下选取统计量如下</p>
 <p class="dmath">$$\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}\sim\chi^2(n-1),$$</p>
 <p>$\alpha=0.05$，自由度为 $n-1=5-1=4$. 查 $\chi^2$ 分布表得 $\chi_{0.025}^2(4)=11.1$，$\chi_{0.975}^2(4)=0.484$，<br>其中 $(n-1)S^2=\sum\limits_{i=1}^{n}(X_i-\overline{X})^2=\sum\limits_{i=1}^{5}X_i^2-5\overline{X}^2=0.03142$，则</p>
 <p class="dmath">$$\dfrac{(n-1)S^2}{\sigma_0^2}=\dfrac{0.03142}{0.048^2}\approx13.64&gt;\chi_{0.025}^2(4).$$</p>
 <p>因此拒绝 $H_0$，即认为这一天纤度方差有显著变化.</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="ans-line">最终答案：<p>因此拒绝 $H_0$，即认为这一天纤度方差有显著变化.</p></div>
 </div></section>
 <section class="q-card" id="q-2-8" data-qid="c8-2.8">
 <div class="q-head"><span class="q-num">【2.8】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>（接上例）若规定加工精度 $\sigma^2$ 不能超过 $0.048^2$，试在 $\alpha=0.05$ 下检验该日产品的精度是否正常？<br>解　建立检验假设 $H_0:\sigma^2\le\sigma_0^2=0.048^2$，$H_1:\sigma^2&gt;0.048^2$.<br>（或者 $H_0:\sigma^2=\sigma_0^2=0.048^2$，$H_1:\sigma^2&gt;0.048^2$.）<br>由于 $\mu$ 未知，当 $H_0$ 成立时</p>
+<div class="q-body"><p>（接上例）若规定加工精度 $\sigma^2$ 不能超过 $0.048^2$，试在 $\alpha=0.05$ 下检验该日产品的精度是否正常？</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　建立检验假设 $H_0:\sigma^2\le\sigma_0^2=0.048^2$，$H_1:\sigma^2&gt;0.048^2$.<br>（或者 $H_0:\sigma^2=\sigma_0^2=0.048^2$，$H_1:\sigma^2&gt;0.048^2$.）<br>由于 $\mu$ 未知，当 $H_0$ 成立时</p>
 <p class="dmath">$$\chi^2=\dfrac{(n-1)S^2}{\sigma_0^2}\sim\chi^2(n-1),$$</p>
 <p>$\alpha=0.05$，自由度为 $n-1=5-1=4$. 查 $\chi^2$ 分布表得 $\chi_{0.05}^2(4)=9.488$，<br>其中 $(n-1)S^2=\sum\limits_{i=1}^{5}(x_i-\overline{x})^2=0.03142$，则</p>
 <p class="dmath">$$\dfrac{(n-1)S^2}{\sigma_0^2}=\dfrac{0.03142}{0.048^2}\approx13.64&gt;9.488=\chi_{0.05}^2(4).$$</p>
 <p>因此拒绝 $H_0$，认为这一天产品的精度不正常.</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="ans-line">最终答案：<p>因此拒绝 $H_0$，认为这一天产品的精度不正常.</p></div>
 <div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　【2.7】和【2.8】是在期望未知的情形下，对正态总体方差的检验问题.<br>比较【2.7】和【2.8】，可知单侧检验与双侧检验所用统计量及其计算是一样的. 只是拒绝域不同.</p></div>
 </div></section>
 <section class="q-card" id="q-2-9" data-qid="c8-2.9">
 <div class="q-head"><span class="q-num">【2.9】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>一种混杂的小麦品种，株高的标准差为 $\sigma_0=14$cm，经提纯后随机抽取 10 株，它们的株高（以 cm 计）为<br>90　105　101　95　100　100　101　105　93　97<br>考虑提纯后群体是否比原群体整齐？取显著性水平 $\alpha=0.01$，并设小麦株高服从 $N(\mu,\sigma^2)$.<br>解　需假设检验（$\alpha=0.01$），$H_0:\sigma\ge\sigma_0$，$H_1:\sigma&lt;\sigma_0$（$\sigma_0=14$）.<br>采用 $\chi^2$ 检验法. 拒绝域为</p>
+<div class="q-body"><p>一种混杂的小麦品种，株高的标准差为 $\sigma_0=14$cm，经提纯后随机抽取 10 株，它们的株高（以 cm 计）为<br>90　105　101　95　100　100　101　105　93　97<br>考虑提纯后群体是否比原群体整齐？取显著性水平 $\alpha=0.01$，并设小麦株高服从 $N(\mu,\sigma^2)$.</p></div>
+<div class="sol-wrap">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　需假设检验（$\alpha=0.01$），$H_0:\sigma\ge\sigma_0$，$H_1:\sigma&lt;\sigma_0$（$\sigma_0=14$）.<br>采用 $\chi^2$ 检验法. 拒绝域为</p>
 <p class="dmath">$$\chi^2 = \frac{(n-1)S^2}{\sigma_0^2} &lt; \chi^2_{1-\alpha}(9),$$</p>
 <p>现在 $n=10$，$\chi^2_{1-0.01}(9)=2.088$，$s^2=24.233$，</p>
 <p class="dmath">$$\chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{218.1}{14^2} = 1.11 &lt; 2.088.$$</p>
 <p>落在拒绝域内，故拒绝 $H_0$，认为提纯后的群体比原群体整齐.</p></div>
-<div class="sol-wrap">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-2-10" data-qid="c8-2.10">
 <div class="q-head"><span class="q-num">【2.10】</span><span>

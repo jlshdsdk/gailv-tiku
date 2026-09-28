@@ -766,36 +766,35 @@
 <div class="q-body"><p>设 $X$ 与 $Y$ 相互独立，分别服从参数为 $\lambda_1$ 与 $\lambda_2$ 的指数分布，求 $Z=\dfrac{X}{Y}$ 的密度函数.<br>分析　设 $(X,Y)$ 是二维连续型随机变量，其联合密度函数为 $f(x,y)$，则随机变量 $Z=\dfrac{X}{Y}$ 的密度函数 $f_Z(z)$ 为</p>
 <p class="dmath">$$f_Z(z)=\int_{-\infty}^{+\infty}|y|f(zy,y)\mathrm{d}y.$$</p>
 <p>特别地，如果 $X$ 与 $Y$ 相互独立，则有 $f(x,y)=f_X(x)f_Y(y)$，此时，我们有</p>
-<p class="dmath">$$f_Z(z)=\int_{-\infty}^{+\infty}|y|f_X(yz)f_Y(y)\mathrm{d}y.$$</p>
-<p>解　$f_X(x)=\begin{cases}\lambda_1\mathrm{e}^{-\lambda_1 x} &amp; x&gt;0\\ 0, &amp; x\le 0,\end{cases}$　$f_Y(y)=\begin{cases}\lambda_2\mathrm{e}^{-\lambda_2 y} &amp; y&gt;0\\ 0, &amp; y\le 0\end{cases}$<br>设 $Z=\dfrac{X}{Y}$，由 $X$ 与 $Y$ 独立性，我们有</p>
+<p class="dmath">$$f_Z(z)=\int_{-\infty}^{+\infty}|y|f_X(yz)f_Y(y)\mathrm{d}y.$$</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$f_X(x)=\begin{cases}\lambda_1\mathrm{e}^{-\lambda_1 x} &amp; x&gt;0\\ 0, &amp; x\le 0,\end{cases}$　$f_Y(y)=\begin{cases}\lambda_2\mathrm{e}^{-\lambda_2 y} &amp; y&gt;0\\ 0, &amp; y\le 0\end{cases}$<br>设 $Z=\dfrac{X}{Y}$，由 $X$ 与 $Y$ 独立性，我们有</p>
 <p class="dmath">$$f_Z(z)=\int_{-\infty}^{+\infty}|y|f_X(yz)f_Y(y)\mathrm{d}y,\quad yz&gt;0,\ y&gt;0$$</p>
 <p>如图 3—5.7 所示：<br>（1）若 $z\le 0$，$f_Z(z)=0$.<br>（2）若 $z&gt;0$，</p>
 <p class="dmath">$$f_Z(z)=\int_{0}^{+\infty}y\lambda_1\mathrm{e}^{-\lambda_1 yz}\lambda_2\mathrm{e}^{-\lambda_2 y}\mathrm{d}y=\lambda_1\lambda_2\int_{0}^{+\infty}y\mathrm{e}^{-(\lambda_2+\lambda_1 z)y}\mathrm{d}y=\frac{\lambda_1\lambda_2}{(\lambda_2+\lambda_1 z)^2}$$</p>
 <p>则 $Z=\dfrac{X}{Y}$ 的密度为</p>
 <p class="dmath">$$f_Z(z)=\begin{cases}\dfrac{\lambda_1\lambda_2}{(\lambda_2+\lambda_1 z)^2}, &amp; z&gt;0\\ 0, &amp; z\le 0.\end{cases}$$</p>
 <div class="fig-desc">图描述：图 3—5.7，直角坐标系，纵轴为 $z$，横轴为 $y$，原点 $O$，在第一象限（$y&gt;0$，$z&gt;0$）区域画有若干条水平线段（表示积分区域 $yz&gt;0$，$y&gt;0$）.</div></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-5-8" data-qid="c3-5.8">
 <div class="q-head"><span class="q-num">【5.8】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设二维随机变量 $(X,Y)$ 的概率密度为</p>
 <p class="dmath">$$f(x,y)=\begin{cases}1, &amp; 0&lt;x&lt;1,\ 0&lt;y&lt;2x\\ 0, &amp; \text{其他}\end{cases}$$</p>
-<p>求：(1) $(X,Y)$ 的边缘概率密度 $f_X(x)$，$f_Y(y)$；<br>（2）$Z=2X-Y$ 的概率密度 $f_Z(z)$；<br>（3）$P\left\{Y\le \dfrac{1}{2}\ \Big|\ X\le \dfrac{1}{2}\right\}$.<br>解　（1）当 $0&lt;x&lt;1$ 时，$f_X(x)=\int_{-\infty}^{+\infty}f(x,y)\mathrm{d}y=\int_{0}^{2x}\mathrm{d}y=2x$<br>当 $x\le 0$ 或 $x\ge 1$ 时，$f_X(x)=0$，　即 $f_X(x)=\begin{cases}2x, &amp; 0&lt;x&lt;1\\ 0 &amp; \text{其他}\end{cases}$<br>当 $0&lt;y&lt;2$ 时，　$f_Y(y)=\int_{-\infty}^{+\infty}f(x,y)\mathrm{d}x=\int_{\frac{y}{2}}^{1}\mathrm{d}x=1-\dfrac{y}{2}$<br>当 $y\le 0$ 或 $y\ge 1$ 时，$f_Y(y)=0$，　即 $f_Y(y)=\begin{cases}1-\dfrac{y}{2}, &amp; 0&lt;y&lt;2\\ 0, &amp; \text{其他}\end{cases}$<br>（2）解法一　当 $z\le 0$ 时，$F_Z(z)=0$<br>当 $0&lt;z&lt;2$ 时，$F_Z(z)=P\{2X-Y\le z\}=\iint\limits_{2x-y\le z}f(x,y)\mathrm{d}x\mathrm{d}y=z-\dfrac{z^2}{4}$<br>当 $z\ge 2$ 时，$F_Z(z)=1$，所以 $f_Z(z)=\begin{cases}1-\dfrac{z}{2}, &amp; 0&lt;z&lt;2\\ 0, &amp; \text{其他}\end{cases}$<br>解法二　$f_Z(z)=\int_{-\infty}^{+\infty}f(x,2x-z)\mathrm{d}x$，<br>其中　$f(x,2x-z)=\begin{cases}1, &amp; 0&lt;x&lt;1,\ 0&lt;z&lt;2x\\ 0, &amp; \text{其他}\end{cases}$<br>当 $z\le 0$ 或 $z\ge 2$ 时，$f_Z(z)=0$<br>当 $0&lt;z&lt;2$ 时，$f_Z(z)=\int_{\frac{z}{2}}^{1}\mathrm{d}x=1-\dfrac{z}{2}$，　即 $f_Z(z)=\begin{cases}1-\dfrac{z}{2}, &amp; 0&lt;z&lt;2\\ 0, &amp; \text{其他}\end{cases}$<br>（3）$P\left\{Y\le \dfrac{1}{2}\ \Big|\ X\le \dfrac{1}{2}\right\}=\dfrac{P\left\{X\le \dfrac{1}{2},\ Y\le \dfrac{1}{2}\right\}}{P\left\{X\le \dfrac{1}{2}\right\}}=\dfrac{\dfrac{3}{16}}{\dfrac{1}{4}}=\dfrac{3}{4}.$</p></div>
+<p>求：(1) $(X,Y)$ 的边缘概率密度 $f_X(x)$，$f_Y(y)$；<br>（2）$Z=2X-Y$ 的概率密度 $f_Z(z)$；<br>（3）$P\left\{Y\le \dfrac{1}{2}\ \Big|\ X\le \dfrac{1}{2}\right\}$.</p></div>
 <div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　（1）当 $0&lt;x&lt;1$ 时，$f_X(x)=\int_{-\infty}^{+\infty}f(x,y)\mathrm{d}y=\int_{0}^{2x}\mathrm{d}y=2x$<br>当 $x\le 0$ 或 $x\ge 1$ 时，$f_X(x)=0$，　即 $f_X(x)=\begin{cases}2x, &amp; 0&lt;x&lt;1\\ 0 &amp; \text{其他}\end{cases}$<br>当 $0&lt;y&lt;2$ 时，　$f_Y(y)=\int_{-\infty}^{+\infty}f(x,y)\mathrm{d}x=\int_{\frac{y}{2}}^{1}\mathrm{d}x=1-\dfrac{y}{2}$<br>当 $y\le 0$ 或 $y\ge 1$ 时，$f_Y(y)=0$，　即 $f_Y(y)=\begin{cases}1-\dfrac{y}{2}, &amp; 0&lt;y&lt;2\\ 0, &amp; \text{其他}\end{cases}$<br>（2）解法一　当 $z\le 0$ 时，$F_Z(z)=0$<br>当 $0&lt;z&lt;2$ 时，$F_Z(z)=P\{2X-Y\le z\}=\iint\limits_{2x-y\le z}f(x,y)\mathrm{d}x\mathrm{d}y=z-\dfrac{z^2}{4}$<br>当 $z\ge 2$ 时，$F_Z(z)=1$，所以 $f_Z(z)=\begin{cases}1-\dfrac{z}{2}, &amp; 0&lt;z&lt;2\\ 0, &amp; \text{其他}\end{cases}$<br>解法二　$f_Z(z)=\int_{-\infty}^{+\infty}f(x,2x-z)\mathrm{d}x$，<br>其中　$f(x,2x-z)=\begin{cases}1, &amp; 0&lt;x&lt;1,\ 0&lt;z&lt;2x\\ 0, &amp; \text{其他}\end{cases}$<br>当 $z\le 0$ 或 $z\ge 2$ 时，$f_Z(z)=0$<br>当 $0&lt;z&lt;2$ 时，$f_Z(z)=\int_{\frac{z}{2}}^{1}\mathrm{d}x=1-\dfrac{z}{2}$，　即 $f_Z(z)=\begin{cases}1-\dfrac{z}{2}, &amp; 0&lt;z&lt;2\\ 0, &amp; \text{其他}\end{cases}$<br>（3）$P\left\{Y\le \dfrac{1}{2}\ \Big|\ X\le \dfrac{1}{2}\right\}=\dfrac{P\left\{X\le \dfrac{1}{2},\ Y\le \dfrac{1}{2}\right\}}{P\left\{X\le \dfrac{1}{2}\right\}}=\dfrac{\dfrac{3}{16}}{\dfrac{1}{4}}=\dfrac{3}{4}.$</p></div>
 </div></section>
 <section class="q-card" id="q-5-9" data-qid="c3-5.9">
 <div class="q-head"><span class="q-num">【5.9】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>设随机变量 $X$ 和 $Y$ 的联合分布是正方形 $G=\{(x,y)\,|\,1\le x\le 3,\ 1\le y\le 3\}$ 上的均匀分布，试求随机变量 $U=|X-Y|$ 的概率密度 $p(u)$.<br>解　由条件知 $X$ 和 $Y$ 的联合密度为　$f(x,y)=\begin{cases}\dfrac{1}{4}, &amp; 1\le x\le 3,\ 1\le y\le 3\\ 0, &amp; \text{其他}\end{cases}$<br>以 $F(u)=P\{U\le u\}\ (-\infty&lt;u&lt;+\infty)$ 表示随机变量 $U$ 的分布函数.<br>显然，当 $u\le 0$ 时，$F(u)=0$；<br>当 $u\ge 2$ 时，$F(u)=1$.<br>设 $0&lt;u&lt;2$，如图 3—5.9 所示，则</p>
+<div class="q-body"><p>设随机变量 $X$ 和 $Y$ 的联合分布是正方形 $G=\{(x,y)\,|\,1\le x\le 3,\ 1\le y\le 3\}$ 上的均匀分布，试求随机变量 $U=|X-Y|$ 的概率密度 $p(u)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由条件知 $X$ 和 $Y$ 的联合密度为　$f(x,y)=\begin{cases}\dfrac{1}{4}, &amp; 1\le x\le 3,\ 1\le y\le 3\\ 0, &amp; \text{其他}\end{cases}$<br>以 $F(u)=P\{U\le u\}\ (-\infty&lt;u&lt;+\infty)$ 表示随机变量 $U$ 的分布函数.<br>显然，当 $u\le 0$ 时，$F(u)=0$；<br>当 $u\ge 2$ 时，$F(u)=1$.<br>设 $0&lt;u&lt;2$，如图 3—5.9 所示，则</p>
 <p class="dmath">$$F(u)=\iint\limits_{|x-y|\le u}f(x,y)\mathrm{d}x\mathrm{d}y=\iint\limits_{|x-y|\le u}\frac{1}{4}\mathrm{d}x\mathrm{d}y=\frac{1}{4}\left[4-(2-u)^2\right]=1-\frac{1}{4}(2-u)^2$$</p>
 <p>于是，随机变量 $U$ 的密度为</p>
 <p class="dmath">$$p(u)=\begin{cases}\dfrac{1}{2}(2-u), &amp; 0&lt;u&lt;2\\ 0, &amp; \text{其他}\end{cases}$$</p>
 <div class="fig-desc">图描述：图 3—5.9，直角坐标系，横轴 $x$，纵轴 $y$，原点 $O$；正方形区域 $G$（$1\le x\le 3$，$1\le y\le 3$，边界以虚线对应坐标 1、2、3），正方形内标有区域 $|x-y|&lt;u$，其两条边界斜线分别为 $y-x=u$（右上）与 $y-x=-u$（右下）.</div></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-5-10" data-qid="c3-5.10">
 <div class="q-head"><span class="q-num">【5.10】</span><span>

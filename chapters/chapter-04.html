@@ -184,18 +184,20 @@
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设随机变量 $X$ 的分布函数为</p>
 <p class="dmath">$$F(x)=\begin{cases}1-\dfrac{4}{x^2}, &amp; x\ge 2\\[2mm] 0, &amp; x&lt;2\end{cases}$$</p>
-<p>求 $X$ 的期望.<br>解　因为 $X$ 的概率密度为</p>
+<p>求 $X$ 的期望.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　因为 $X$ 的概率密度为</p>
 <p class="dmath">$$f(x)=F'(x)=\begin{cases}\dfrac{8}{x^3}, &amp; x\ge 2\\[2mm] 0, &amp; x&lt;2\end{cases}$$</p>
 <p>所以 $E(X)=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x=\int_2^{+\infty}\dfrac{8}{x^2}\mathrm{d}x=4$.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-1-6" data-qid="c4-1.6">
 <div class="q-head"><span class="q-num">【1.6】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设 $f(x)$ 为随机变量 $X$ 的密度函数，若对于常数 $c$，有</p>
 <p class="dmath">$$f(c+x)=f(c-x),\quad x&gt;0$$</p>
-<p>且 $EX$ 存在，试证明 $EX=c$.<br>证　由数学期望的定义知</p>
+<p>且 $EX$ 存在，试证明 $EX=c$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>证　由数学期望的定义知</p>
 <p class="dmath">$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x\xlongequal{x=c+t}\int_{-\infty}^{+\infty}(c+t)f(c+t)\mathrm{d}t$$</p>
 <p class="dmath">$$=\int_{-\infty}^{+\infty}cf(c+t)\mathrm{d}t+\int_{-\infty}^{+\infty}tf(c+t)\mathrm{d}t$$</p>
 <p>而</p>
@@ -207,8 +209,6 @@
 <p>亦即</p>
 <p class="dmath">$$\int_{-\infty}^{+\infty}tf(c+t)\mathrm{d}t=0$$</p>
 <p>从而证明 $EX=c$.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <div class="block-title">题型3 随机变量函数的数学期望</div>
 <section class="q-card" id="q-1-7" data-qid="c4-1.7">
@@ -216,34 +216,36 @@
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设随机变量 $X$ 的分布律为</p>
 <table><tr><th>$X$</th><th>$-2$</th><th>0</th><th>2</th></tr><tr><td>$P$</td><td>0.4</td><td>0.3</td><td>0.3</td></tr></table>
-<p>求 $E(X)$，$E(X^2)$，$E(3X^2+5)$.<br>解　$E(X)=(-2)\times 0.4+0\times 0.3+2\times 0.3=-0.2$<br>$E(X^2)=(-2)^2\times 0.4\times+0^2\times 0.3+2^2\times 0.3=2.8$<br>$E(3X^2+5)=[3\times(-2)^2+5]\times 0.4+[3\times 0^2+5]\times 0.3+[3\times 2^2+5]\times 0.3=13.4$<br>或由期望的性质<br>$E(3X^2+5)=3E(X^2)+5=3\times 2.8+5=13.4.$</p></div>
+<p>求 $E(X)$，$E(X^2)$，$E(3X^2+5)$.</p></div>
 <div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$E(X)=(-2)\times 0.4+0\times 0.3+2\times 0.3=-0.2$<br>$E(X^2)=(-2)^2\times 0.4\times+0^2\times 0.3+2^2\times 0.3=2.8$<br>$E(3X^2+5)=[3\times(-2)^2+5]\times 0.4+[3\times 0^2+5]\times 0.3+[3\times 2^2+5]\times 0.3=13.4$<br>或由期望的性质<br>$E(3X^2+5)=3E(X^2)+5=3\times 2.8+5=13.4.$</p></div>
 </div></section>
 <section class="q-card" id="q-1-8" data-qid="c4-1.8">
 <div class="q-head"><span class="q-num">【1.8】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设随机变量 $X$ 的概率密度为</p>
 <p class="dmath">$$f(x)=\begin{cases}\mathrm{e}^{-x}, &amp; x&gt;0\\ 0, &amp; x\le 0\end{cases}$$</p>
-<p>求　（1）$Y=2X$；<br>（2）$Y=\mathrm{e}^{-2X}$ 的数学期望.<br>解　（1）$E(Y)=E(2X)=\int_{-\infty}^{+\infty}2xf(x)\mathrm{d}x=\int_0^{+\infty}2x\mathrm{e}^{-x}\mathrm{d}x=2$；<br>（2）$E(Y)=E(\mathrm{e}^{-2X})=\int_{-\infty}^{+\infty}\mathrm{e}^{-2x}f(x)\mathrm{d}x=\int_0^{+\infty}\mathrm{e}^{-2x}\mathrm{e}^{-x}\mathrm{d}x=\dfrac{1}{3}$.</p></div>
+<p>求　（1）$Y=2X$；<br>（2）$Y=\mathrm{e}^{-2X}$ 的数学期望.</p></div>
 <div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　（1）$E(Y)=E(2X)=\int_{-\infty}^{+\infty}2xf(x)\mathrm{d}x=\int_0^{+\infty}2x\mathrm{e}^{-x}\mathrm{d}x=2$；<br>（2）$E(Y)=E(\mathrm{e}^{-2X})=\int_{-\infty}^{+\infty}\mathrm{e}^{-2x}f(x)\mathrm{d}x=\int_0^{+\infty}\mathrm{e}^{-2x}\mathrm{e}^{-x}\mathrm{d}x=\dfrac{1}{3}$.</p></div>
 </div></section>
 <section class="q-card" id="q-1-9" data-qid="c4-1.9">
 <div class="q-head"><span class="q-num">【1.9】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设二维随机变量的联合分布列为</p>
 <table><tr><th>$X$ \ $Y$</th><th>1</th><th>2</th></tr><tr><td>1</td><td>0.25</td><td>0.32</td></tr><tr><td>2</td><td>0.08</td><td>0.35</td></tr></table>
-<p>求 $E(X^2+Y)$.<br>解　由公式 $E[g(X,Y)]=\sum\limits_i\sum\limits_j g(x_i,y_j)p_{ij}$：<br>$E(X^2+Y)=(1^2+1)\times 0.25+(1^2+2)\times 0.32+(2^2+1)\times 0.08+(2^2+2)\times 0.35$<br>$=3.96.$</p></div>
+<p>求 $E(X^2+Y)$.</p></div>
 <div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由公式 $E[g(X,Y)]=\sum\limits_i\sum\limits_j g(x_i,y_j)p_{ij}$：<br>$E(X^2+Y)=(1^2+1)\times 0.25+(1^2+2)\times 0.32+(2^2+1)\times 0.08+(2^2+2)\times 0.35$<br>$=3.96.$</p></div>
 </div></section>
 <section class="q-card" id="q-1-10" data-qid="c4-1.10">
 <div class="q-head"><span class="q-num">【1.10】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设二维随机变量 $(X,Y)$ 的联合分布密度为</p>
 <p class="dmath">$$f(x,y)=\begin{cases}x+y, &amp; 0\le x\le 1,\ 0\le y\le 1\\ 0, &amp; \text{其他}\end{cases}$$</p>
-<p>求 $E(XY)$，$E(X)$，$E(Y)$.<br>解　由公式 $E[g(X,Y)]=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(x,y)f(x,y)\mathrm{d}x\mathrm{d}y$</p>
+<p>求 $E(XY)$，$E(X)$，$E(Y)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由公式 $E[g(X,Y)]=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(x,y)f(x,y)\mathrm{d}x\mathrm{d}y$</p>
 <p class="dmath">$$E(XY)=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}xyf(x,y)\mathrm{d}x\mathrm{d}y=\int_0^1\int_0^1 xy(x+y)\mathrm{d}x\mathrm{d}y=\dfrac{1}{3}.$$</p>
 <p>求 $E(X)$ 与 $E(Y)$ 有两种方法：<br>方法一　先求出 $f_X(x),f_Y(y)$，利用公式</p>
 <p class="dmath">$$E(X)=\int_{-\infty}^{+\infty}xf_X(x)\mathrm{d}x$$</p>
@@ -253,8 +255,6 @@
 <p>同理可求 $E(Y)=\dfrac{7}{12}$<br>方法二　直接使用 $E[g(X,Y)]$ 公式</p>
 <p class="dmath">$$E(X)=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}xf(x,y)\mathrm{d}x\mathrm{d}y=\dfrac{7}{12}$$</p>
 <p class="dmath">$$E(Y)=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}yf(x,y)\mathrm{d}x\mathrm{d}y=\dfrac{7}{12}.$$</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　当已知 $(X,Y)$ 的概率密度 $f(x,y)$，求 $E(X)$、$E(Y)$ 时方法二简便.</p></div>
 </div></section>
 <section class="q-card" id="q-1-11" data-qid="c4-1.11">
@@ -262,7 +262,9 @@
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>假设随机变量 $Y$ 服从参数为 $\lambda=1$ 的指数分布，随机变量</p>
 <p class="dmath">$$X_k=\begin{cases}0, &amp; Y\le k\\ 1, &amp; Y&gt;k\end{cases}\quad (k=1,2)$$</p>
-<p>（1）求 $X_1$ 和 $X_2$ 的联合概率分布；<br>（2）求 $E(X_1+X_2)$.<br>解　（1）$Y$ 的分布函数为 $F(y)=1-\mathrm{e}^{-y}\ (y&gt;0)$，$F(y)=0\ (y\le 0)$.<br>$(X_1,X_2)$ 有四个可能值：$(0,0)$，$(0,1)$，$(1,0)$，$(1,1)$.<br>易见</p>
+<p>（1）求 $X_1$ 和 $X_2$ 的联合概率分布；<br>（2）求 $E(X_1+X_2)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　（1）$Y$ 的分布函数为 $F(y)=1-\mathrm{e}^{-y}\ (y&gt;0)$，$F(y)=0\ (y\le 0)$.<br>$(X_1,X_2)$ 有四个可能值：$(0,0)$，$(0,1)$，$(1,0)$，$(1,1)$.<br>易见</p>
 <p class="dmath">$$P\{X_1=0,X_2=0\}=P\{Y\le 1,Y\le 2\}=P\{Y\le 1\}=1-\mathrm{e}^{-1}$$</p>
 <p class="dmath">$$P\{X_1=0,X_2=1\}=P\{Y\le 1,Y&gt;2\}=0\,.$$</p>
 <p class="dmath">$$P\{X_1=1,X_2=0\}=P\{Y&gt;1,Y\le 2\}=P\{1&lt;Y\le 2\}=\mathrm{e}^{-1}-\mathrm{e}^{-2}$$</p>
@@ -272,8 +274,6 @@
 <p>（2）易见，$X_k(k=1,2)$ 服从 $0-1$ 分布：</p>
 <p class="dmath">$$X_k\sim\begin{bmatrix}0 &amp; 1\\ P\{Y\le k\} &amp; P\{Y&gt;k\}\end{bmatrix}=\begin{bmatrix}0 &amp; 1\\ 1-\mathrm{e}^{-k} &amp; \mathrm{e}^{-k}\end{bmatrix}$$</p>
 <p>因此 $EX_k=1\times\mathrm{e}^{-k}=\mathrm{e}^{-k}\quad (k=1,2)$<br>则 $E(X_1+X_2)=EX_1+EX_2=\mathrm{e}^{-1}+\mathrm{e}^{-2}$.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　第二问中 $E(X_1+X_2)$ 也可以利用公式</p>
 <p class="dmath">$$E[g(X,Y)]=\sum\limits_i\sum\limits_j g(x_i,y_j)p_{ij}$$</p>
 <p>直接计算得：</p>
@@ -285,28 +285,30 @@
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>已知离散型随机变量 $X$ 服从参数为 2 的泊松分布，即</p>
 <p class="dmath">$$P\{X=k\}=\dfrac{2^k\,\mathrm{e}^{-2}}{k!},\quad k=0,1,2,\cdots,$$</p>
-<p>则随机变量 $Z=3X-2$ 的数学期望 $EZ=$ ______.<br>解　本题要求读者熟悉泊松分布的数字特征，并会利用数学期望的性质求随机变量线性函数的数学期望.<br>由于 $X$ 服从参数为 2 的泊松分布，则 $EX=2$，所以</p>
-<p class="dmath">$$EZ=E(3X-2)=3EX-2=4.$$</p></div>
+<p>则随机变量 $Z=3X-2$ 的数学期望 $EZ=$ ______.</p></div>
 <div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　本题要求读者熟悉泊松分布的数字特征，并会利用数学期望的性质求随机变量线性函数的数学期望.<br>由于 $X$ 服从参数为 2 的泊松分布，则 $EX=2$，所以</p>
+<p class="dmath">$$EZ=E(3X-2)=3EX-2=4.$$</p></div>
 </div></section>
 <section class="q-card" id="q-1-13" data-qid="c4-1.13">
 <div class="q-head"><span class="q-num">【1.13】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设随机变量 $X_{ij}\ (i,j=1,2,\cdots,n;\ n\ge 2)$ 独立同分布，$EX_{ij}=2$，则行列式</p>
 <p class="dmath">$$Y=\begin{vmatrix}X_{11} &amp; X_{12} &amp; \cdots &amp; X_{1n}\\ X_{21} &amp; X_{22} &amp; \cdots &amp; X_{2n}\\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots\\ X_{n1} &amp; X_{n2} &amp; \cdots &amp; X_{nn}\end{vmatrix}$$</p>
-<p>的数学期望 $EY=$ ______.<br>解　由 $Y=\sum\limits_{j_1j_2\cdots j_n}(-1)^{\tau(j_1j_2\cdots j_n)}X_{1j_1}X_{2j_2}\cdots X_{nj_n}$<br>且随机变量 $X_{ij}\ (i,j=1,2,\cdots,n)$ 相互独立同分布，$EX_{ij}=2$，有</p>
+<p>的数学期望 $EY=$ ______.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　由 $Y=\sum\limits_{j_1j_2\cdots j_n}(-1)^{\tau(j_1j_2\cdots j_n)}X_{1j_1}X_{2j_2}\cdots X_{nj_n}$<br>且随机变量 $X_{ij}\ (i,j=1,2,\cdots,n)$ 相互独立同分布，$EX_{ij}=2$，有</p>
 <p class="dmath">$$EY=E\sum\limits_{j_1j_2\cdots j_n}(-1)^{\tau(j_1j_2\cdots j_n)}X_{1j_1}X_{2j_2}\cdots X_{nj_n}$$</p>
 <p class="dmath">$$=\sum\limits_{j_1j_2\cdots j_n}(-1)^{\tau(j_1j_2\cdots j_n)}EX_{1j_1}EX_{2j_2}\cdots EX_{nj_n}$$</p>
 <p class="dmath">$$=\begin{vmatrix}EX_{11} &amp; EX_{12} &amp; \cdots &amp; EX_{1n}\\ EX_{21} &amp; EX_{22} &amp; \cdots &amp; EX_{2n}\\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots\\ EX_{n1} &amp; EX_{n2} &amp; \cdots &amp; EX_{nn}\end{vmatrix}=\begin{vmatrix}2 &amp; 2 &amp; \cdots &amp; 2\\ 2 &amp; 2 &amp; \cdots &amp; 2\\ \cdots &amp; \cdots &amp; \cdots &amp; \cdots\\ 2 &amp; 2 &amp; \cdots &amp; 2\end{vmatrix}=0.$$</p>
 <p>故应填 0.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-1-14" data-qid="c4-1.14">
 <div class="q-head"><span class="q-num">【1.14】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>从甲地到乙地的旅游车载 20 位旅客自甲地开出，沿途有 10 个车站，如到达一个车站没有旅客下车就不停车. 以 $X$ 表示停车次数，求 $E(X)$（设每位旅客在各个车站下车是等可能的）.<br>解　引进随机变量 $X_i=\begin{cases}0, &amp; \text{第}\ i\ \text{站没有人下车}\\ 1, &amp; \text{第}\ i\ \text{站有人下车}\end{cases}$<br>则</p>
+<div class="q-body"><p>从甲地到乙地的旅游车载 20 位旅客自甲地开出，沿途有 10 个车站，如到达一个车站没有旅客下车就不停车. 以 $X$ 表示停车次数，求 $E(X)$（设每位旅客在各个车站下车是等可能的）.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　引进随机变量 $X_i=\begin{cases}0, &amp; \text{第}\ i\ \text{站没有人下车}\\ 1, &amp; \text{第}\ i\ \text{站有人下车}\end{cases}$<br>则</p>
 <p class="dmath">$$X=X_1+X_2+\cdots+X_{10}.$$</p>
 <p>根据题意任一旅客在第 $i$ 站不下车的概率为 $\dfrac{9}{10}$，因此 20 位旅客在第 $i$ 站不下车的概率为 $\left(\dfrac{9}{10}\right)^{20}$，在第 $i$ 站有人下车的概率为 $1-\left(\dfrac{9}{10}\right)^{20}$. 即</p>
 <p class="dmath">$$P\{X_i=0\}=\left(\dfrac{9}{10}\right)^{20},\qquad P\{X_i=1\}=1-\left(\dfrac{9}{10}\right)^{20}.\quad (i=1,2,\cdots,10)$$</p>
@@ -314,8 +316,6 @@
 <p class="dmath">$$E(X_i)=0\times\left(\dfrac{9}{10}\right)^{20}+1\times\left[1-\left(\dfrac{9}{10}\right)^{20}\right]=1-\left(\dfrac{9}{10}\right)^{20}$$</p>
 <p class="dmath">$$EX=\sum\limits_{i=1}^{10}\left[1-\left(\dfrac{9}{10}\right)^{20}\right]\approx 8.8.$$</p>
 <p>故平均停车 9 次.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 <div class="cmt-box"><span class="cmt-label">点评：</span><p>点评　将 $X$ 分解成数个随机变量之和，然后利用数学期望的性质求 $EX$，这种方法对于不易求分布律的随机变量计算数学期望有很大作用.</p></div>
 </div></section>
 <section class="q-card" id="q-1-15" data-qid="c4-1.15">
@@ -323,18 +323,20 @@
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设 $X,Y$ 相互独立，其密度函数分别为</p>
 <p class="dmath">$$f_X(x)=\begin{cases}2x, &amp; 0\le x\le 1\\ 0, &amp; \text{其他}\end{cases}\qquad F_Y(y)=\begin{cases}\mathrm{e}^{-(y-5)}, &amp; y&gt;5\\ 0, &amp; \text{其他}\end{cases}$$</p>
-<p>求 $E(XY)$.<br>解法一　因为 $X,Y$ 相互独立，故利用期望性质</p>
+<p>求 $E(XY)$.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解法一　因为 $X,Y$ 相互独立，故利用期望性质</p>
 <p class="dmath">$$E(XY)=E(X)\cdot E(Y)=\int_0^1 x2x\,\mathrm{d}x\int_5^{+\infty}y\mathrm{e}^{-(y-5)}\mathrm{d}y=\dfrac{2}{3}\times 6=4.$$</p>
 <p>解法二</p>
 <p class="dmath">$$E(XY)=\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}xyf_X(x)f_Y(y)\mathrm{d}x\mathrm{d}y=\int_0^1\int_5^{+\infty}xy\,2x\mathrm{e}^{-(y-5)}\mathrm{d}x\mathrm{d}y=4.$$</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <div class="block-title">题型5 数学期望的应用</div>
 <section class="q-card" id="q-1-16" data-qid="c4-1.16">
 <div class="q-head"><span class="q-num">【1.16】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>游客乘电梯从底层到电视塔顶层观光. 电梯于每个整点的第 5 分钟、25 分钟和 55 分钟从底层起行，假设一游客在早八点的第 $X$ 分钟到达底层候梯处，且 $X$ 在 $[0,60]$ 上均匀分布，求该游客等候时间的数学期望.<br>解　已知 $X$ 在 $[0,60]$ 上服从均匀分布，其密度为</p>
+<div class="q-body"><p>游客乘电梯从底层到电视塔顶层观光. 电梯于每个整点的第 5 分钟、25 分钟和 55 分钟从底层起行，假设一游客在早八点的第 $X$ 分钟到达底层候梯处，且 $X$ 在 $[0,60]$ 上均匀分布，求该游客等候时间的数学期望.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　已知 $X$ 在 $[0,60]$ 上服从均匀分布，其密度为</p>
 <p class="dmath">$$f(x)=\begin{cases}\dfrac{1}{60}, &amp; \text{若}\ 0\le x\le 60\\ 0, &amp; \text{其他}\end{cases}$$</p>
 <p>设 $Y$ 为游客等候电梯的时间（单位：分），则</p>
 <p class="dmath">$$Y=g(X)=\begin{cases}5-X, &amp; 0&lt;X\le 5\\ 25-X, &amp; 5&lt;X\le 25\\ 55-X, &amp; 25&lt;X\le 55\\ 60-X+5, &amp; 55&lt;X\le 60\end{cases}$$</p>
@@ -342,13 +344,13 @@
 <p class="dmath">$$E(Y)=E[g(X)]=\int_{-\infty}^{+\infty}g(x)f(x)\mathrm{d}x=\dfrac{1}{60}\int_0^{60}g(x)\mathrm{d}x$$</p>
 <p class="dmath">$$=\dfrac{1}{60}\left[\int_0^5(5-x)\mathrm{d}x+\int_5^{25}(25-x)\mathrm{d}x+\int_{25}^{55}(55-x)\mathrm{d}x+\int_{55}^{60}(65-x)\mathrm{d}x\right]$$</p>
 <p class="dmath">$$=\dfrac{1}{60}[12.5+200+450+37.5]=11.67.$$</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-1-17" data-qid="c4-1.17">
 <div class="q-head"><span class="q-num">【1.17】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>设某种商品每周的需求量 $X$ 是服从区间 $[10,30]$ 上均匀分布的随机变量，而经销商店进货数量为区间 $[10,30]$ 中的某一整数，商店每销售 1 单位商品可获利 500 元；若供大于求则削价处理，每处理 1 单位商品亏损 100 元；若供不应求，则可从外部调剂供应，此时每 1 单位商品仅获利 300 元. 为使商店所获利润期望值不少于 9280 元，试确定最少进货量.<br>解　设进货数量为 $a$，则利润为</p>
+<div class="q-body"><p>设某种商品每周的需求量 $X$ 是服从区间 $[10,30]$ 上均匀分布的随机变量，而经销商店进货数量为区间 $[10,30]$ 中的某一整数，商店每销售 1 单位商品可获利 500 元；若供大于求则削价处理，每处理 1 单位商品亏损 100 元；若供不应求，则可从外部调剂供应，此时每 1 单位商品仅获利 300 元. 为使商店所获利润期望值不少于 9280 元，试确定最少进货量.</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设进货数量为 $a$，则利润为</p>
 <p class="dmath">$$Y=\begin{cases}500a+(X-a)300, &amp; a&lt;X\le 30\\ 500X-(a-X)100, &amp; 10\le X\le a\end{cases}=\begin{cases}300X+200a, &amp; a&lt;X\le 30\\ 600X-100a, &amp; 10\le X\le a\end{cases}$$</p>
 <p>利润期望</p>
 <p class="dmath">$$EY=\int_{-\infty}^{+\infty}g(x)f(x)\mathrm{d}x=\int_{10}^{30}\dfrac{1}{20}\cdot g(x)\mathrm{d}x$$</p>
@@ -358,13 +360,13 @@
 <p>依题意，有</p>
 <p class="dmath">$$-7.5a^2+350a+5250\ge 9280\quad \text{即}\quad 7.5a^2-350a+4030\le 0,$$</p>
 <p>解得 $20\dfrac{2}{3}\le a\le 26$.<br>故利润期望值不少于 9280 元的最少进货量为 21 单位.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-1-18" data-qid="c4-1.18">
 <div class="q-head"><span class="q-num">【1.18】</span><span>
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
-<div class="q-body"><p>假设一部机器在一天内发生故障的概率为 0.2，机器发生故障时全天停止工作，若一周 5 个工作日里无故障，可获利润 10 万元；发生一次故障仍可获利润 5 万元；发生二次故障所获利润 0 元；发生三次或三次以上故障要亏损 2 万元. 求一周内期望利润是多少？<br>解　设一周 5 个工作日内发生故障的天数为 $X$，由题意知 $X$ 服从二项分布，</p>
+<div class="q-body"><p>假设一部机器在一天内发生故障的概率为 0.2，机器发生故障时全天停止工作，若一周 5 个工作日里无故障，可获利润 10 万元；发生一次故障仍可获利润 5 万元；发生二次故障所获利润 0 元；发生三次或三次以上故障要亏损 2 万元. 求一周内期望利润是多少？</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　设一周 5 个工作日内发生故障的天数为 $X$，由题意知 $X$ 服从二项分布，</p>
 <p class="dmath">$$P\{X=0\}=0.8^5=0.32768,$$</p>
 <p class="dmath">$$P\{X=1\}=C_5^1 0.2\times 0.8^4=0.4096,$$</p>
 <p class="dmath">$$P\{X=2\}=C_5^2 0.8^3\times 0.2^2=0.2048,$$</p>
@@ -374,8 +376,6 @@
 <p>则 $Y$ 的分布律为：</p>
 <table><tr><th>$Y$</th><th>10</th><th>5</th><th>0</th><th>$-2$</th></tr><tr><td>$P$</td><td>0.32768</td><td>0.4096</td><td>0.2048</td><td>0.05792</td></tr></table>
 <p>则 $EY=10\times 0.32768+5\times 0.4096-2\times 0.05792=5.20896$.</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <h2 class="sec-title" id="sec-2">§2. 方差</h2>
 <div class="know-box"><p>1. 方差的统一定义和简化公式<br>若随机变量 $X$ 的数学期望 $EX$ 存在,则 $X$ 的方差可用下式统一定义:</p>
@@ -651,7 +651,9 @@
 <button class="toggle-btn">收起解析</button> <button class="mark-btn">○ 未做</button></span></div>
 <div class="q-body"><p>设随机变量 $X$ 和 $Y$ 的联合概率分布为</p>
 <table><tr><th>概率 \ Y</th><th>$-1$</th><th>$0$</th><th>$1$</th></tr><tr><td>$X=0$</td><td>0.07</td><td>0.18</td><td>0.15</td></tr><tr><td>$X=1$</td><td>0.08</td><td>0.32</td><td>0.20</td></tr></table>
-<p>则 $X$ 和 $Y$ 的相关系数 $\rho=$______．$X^2$ 和 $Y^2$ 的协方差 $\mathrm{Cov}(X^2,Y^2)=$______．<br>解　$X$ 的分布律</p>
+<p>则 $X$ 和 $Y$ 的相关系数 $\rho=$______．$X^2$ 和 $Y^2$ 的协方差 $\mathrm{Cov}(X^2,Y^2)=$______．</p></div>
+<div class="sol-wrap collapsed">
+<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span><p>解　$X$ 的分布律</p>
 <table><tr><th>$X$</th><th>$0$</th><th>$1$</th></tr><tr><td>$P$</td><td>$0.4$</td><td>$0.6$</td></tr></table>
 <p>$Y$ 的分布律</p>
 <table><tr><th>$Y$</th><th>$-1$</th><th>$0$</th><th>$1$</th></tr><tr><td>$P$</td><td>$0.15$</td><td>$0.5$</td><td>$0.35$</td></tr></table>
@@ -660,8 +662,6 @@
 <p>$E(X^2)=0.6$，<br>$E(Y^2)=0.5$，<br>$E(X^2Y^2)=\sum_i \sum_j x_i^2\, y_j^2\, p_{ij}=0.28.$<br>所以</p>
 <p class="dmath">$$\mathrm{Cov}(X^2,Y^2)=E(X^2Y^2)-E(X^2)E(Y^2)=-0.02.$$</p>
 <p>故应填 $0$；$-0.02$．</p></div>
-<div class="sol-wrap collapsed">
-<hr class="sol-divider"><div class="sol-body"><span class="sol-label">【解析】</span></div>
 </div></section>
 <section class="q-card" id="q-3-2" data-qid="c4-3.2">
 <div class="q-head"><span class="q-num">【3.2】</span><span>
